@@ -21,15 +21,15 @@ export default function AboutPage() {
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
             <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-full px-6 py-2">
-              <span className="text-emerald-400 font-medium">Nuestra Historia</span>
+              <span className="text-emerald-400 font-medium">{t("about.badge")}</span>
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            Creemos en hacer la vida <span className="text-emerald-400">más fácil</span>
+            {t("about.hero.title.line1")}{" "}
+            <span className="text-emerald-400">{t("about.hero.title.line2")}</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto text-balance">
-            Somos una agencia de automatización que cree que el futuro es ahora, y estamos aquí para ayudar a nuestros
-            clientes a alcanzarlo
+            {t("about.hero.description")}
           </p>
         </div>
 
@@ -48,19 +48,16 @@ export default function AboutPage() {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-4 py-2 mb-6">
               <Heart className="w-4 h-4 text-red-400" />
-              <span className="text-red-400 font-medium">Por qué existimos</span>
+              <span className="text-red-400 font-medium">{t("about.why.badge")}</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
-              Vimos personas perdiendo tiempo en tareas repetitivas
+              {t("about.why.title")}
             </h2>
             <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-              Cada día, miles de personas dedican horas a tareas manuales que una computadora podría hacer en segundos.
-              Copiar datos, enviar emails, procesar facturas... trabajo que roba tiempo valioso que podrían usar para
-              crecer su negocio.
+              {t("about.why.description1")}
             </p>
             <p className="text-lg text-gray-400 leading-relaxed">
-              Decidimos que tenía que haber una mejor manera. Una forma de liberar a las personas de lo repetitivo para
-              que puedan enfocarse en lo que realmente importa.
+              {t("about.why.description2")}
             </p>
           </div>
         </div>
@@ -69,17 +66,14 @@ export default function AboutPage() {
           <div>
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mb-6">
               <Sparkles className="w-4 h-4 text-emerald-400" />
-              <span className="text-emerald-400 font-medium">Nuestra creencia</span>
+              <span className="text-emerald-400 font-medium">{t("about.belief.badge")}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">El futuro es ahora</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">{t("about.belief.title")}</h2>
             <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-              La tecnología para automatizar procesos ya existe. No es algo del futuro lejano - está aquí, disponible,
-              lista para usar. La inteligencia artificial y la automatización no son ciencia ficción, son herramientas
-              reales que pueden transformar tu negocio hoy.
+              {t("about.belief.description1")}
             </p>
             <p className="text-lg text-gray-400 leading-relaxed">
-              Creemos que cada negocio, sin importar su tamaño, merece acceso a estas herramientas. El futuro no es algo
-              que esperamos - es algo que construimos juntos, un proceso automatizado a la vez.
+              {t("about.belief.description2")}
             </p>
           </div>
           <div>
@@ -110,16 +104,14 @@ export default function AboutPage() {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-4 py-2 mb-6">
               <Users className="w-4 h-4 text-purple-400" />
-              <span className="text-purple-400 font-medium">Cómo ayudamos</span>
+              <span className="text-purple-400 font-medium">{t("about.help.badge")}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">Estamos aquí para nuestros clientes</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">{t("about.help.title")}</h2>
             <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-              No vendemos software complicado. No te dejamos solo con un manual de 200 páginas. Somos tu socio en
-              automatización - entendemos tu negocio, identificamos qué se puede automatizar, y lo hacemos realidad.
+              {t("about.help.description1")}
             </p>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              Desde el restaurante local hasta la empresa multinacional, cada cliente tiene procesos únicos. Nuestra
-              misión es entender esos procesos y crear automatizaciones que realmente funcionen para ti.
+              {t("about.help.description2")}
             </p>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -127,9 +119,9 @@ export default function AboutPage() {
                   <ArrowRight className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <p className="font-semibold mb-1">Entendemos tu negocio</p>
+                  <p className="font-semibold mb-1">{t("about.help.feature1.title")}</p>
                   <p className="text-gray-400 text-sm">
-                    Cada negocio es diferente. Tomamos tiempo para conocer tus procesos únicos.
+                    {t("about.help.feature1.description")}
                   </p>
                 </div>
               </div>
@@ -138,9 +130,9 @@ export default function AboutPage() {
                   <ArrowRight className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <p className="font-semibold mb-1">Automatizamos lo que importa</p>
+                  <p className="font-semibold mb-1">{t("about.help.feature2.title")}</p>
                   <p className="text-gray-400 text-sm">
-                    No automatizamos por automatizar. Nos enfocamos en lo que realmente te ahorra tiempo y dinero.
+                    {t("about.help.feature2.description")}
                   </p>
                 </div>
               </div>
@@ -149,9 +141,9 @@ export default function AboutPage() {
                   <ArrowRight className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <p className="font-semibold mb-1">Te acompañamos siempre</p>
+                  <p className="font-semibold mb-1">{t("about.help.feature3.title")}</p>
                   <p className="text-gray-400 text-sm">
-                    Desde la implementación hasta el soporte continuo, estamos contigo en cada paso.
+                    {t("about.help.feature3.description")}
                   </p>
                 </div>
               </div>
@@ -163,13 +155,11 @@ export default function AboutPage() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 mb-6">
               <Zap className="w-4 h-4 text-blue-400" />
-              <span className="text-blue-400 font-medium">Quiénes somos</span>
+              <span className="text-blue-400 font-medium">{t("about.who.badge")}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Smartmark Consultores</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">{t("about.who.title")}</h2>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              Somos una agencia de automatización especializada en hacer la vida más fácil a través de la tecnología.
-              Combinamos experiencia en negocios con conocimiento técnico para crear soluciones de automatización que
-              realmente funcionan.
+              {t("about.who.description")}
             </p>
             <div className="flex justify-center mb-8">
               <div className="bg-zinc-900 rounded-xl p-8 inline-block">
@@ -177,23 +167,22 @@ export default function AboutPage() {
               </div>
             </div>
             <p className="text-gray-400 italic">
-              "Creemos que cada hora que ahorras en tareas repetitivas es una hora que puedes invertir en hacer crecer
-              tu negocio y vivir mejor."
+              "{t("about.who.quote")}"
             </p>
           </div>
         </CleanCard>
 
         <div className="text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">¿Listo para hacer tu vida más fácil?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">{t("about.cta.title")}</h2>
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Conversemos sobre cómo podemos automatizar tus procesos y darte más tiempo para lo que realmente importa
+            {t("about.cta.description")}
           </p>
           <Button
             size="lg"
             className="bg-emerald-500 hover:bg-emerald-600 text-lg px-8 py-6"
             onClick={() => handleNavigation("/contact")}
           >
-            Comencemos a automatizar <ArrowRight className="ml-2 h-5 w-5" />
+            {t("about.cta.button")} <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>

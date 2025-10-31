@@ -34,12 +34,11 @@ export default function ServicesPage() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
-            <span className="text-emerald-400 text-sm font-medium">Nuestro único servicio</span>
+            <span className="text-emerald-400 text-sm font-medium">{t("services.badge")}</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Automatización de Procesos de Negocio</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">{t("services.title")}</h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Nos especializamos en una sola cosa: automatizar cualquier proceso de tu negocio que involucre una
-            computadora o software.
+            {t("services.description")}
           </p>
         </div>
 
@@ -47,11 +46,9 @@ export default function ServicesPage() {
         <div className="mb-20">
           <CleanCard className="bg-gradient-to-br from-emerald-500/10 to-transparent border-emerald-500/20">
             <div className="text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">Un solo servicio, infinitas posibilidades</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">{t("services.value.title")}</h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-                No ofrecemos múltiples servicios porque creemos en la especialización. Somos expertos en automatización
-                de procesos, y eso significa que podemos automatizar{" "}
-                <span className="text-emerald-400 font-semibold">cualquier cosa</span> que hagas en una computadora.
+                {t("services.value.description")}
               </p>
             </div>
           </CleanCard>
@@ -59,47 +56,47 @@ export default function ServicesPage() {
 
         {/* Examples Section */}
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ejemplos de procesos que automatizamos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t("services.examples.title")}</h2>
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-            Estos son solo algunos ejemplos. Si lo haces en una computadora, lo podemos automatizar.
+            {t("services.examples.description")}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
               {
                 icon: <Mail className="w-6 h-6" />,
-                title: "Emails automáticos",
-                description: "Respuestas, seguimientos y notificaciones sin intervención manual",
+                titleKey: "services.example.emails.title",
+                descriptionKey: "services.example.emails.description",
                 color: "blue",
               },
               {
                 icon: <FileText className="w-6 h-6" />,
-                title: "Procesamiento de documentos",
-                description: "Facturas, contratos, reportes generados y enviados automáticamente",
+                titleKey: "services.example.documents.title",
+                descriptionKey: "services.example.documents.description",
                 color: "green",
               },
               {
                 icon: <MessageSquare className="w-6 h-6" />,
-                title: "Atención al cliente",
-                description: "Respuestas instantáneas por WhatsApp, chat o redes sociales",
+                titleKey: "services.example.customerService.title",
+                descriptionKey: "services.example.customerService.description",
                 color: "purple",
               },
               {
                 icon: <Calendar className="w-6 h-6" />,
-                title: "Gestión de citas",
-                description: "Agendamiento, recordatorios y confirmaciones automáticas",
+                titleKey: "services.example.appointments.title",
+                descriptionKey: "services.example.appointments.description",
                 color: "pink",
               },
               {
                 icon: <Database className="w-6 h-6" />,
-                title: "Entrada de datos",
-                description: "Captura y organización de información sin errores humanos",
+                titleKey: "services.example.dataEntry.title",
+                descriptionKey: "services.example.dataEntry.description",
                 color: "blue",
               },
               {
                 icon: <BarChart3 className="w-6 h-6" />,
-                title: "Reportes y análisis",
-                description: "Dashboards actualizados en tiempo real con tus datos",
+                titleKey: "services.example.reports.title",
+                descriptionKey: "services.example.reports.description",
                 color: "green",
               },
             ].map((example, index) => (
@@ -108,8 +105,8 @@ export default function ServicesPage() {
                   <div className="mb-4">
                     <FeatureIcon icon={example.icon} color={example.color} size="sm" />
                   </div>
-                  <h3 className="text-lg font-bold mb-2">{example.title}</h3>
-                  <p className="text-gray-400 text-sm">{example.description}</p>
+                  <h3 className="text-lg font-bold mb-2">{t(example.titleKey)}</h3>
+                  <p className="text-gray-400 text-sm">{t(example.descriptionKey)}</p>
                 </div>
               </CleanCard>
             ))}
@@ -119,10 +116,10 @@ export default function ServicesPage() {
           <CleanCard className="bg-emerald-500/5 border-emerald-500/20">
             <div className="text-center">
               <p className="text-lg text-emerald-400 font-semibold mb-2">
-                Estos son solo ejemplos - automatizamos miles de procesos diferentes
+                {t("services.callout.title")}
               </p>
               <p className="text-gray-400">
-                Si tu proceso no está aquí, no te preocupes. Si lo haces en una computadora, lo podemos automatizar.
+                {t("services.callout.description")}
               </p>
             </div>
           </CleanCard>
@@ -130,38 +127,37 @@ export default function ServicesPage() {
 
         {/* Tools We Work With */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Trabajamos con cualquier herramienta</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t("services.tools.title")}</h2>
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-            No importa qué software uses, podemos conectarlo y automatizarlo
+            {t("services.tools.description")}
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
             {[
-              { icon: <Mail className="w-5 h-5" />, name: "Email (Gmail, Outlook, etc.)" },
-              { icon: <MessageSquare className="w-5 h-5" />, name: "WhatsApp Business" },
-              { icon: <FileText className="w-5 h-5" />, name: "Excel y Google Sheets" },
-              { icon: <Database className="w-5 h-5" />, name: "Bases de datos" },
-              { icon: <Globe className="w-5 h-5" />, name: "Sitios web y formularios" },
-              { icon: <ShoppingCart className="w-5 h-5" />, name: "E-commerce" },
-              { icon: <Users className="w-5 h-5" />, name: "CRM y ERP" },
-              { icon: <Repeat className="w-5 h-5" />, name: "APIs y sistemas personalizados" },
+              { icon: <Mail className="w-5 h-5" />, nameKey: "services.tool.email" },
+              { icon: <MessageSquare className="w-5 h-5" />, nameKey: "services.tool.whatsapp" },
+              { icon: <FileText className="w-5 h-5" />, nameKey: "services.tool.excel" },
+              { icon: <Database className="w-5 h-5" />, nameKey: "services.tool.databases" },
+              { icon: <Globe className="w-5 h-5" />, nameKey: "services.tool.websites" },
+              { icon: <ShoppingCart className="w-5 h-5" />, nameKey: "services.tool.ecommerce" },
+              { icon: <Users className="w-5 h-5" />, nameKey: "services.tool.crm" },
+              { icon: <Repeat className="w-5 h-5" />, nameKey: "services.tool.apis" },
             ].map((tool, index) => (
               <div
                 key={index}
                 className="flex items-center gap-3 p-4 bg-white/5 rounded-lg border border-white/10 hover:border-emerald-500/30 transition-colors"
               >
                 <div className="text-emerald-400">{tool.icon}</div>
-                <span className="text-sm text-gray-300">{tool.name}</span>
+                <span className="text-sm text-gray-300">{t(tool.nameKey)}</span>
               </div>
             ))}
           </div>
 
           <CleanCard className="bg-gradient-to-br from-purple-500/10 to-transparent border-purple-500/20">
             <div className="text-center">
-              <p className="text-xl font-semibold mb-2">Si lo haces en una computadora, lo podemos automatizar</p>
+              <p className="text-xl font-semibold mb-2">{t("services.tools.final.title")}</p>
               <p className="text-gray-400">
-                No importa si usas software especializado, herramientas personalizadas o sistemas legacy. Encontramos la
-                forma de automatizarlo.
+                {t("services.tools.final.description")}
               </p>
             </div>
           </CleanCard>
@@ -169,26 +165,25 @@ export default function ServicesPage() {
 
         {/* How It Works */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Cómo funciona</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t("services.howItWorks.title")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 step: "1",
-                title: "Analizamos tu proceso",
-                description:
-                  "Entendemos exactamente qué haces, cuánto tiempo toma y dónde están los cuellos de botella",
+                titleKey: "services.howItWorks.step1.title",
+                descriptionKey: "services.howItWorks.step1.description",
                 color: "green",
               },
               {
                 step: "2",
-                title: "Diseñamos la automatización",
-                description: "Creamos un flujo automatizado que replica (y mejora) tu proceso actual",
+                titleKey: "services.howItWorks.step2.title",
+                descriptionKey: "services.howItWorks.step2.description",
                 color: "purple",
               },
               {
                 step: "3",
-                title: "Implementamos y optimizamos",
-                description: "Ponemos todo en marcha y ajustamos hasta que funcione perfectamente",
+                titleKey: "services.howItWorks.step3.title",
+                descriptionKey: "services.howItWorks.step3.description",
                 color: "blue",
               },
             ].map((step, index) => (
@@ -197,8 +192,8 @@ export default function ServicesPage() {
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-500/20 to-purple-500/20 flex items-center justify-center mb-6 border border-white/10">
                     <span className="text-3xl font-bold text-emerald-400">{step.step}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                  <p className="text-gray-400">{step.description}</p>
+                  <h3 className="text-xl font-bold mb-3">{t(step.titleKey)}</h3>
+                  <p className="text-gray-400">{t(step.descriptionKey)}</p>
                 </div>
               </CleanCard>
             ))}
@@ -207,39 +202,39 @@ export default function ServicesPage() {
 
         {/* Benefits */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Qué ganas con la automatización</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t("services.benefits.title")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                title: "Ahorra tiempo valioso",
-                description: "Recupera horas cada semana que puedes dedicar a hacer crecer tu negocio",
-                stat: "Hasta 20 horas/semana",
+                titleKey: "services.benefit.time.title",
+                descriptionKey: "services.benefit.time.description",
+                statKey: "services.benefit.time.stat",
               },
               {
-                title: "Reduce costos operativos",
-                description: "Menos errores, menos trabajo manual, más eficiencia en cada proceso",
-                stat: "30-50% menos costos",
+                titleKey: "services.benefit.cost.title",
+                descriptionKey: "services.benefit.cost.description",
+                statKey: "services.benefit.cost.stat",
               },
               {
-                title: "Escala sin contratar",
-                description: "Crece tu negocio sin necesidad de aumentar tu equipo proporcionalmente",
-                stat: "10x más capacidad",
+                titleKey: "services.benefit.scale.title",
+                descriptionKey: "services.benefit.scale.description",
+                statKey: "services.benefit.scale.stat",
               },
               {
-                title: "Elimina errores humanos",
-                description: "Los procesos automatizados son consistentes y precisos cada vez",
-                stat: "99.9% precisión",
+                titleKey: "services.benefit.accuracy.title",
+                descriptionKey: "services.benefit.accuracy.description",
+                statKey: "services.benefit.accuracy.stat",
               },
             ].map((benefit, index) => (
               <CleanCard key={index} className="bg-gradient-to-br from-white/5 to-transparent">
                 <div>
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-bold">{benefit.title}</h3>
+                    <h3 className="text-xl font-bold">{t(benefit.titleKey)}</h3>
                     <span className="text-emerald-400 font-bold text-sm bg-emerald-500/10 px-3 py-1 rounded-full">
-                      {benefit.stat}
+                      {t(benefit.statKey)}
                     </span>
                   </div>
-                  <p className="text-gray-400">{benefit.description}</p>
+                  <p className="text-gray-400">{t(benefit.descriptionKey)}</p>
                 </div>
               </CleanCard>
             ))}
@@ -248,13 +243,13 @@ export default function ServicesPage() {
 
         {/* CTA */}
         <CleanCard className="text-center bg-gradient-to-br from-emerald-500/10 via-purple-500/10 to-blue-500/10 border-emerald-500/20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Listo para automatizar tu negocio?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("services.cta.title")}</h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Cuéntanos qué procesos te quitan más tiempo y te mostraremos cómo automatizarlos
+            {t("services.cta.description")}
           </p>
           <button onClick={() => handleNavigation("/contact")}>
             <Button className="bg-emerald-500 hover:bg-emerald-600 text-lg px-8 py-6">
-              Comenzar ahora <ArrowRight className="ml-2 h-5 w-5" />
+              {t("services.cta.button")} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </button>
         </CleanCard>

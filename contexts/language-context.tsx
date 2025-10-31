@@ -414,9 +414,89 @@ export const translations = {
     es: "Comencemos a automatizar",
     en: "Let's Start Automating",
   },
+  "contact.page.title": {
+    es: "Hablemos sobre tu proyecto",
+    en: "Let's Talk About Your Project",
+  },
+  "contact.page.description": {
+    es: "Cuéntanos qué procesos quieres automatizar y te explicamos cómo podemos ayudarte",
+    en: "Tell us what processes you want to automate and we'll explain how we can help you",
+  },
+  "contact.form.title": {
+    es: "Envíanos un mensaje",
+    en: "Send Us a Message",
+  },
+  "contact.form.name": {
+    es: "Nombre",
+    en: "Name",
+  },
+  "contact.form.name.placeholder": {
+    es: "Tu nombre completo",
+    en: "Your full name",
+  },
+  "contact.form.email": {
+    es: "Email",
+    en: "Email",
+  },
+  "contact.form.email.placeholder": {
+    es: "tu@email.com",
+    en: "your@email.com",
+  },
+  "contact.form.subject": {
+    es: "Asunto",
+    en: "Subject",
+  },
+  "contact.form.subject.placeholder": {
+    es: "¿En qué podemos ayudarte?",
+    en: "How can we help you?",
+  },
+  "contact.form.message": {
+    es: "Mensaje",
+    en: "Message",
+  },
+  "contact.form.message.placeholder": {
+    es: "Cuéntanos sobre tu proyecto o pregunta...",
+    en: "Tell us about your project or question...",
+  },
+  "contact.form.button": {
+    es: "Enviar mensaje",
+    en: "Send Message",
+  },
   "contact.info.title": {
     es: "Información de Contacto",
     en: "Contact Information",
+  },
+  "contact.info.email": {
+    es: "Email",
+    en: "Email",
+  },
+  "contact.info.phone": {
+    es: "Teléfono",
+    en: "Phone",
+  },
+  "contact.info.office": {
+    es: "Oficina",
+    en: "Office",
+  },
+  "contact.hours.title": {
+    es: "Horario de Atención",
+    en: "Business Hours",
+  },
+  "contact.hours.weekdays": {
+    es: "Lunes - Viernes",
+    en: "Monday - Friday",
+  },
+  "contact.hours.saturday": {
+    es: "Sábado",
+    en: "Saturday",
+  },
+  "contact.hours.sunday": {
+    es: "Domingo",
+    en: "Sunday",
+  },
+  "contact.hours.closed": {
+    es: "Cerrado",
+    en: "Closed",
   },
   "contact.response.title": {
     es: "Respuesta Rápida",

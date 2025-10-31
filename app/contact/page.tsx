@@ -17,7 +17,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-20">
             <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
-              <span className="text-emerald-400 text-sm font-medium">Comencemos a automatizar</span>
+              <span className="text-emerald-400 text-sm font-medium">{t("contact.badge")}</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">{t("contact.page.title")}</h1>
             <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto text-pretty">
@@ -85,7 +85,7 @@ export default function ContactPage() {
             {/* Contact Info - Takes 1 column */}
             <div className="space-y-6">
               <div className="bg-zinc-900/50 backdrop-blur-sm p-6 rounded-3xl border border-zinc-800/50">
-                <h3 className="text-lg font-bold mb-6 text-emerald-400">Información de Contacto</h3>
+                <h3 className="text-lg font-bold mb-6 text-emerald-400">{t("contact.info.title")}</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 bg-emerald-500/10 rounded-xl flex items-center justify-center border border-emerald-500/20">
@@ -194,10 +194,10 @@ export default function ContactPage() {
               <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 backdrop-blur-sm p-6 rounded-3xl border border-emerald-500/20">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-                  <h3 className="text-sm font-bold text-emerald-400">Respuesta Rápida</h3>
+                  <h3 className="text-sm font-bold text-emerald-400">{t("contact.response.title")}</h3>
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Respondemos en menos de 24 horas. Estamos listos para ayudarte a automatizar tu negocio.
+                  {t("contact.response.description")}
                 </p>
               </div>
             </div>
