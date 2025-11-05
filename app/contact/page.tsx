@@ -1,14 +1,72 @@
 "use client"
 
-import { useRouter } from "next/navigation"
+import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import * as z from "zod"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useLanguage } from "@/contexts/language-context"
+import { useToast } from "@/hooks/use-toast"
+
+const contactFormSchema = z.object({
+  name: z.string().min(2, "El nombre debe tener al menos 2 caracteres"),
+  email: z.string().email("Por favor ingresa un email válido"),
+  subject: z.string().min(3, "El asunto debe tener al menos 3 caracteres"),
+  message: z.string().min(10, "El mensaje debe tener al menos 10 caracteres"),
+})
+
+type ContactFormData = z.infer<typeof contactFormSchema>
 
 export default function ContactPage() {
-  const router = useRouter()
   const { t } = useLanguage()
+  const { toast } = useToast()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+  })
+
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true)
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        const errorMessage = result.error + (result.details ? ` (${result.details})` : "")
+        throw new Error(errorMessage || "Error al enviar el mensaje")
+      }
+
+      toast({
+        title: "¡Mensaje enviado!",
+        description: "Tu mensaje ha sido enviado exitosamente. Te responderemos pronto.",
+      })
+
+      reset()
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: error instanceof Error ? error.message : "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <main className="min-h-screen bg-black text-white pt-32">
@@ -30,7 +88,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-zinc-900/50 backdrop-blur-sm p-8 md:p-10 rounded-3xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
                 <h2 className="text-3xl font-bold mb-8">{t("contact.form.title")}</h2>
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300">
@@ -38,9 +96,13 @@ export default function ContactPage() {
                       </label>
                       <Input
                         id="name"
+                        {...register("name")}
                         placeholder={t("contact.form.name.placeholder")}
                         className="bg-black/50 border-zinc-700 focus:border-emerald-500 h-12 text-base"
                       />
+                      {errors.name && (
+                        <p className="mt-1 text-sm text-red-400">{errors.name.message}</p>
+                      )}
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-300">
@@ -49,9 +111,13 @@ export default function ContactPage() {
                       <Input
                         id="email"
                         type="email"
+                        {...register("email")}
                         placeholder={t("contact.form.email.placeholder")}
                         className="bg-black/50 border-zinc-700 focus:border-emerald-500 h-12 text-base"
                       />
+                      {errors.email && (
+                        <p className="mt-1 text-sm text-red-400">{errors.email.message}</p>
+                      )}
                     </div>
                   </div>
                   <div>
@@ -60,9 +126,13 @@ export default function ContactPage() {
                     </label>
                     <Input
                       id="subject"
+                      {...register("subject")}
                       placeholder={t("contact.form.subject.placeholder")}
                       className="bg-black/50 border-zinc-700 focus:border-emerald-500 h-12 text-base"
                     />
+                    {errors.subject && (
+                      <p className="mt-1 text-sm text-red-400">{errors.subject.message}</p>
+                    )}
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-300">
@@ -70,13 +140,21 @@ export default function ContactPage() {
                     </label>
                     <Textarea
                       id="message"
+                      {...register("message")}
                       placeholder={t("contact.form.message.placeholder")}
                       rows={6}
                       className="bg-black/50 border-zinc-700 focus:border-emerald-500 text-base resize-none"
                     />
+                    {errors.message && (
+                      <p className="mt-1 text-sm text-red-400">{errors.message.message}</p>
+                    )}
                   </div>
-                  <Button className="w-full bg-emerald-500 hover:bg-emerald-600 h-12 text-base font-medium">
-                    {t("contact.form.button")}
+                  <Button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-emerald-500 hover:bg-emerald-600 h-12 text-base font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? "Enviando..." : t("contact.form.button")}
                   </Button>
                 </form>
               </div>

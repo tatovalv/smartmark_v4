@@ -1,0 +1,19 @@
+{
+  "name": "SmartMark Consultores",
+  "short_name": "SmartMark",
+  "description": "Especialistas en automatización IA que transforman operaciones empresariales",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#10b981",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
+
+

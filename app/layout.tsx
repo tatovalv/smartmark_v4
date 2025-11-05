@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { LanguageProvider } from "@/contexts/language-context"
 import SeoSchema from "@/components/seo-schema"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -95,6 +96,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <SeoSchema />
+            <Toaster />
           </LanguageProvider>
         </ThemeProvider>
       </body>
