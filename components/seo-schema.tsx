@@ -13,10 +13,10 @@ export default function SeoSchema() {
     logo: "https://smartmarkconsultores.com/logo.png",
     description:
       language === "es"
-        ? "Especialistas en automatización IA que transforman operaciones empresariales con soluciones inteligentes de vanguardia."
+        ? "Consultoría en transformación digital, capacitación en IA y automatización de procesos para empresas que quieren crecer con tecnología."
         : language === "en"
-          ? "AI automation specialists who transform business operations with cutting-edge intelligent solutions."
-          : "Especialistas em automação IA que transformam operações empresariais com soluções inteligentes de ponta.",
+          ? "Digital transformation consulting, AI training, and process automation for companies that want to grow with technology."
+          : "Consultoria em transformação digital, capacitação em IA e automação de processos para empresas que querem crescer com tecnologia.",
     sameAs: [
       "https://facebook.com/smartmarkconsultores",
       "https://twitter.com/smartmarkia",
@@ -28,18 +28,18 @@ export default function SeoSchema() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: language === "es" ? "Automatización con IA" : "AI Automation",
+    name: language === "es" ? "Consultoría en transformación digital e IA" : "Digital Transformation & AI Consulting",
     provider: {
       "@type": "Organization",
       name: "SmartMark Consultores",
     },
     description:
       language === "es"
-        ? "Soluciones de automatización impulsadas por IA avanzada para optimizar procesos empresariales, reducir costos y aumentar la productividad."
+        ? "Servicios de consultoría: transformación digital, capacitaciones en IA, automatización de procesos, diagnóstico estratégico e implementación de soluciones."
         : language === "en"
-          ? "Advanced AI-powered automation solutions to optimize business processes, reduce costs, and increase productivity."
-          : "Soluções de automação impulsionadas por IA avançada para otimizar processos empresariais, reduzir custos e aumentar a produtividade.",
-    serviceType: "AI Automation",
+          ? "Consulting services: digital transformation, AI training, process automation, strategic assessment, and solution implementation."
+          : "Serviços de consultoria: transformação digital, capacitações em IA, automação de processos, diagnóstico estratégico e implementação de soluções.",
+    serviceType: "Technology Consulting",
   }
 
   return (

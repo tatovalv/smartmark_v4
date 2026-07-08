@@ -31,34 +31,34 @@ export const translations = {
     en: "Contact",
   },
   "nav.getStarted": {
-    es: "Comenzar",
-    en: "Get Started",
+    es: "Consulta gratis",
+    en: "Free consultation",
   },
 
   // Hero Section
   "hero.badge": {
-    es: "Automatización IA de Última Generación",
-    en: "Next-Gen AI Automation",
+    es: "Consultoría en transformación digital e IA",
+    en: "Digital Transformation & AI Consulting",
   },
   "hero.title.line1": {
-    es: "Automatiza Tu",
-    en: "Automate Your",
+    es: "Impulsamos la",
+    en: "We drive your",
   },
   "hero.title.line2": {
-    es: "Negocio Con",
-    en: "Business With",
+    es: "transformación",
+    en: "digital",
   },
   "hero.title.line3": {
-    es: "IA Avanzada",
-    en: "Advanced AI",
+    es: "con IA",
+    en: "with AI",
   },
   "hero.description": {
-    es: "SmartMark transforma las operaciones empresariales con automatización de IA de vanguardia. Optimizamos procesos, reducimos costos y aumentamos la productividad con soluciones inteligentes que se adaptan a tu negocio.",
-    en: "SmartMark transforms business operations with cutting-edge AI automation. We optimize processes, reduce costs, and increase productivity with intelligent solutions that adapt to your business.",
+    es: "SmartMark Consultores acompaña a empresas en su evolución tecnológica: estrategia, capacitación, automatización e implementación de soluciones con inteligencia artificial.",
+    en: "SmartMark Consultores guides companies through their technology evolution: strategy, training, automation, and AI solution implementation.",
   },
   "hero.button.explore": {
-    es: "Explorar Automatización IA",
-    en: "Explore AI Automation",
+    es: "Conocer nuestros servicios",
+    en: "Explore Our Services",
   },
   "hero.button.about": {
     es: "Sobre Nosotros",
@@ -67,96 +67,96 @@ export const translations = {
 
   // Services Section
   "services.badge": {
-    es: "Nuestro único servicio",
-    en: "Our Only Service",
+    es: "Nuestros servicios",
+    en: "Our Services",
   },
   "services.title": {
-    es: "Automatización de Procesos de Negocio",
-    en: "Business Process Automation",
+    es: "Consultoría que genera resultados",
+    en: "Consulting that delivers results",
   },
   "services.description": {
-    es: "Nos especializamos en una sola cosa: automatizar cualquier proceso de tu negocio que involucre una computadora o software.",
-    en: "We specialize in one thing: automating any business process that involves a computer or software.",
+    es: "Te ayudamos a modernizar tu empresa con IA, automatización y capacitación.",
+    en: "We help you modernize your company with AI, automation, and training.",
   },
   "services.value.title": {
-    es: "Un solo servicio, infinitas posibilidades",
-    en: "One Service, Infinite Possibilities",
+    es: "Consultoría integral, resultados concretos",
+    en: "Comprehensive Consulting, Concrete Results",
   },
   "services.value.description": {
-    es: "No ofrecemos múltiples servicios porque creemos en la especialización. Somos expertos en automatización de procesos, y eso significa que podemos automatizar cualquier cosa que hagas en una computadora.",
-    en: "We don't offer multiple services because we believe in specialization. We're experts in process automation, and that means we can automate anything you do on a computer.",
+    es: "Combinamos visión estratégica con ejecución técnica. No solo recomendamos: diagnosticamos, diseñamos, implementamos y capacitamos a tu equipo para que los cambios perduren.",
+    en: "We combine strategic vision with technical execution. We don't just recommend — we assess, design, implement, and train your team so changes last.",
   },
   "services.examples.title": {
-    es: "Ejemplos de procesos que automatizamos",
-    en: "Examples of Processes We Automate",
+    es: "Servicios",
+    en: "Services",
   },
   "services.examples.description": {
-    es: "Estos son solo algunos ejemplos. Si lo haces en una computadora, lo podemos automatizar.",
-    en: "These are just a few examples. If you do it on a computer, we can automate it.",
+    es: "Servicios diseñados para empresas que quieren modernizar sus operaciones y aprovechar la inteligencia artificial.",
+    en: "Services designed for companies looking to modernize operations and leverage artificial intelligence.",
   },
-  "services.example.emails.title": {
-    es: "Emails automáticos",
-    en: "Automatic Emails",
+  "services.example.digital.title": {
+    es: "Transformación digital",
+    en: "Digital Transformation",
   },
-  "services.example.emails.description": {
-    es: "Respuestas, seguimientos y notificaciones sin intervención manual",
-    en: "Responses, follow-ups, and notifications without manual intervention",
+  "services.example.digital.description": {
+    es: "Plan para modernizar tu empresa: sistemas, procesos y cultura digital.",
+    en: "Plan to modernize your company: systems, processes, and digital culture.",
   },
-  "services.example.documents.title": {
-    es: "Procesamiento de documentos",
-    en: "Document Processing",
+  "services.example.training.title": {
+    es: "Capacitaciones sobre IA",
+    en: "AI Training",
   },
-  "services.example.documents.description": {
-    es: "Facturas, contratos, reportes generados y enviados automáticamente",
-    en: "Invoices, contracts, reports generated and sent automatically",
+  "services.example.training.description": {
+    es: "Talleres para que tu equipo use IA con confianza.",
+    en: "Workshops so your team uses AI confidently.",
   },
-  "services.example.customerService.title": {
-    es: "Atención al cliente",
-    en: "Customer Service",
+  "services.example.automation.title": {
+    es: "Automatización de procesos",
+    en: "Process Automation",
   },
-  "services.example.customerService.description": {
-    es: "Respuestas instantáneas por WhatsApp, chat o redes sociales",
-    en: "Instant responses via WhatsApp, chat, or social media",
+  "services.example.automation.description": {
+    es: "Tareas repetitivas automatizadas. Ahorra tiempo y reduce errores.",
+    en: "Automated repetitive tasks. Save time and reduce errors.",
   },
-  "services.example.appointments.title": {
-    es: "Gestión de citas",
-    en: "Appointment Management",
+  "services.example.strategy.title": {
+    es: "Diagnóstico y estrategia",
+    en: "Assessment & Strategy",
   },
-  "services.example.appointments.description": {
-    es: "Agendamiento, recordatorios y confirmaciones automáticas",
-    en: "Scheduling, reminders, and automatic confirmations",
+  "services.example.strategy.description": {
+    es: "Evaluamos tu empresa y definimos prioridades claras.",
+    en: "We assess your company and define clear priorities.",
   },
-  "services.example.dataEntry.title": {
-    es: "Entrada de datos",
-    en: "Data Entry",
+  "services.example.implementation.title": {
+    es: "Implementación de soluciones IA",
+    en: "AI Solution Implementation",
   },
-  "services.example.dataEntry.description": {
-    es: "Captura y organización de información sin errores humanos",
-    en: "Capture and organize information without human errors",
+  "services.example.implementation.description": {
+    es: "Chatbots, análisis de datos y asistentes inteligentes.",
+    en: "Chatbots, data analytics, and smart assistants.",
   },
-  "services.example.reports.title": {
-    es: "Reportes y análisis",
-    en: "Reports and Analysis",
+  "services.example.support.title": {
+    es: "Acompañamiento continuo",
+    en: "Ongoing Support",
   },
-  "services.example.reports.description": {
-    es: "Dashboards actualizados en tiempo real con tus datos",
-    en: "Dashboards updated in real-time with your data",
+  "services.example.support.description": {
+    es: "Soporte y evolución después de implementar.",
+    en: "Support and evolution after implementation.",
   },
   "services.callout.title": {
-    es: "Estos son solo ejemplos - automatizamos miles de procesos diferentes",
-    en: "These are just examples - we automate thousands of different processes",
+    es: "¿No encuentras lo que buscas?",
+    en: "Can't find what you're looking for?",
   },
   "services.callout.description": {
-    es: "Si tu proceso no está aquí, no te preocupes. Si lo haces en una computadora, lo podemos automatizar.",
-    en: "If your process isn't here, don't worry. If you do it on a computer, we can automate it.",
+    es: "Cada empresa es diferente. Cuéntanos tu reto y diseñamos una propuesta de consultoría a la medida.",
+    en: "Every company is different. Tell us your challenge and we'll design a tailored consulting proposal.",
   },
   "services.tools.title": {
-    es: "Trabajamos con cualquier herramienta",
-    en: "We Work With Any Tool",
+    es: "Tecnologías con las que trabajamos",
+    en: "Technologies We Work With",
   },
   "services.tools.description": {
-    es: "No importa qué software uses, podemos conectarlo y automatizarlo",
-    en: "No matter what software you use, we can connect and automate it",
+    es: "Integramos y optimizamos las herramientas que ya usas con soluciones modernas de IA",
+    en: "We integrate and optimize the tools you already use with modern AI solutions",
   },
   "services.tool.email": {
     es: "Email (Gmail, Outlook, etc.)",
@@ -191,194 +191,194 @@ export const translations = {
     en: "APIs and custom systems",
   },
   "services.tools.final.title": {
-    es: "Si lo haces en una computadora, lo podemos automatizar",
-    en: "If you do it on a computer, we can automate it",
+    es: "Tecnología al servicio de tu negocio",
+    en: "Technology at the service of your business",
   },
   "services.tools.final.description": {
-    es: "No importa si usas software especializado, herramientas personalizadas o sistemas legacy. Encontramos la forma de automatizarlo.",
-    en: "It doesn't matter if you use specialized software, custom tools, or legacy systems. We find a way to automate it.",
+    es: "Trabajamos con las herramientas que ya usas y las integramos con soluciones modernas de IA y automatización.",
+    en: "We work with the tools you already use and integrate them with modern AI and automation solutions.",
   },
   "services.howItWorks.title": {
-    es: "Cómo funciona",
-    en: "How It Works",
+    es: "¿Cómo funciona?",
+    en: "How does it work?",
   },
   "services.howItWorks.step1.title": {
-    es: "Analizamos tu proceso",
-    en: "We Analyze Your Process",
+    es: "Platicamos",
+    en: "We talk",
   },
   "services.howItWorks.step1.description": {
-    es: "Entendemos exactamente qué haces, cuánto tiempo toma y dónde están los cuellos de botella",
-    en: "We understand exactly what you do, how long it takes, and where the bottlenecks are",
+    es: "30 minutos gratis para entender tu negocio.",
+    en: "Free 30 minutes to understand your business.",
   },
   "services.howItWorks.step2.title": {
-    es: "Diseñamos la automatización",
-    en: "We Design the Automation",
+    es: "Te proponemos",
+    en: "We propose",
   },
   "services.howItWorks.step2.description": {
-    es: "Creamos un flujo automatizado que replica (y mejora) tu proceso actual",
-    en: "We create an automated flow that replicates (and improves) your current process",
+    es: "Plan con servicios, tiempos y costos claros.",
+    en: "Plan with clear services, timelines, and costs.",
   },
   "services.howItWorks.step3.title": {
-    es: "Implementamos y optimizamos",
-    en: "We Implement and Optimize",
+    es: "Lo hacemos",
+    en: "We do it",
   },
   "services.howItWorks.step3.description": {
-    es: "Ponemos todo en marcha y ajustamos hasta que funcione perfectamente",
-    en: "We get everything running and adjust until it works perfectly",
+    es: "Implementamos y capacitamos a tu equipo.",
+    en: "We implement and train your team.",
   },
   "services.benefits.title": {
-    es: "Qué ganas con la automatización",
-    en: "What You Gain With Automation",
+    es: "Qué ganas con nuestra consultoría",
+    en: "What You Gain With Our Consulting",
   },
   "services.benefit.time.title": {
-    es: "Ahorra tiempo valioso",
-    en: "Save Valuable Time",
+    es: "Decisiones informadas",
+    en: "Informed Decisions",
   },
   "services.benefit.time.description": {
-    es: "Recupera horas cada semana que puedes dedicar a hacer crecer tu negocio",
-    en: "Recover hours each week that you can dedicate to growing your business",
+    es: "Estrategia clara basada en diagnóstico real, no en suposiciones ni modas tecnológicas",
+    en: "Clear strategy based on real assessment, not assumptions or tech trends",
   },
   "services.benefit.time.stat": {
-    es: "Hasta 20 horas/semana",
-    en: "Up to 20 hours/week",
+    es: "Enfoque claro",
+    en: "Clear focus",
   },
   "services.benefit.cost.title": {
-    es: "Reduce costos operativos",
-    en: "Reduce Operating Costs",
+    es: "Inversión inteligente",
+    en: "Smart Investment",
   },
   "services.benefit.cost.description": {
-    es: "Menos errores, menos trabajo manual, más eficiencia en cada proceso",
-    en: "Fewer errors, less manual work, more efficiency in every process",
+    es: "Priorizamos lo que genera mayor impacto con el menor riesgo para tu operación",
+    en: "We prioritize what generates the greatest impact with the lowest risk to your operations",
   },
   "services.benefit.cost.stat": {
-    es: "30-50% menos costos",
-    en: "30-50% less costs",
+    es: "ROI medible",
+    en: "Measurable ROI",
   },
   "services.benefit.scale.title": {
-    es: "Escala sin contratar",
-    en: "Scale Without Hiring",
+    es: "Equipo capacitado",
+    en: "Trained Team",
   },
   "services.benefit.scale.description": {
-    es: "Crece tu negocio sin necesidad de aumentar tu equipo proporcionalmente",
-    en: "Grow your business without needing to increase your team proportionally",
+    es: "Tu gente aprende a usar la tecnología, no depende de nosotros para siempre",
+    en: "Your people learn to use technology, they don't depend on us forever",
   },
   "services.benefit.scale.stat": {
-    es: "10x más capacidad",
-    en: "10x more capacity",
+    es: "Autonomía",
+    en: "Autonomy",
   },
   "services.benefit.accuracy.title": {
-    es: "Elimina errores humanos",
-    en: "Eliminate Human Errors",
+    es: "Cambio que perdura",
+    en: "Lasting Change",
   },
   "services.benefit.accuracy.description": {
-    es: "Los procesos automatizados son consistentes y precisos cada vez",
-    en: "Automated processes are consistent and accurate every time",
+    es: "Implementamos con acompañamiento para que las mejoras se integren a tu cultura organizacional",
+    en: "We implement with ongoing support so improvements integrate into your organizational culture",
   },
   "services.benefit.accuracy.stat": {
-    es: "99.9% precisión",
-    en: "99.9% accuracy",
+    es: "Sostenible",
+    en: "Sustainable",
   },
   "services.cta.title": {
-    es: "¿Listo para automatizar tu negocio?",
-    en: "Ready to Automate Your Business?",
+    es: "¿Empezamos?",
+    en: "Shall we start?",
   },
   "services.cta.description": {
-    es: "Cuéntanos qué procesos te quitan más tiempo y te mostraremos cómo automatizarlos",
-    en: "Tell us which processes take up most of your time and we'll show you how to automate them",
+    es: "Agenda tu consulta gratuita. Sin compromiso.",
+    en: "Book your free consultation. No commitment.",
   },
   "services.cta.button": {
-    es: "Comenzar ahora",
-    en: "Start Now",
+    es: "Agendar consulta gratis",
+    en: "Book free consultation",
   },
 
   // About Page
   "about.badge": {
-    es: "Nuestra Historia",
-    en: "Our Story",
+    es: "Consultoría tecnológica",
+    en: "Technology Consulting",
   },
   "about.hero.title.line1": {
-    es: "Creemos en hacer la vida",
-    en: "We Believe in Making Life",
+    es: "Tu socio en",
+    en: "Your partner in",
   },
   "about.hero.title.line2": {
-    es: "más fácil",
-    en: "Easier",
+    es: "transformación digital",
+    en: "digital transformation",
   },
   "about.hero.description": {
-    es: "Somos una agencia de automatización que cree que el futuro es ahora, y estamos aquí para ayudar a nuestros clientes a alcanzarlo",
-    en: "We're an automation agency that believes the future is now, and we're here to help our clients reach it",
+    es: "Consultoría en IA, automatización y capacitación para empresas que quieren crecer con tecnología.",
+    en: "AI, automation, and training consulting for companies that want to grow with technology.",
   },
   "about.why.badge": {
     es: "Por qué existimos",
     en: "Why We Exist",
   },
   "about.why.title": {
-    es: "Vimos personas perdiendo tiempo en tareas repetitivas",
-    en: "We Saw People Wasting Time on Repetitive Tasks",
+    es: "Las empresas necesitan un socio, no solo un proveedor",
+    en: "Companies need a partner, not just a vendor",
   },
   "about.why.description1": {
-    es: "Cada día, miles de personas dedican horas a tareas manuales que una computadora podría hacer en segundos. Copiar datos, enviar emails, procesar facturas... trabajo que roba tiempo valioso que podrían usar para crecer su negocio.",
-    en: "Every day, thousands of people spend hours on manual tasks that a computer could do in seconds. Copying data, sending emails, processing invoices... work that steals valuable time they could use to grow their business.",
+    es: "La transformación digital no es comprar software. Es cambiar la forma en que opera tu empresa: procesos más eficientes, equipos capacitados y decisiones basadas en datos. Muchas organizaciones saben que deben evolucionar, pero no saben por dónde empezar.",
+    en: "Digital transformation isn't buying software. It's changing how your company operates: more efficient processes, trained teams, and data-driven decisions. Many organizations know they need to evolve, but don't know where to start.",
   },
   "about.why.description2": {
-    es: "Decidimos que tenía que haber una mejor manera. Una forma de liberar a las personas de lo repetitivo para que puedan enfocarse en lo que realmente importa.",
-    en: "We decided there had to be a better way. A way to free people from repetition so they can focus on what really matters.",
+    es: "Existimos para ser ese guía: entender tu negocio, diseñar la estrategia correcta y acompañarte en la ejecución hasta que veas resultados reales.",
+    en: "We exist to be that guide: understand your business, design the right strategy, and support you through execution until you see real results.",
   },
   "about.belief.badge": {
     es: "Nuestra creencia",
     en: "Our Belief",
   },
   "about.belief.title": {
-    es: "El futuro es ahora",
-    en: "The Future Is Now",
+    es: "La tecnología debe servir al negocio",
+    en: "Technology Should Serve the Business",
   },
   "about.belief.description1": {
-    es: "La tecnología para automatizar procesos ya existe. No es algo del futuro lejano - está aquí, disponible, lista para usar. La inteligencia artificial y la automatización no son ciencia ficción, son herramientas reales que pueden transformar tu negocio hoy.",
-    en: "The technology to automate processes already exists. It's not something from the distant future - it's here, available, ready to use. Artificial intelligence and automation aren't science fiction, they're real tools that can transform your business today.",
+    es: "La IA y la automatización no son fines en sí mismos. Son herramientas para que tu empresa sea más competitiva, ágil y rentable. Nuestra consultoría se enfoca en generar valor medible, no en implementar tecnología por moda.",
+    en: "AI and automation aren't ends in themselves. They're tools to make your company more competitive, agile, and profitable. Our consulting focuses on generating measurable value, not implementing trendy technology.",
   },
   "about.belief.description2": {
-    es: "Creemos que cada negocio, sin importar su tamaño, merece acceso a estas herramientas. El futuro no es algo que esperamos - es algo que construimos juntos, un proceso automatizado a la vez.",
-    en: "We believe every business, regardless of size, deserves access to these tools. The future isn't something we wait for - it's something we build together, one automated process at a time.",
+    es: "Creemos que cualquier empresa, sin importar su tamaño, puede aprovechar estas herramientas con la estrategia y el acompañamiento correctos.",
+    en: "We believe any company, regardless of size, can leverage these tools with the right strategy and support.",
   },
   "about.help.badge": {
     es: "Cómo ayudamos",
     en: "How We Help",
   },
   "about.help.title": {
-    es: "Estamos aquí para nuestros clientes",
-    en: "We're Here for Our Clients",
+    es: "Consultoría de principio a fin",
+    en: "End-to-End Consulting",
   },
   "about.help.description1": {
-    es: "No vendemos software complicado. No te dejamos solo con un manual de 200 páginas. Somos tu socio en automatización - entendemos tu negocio, identificamos qué se puede automatizar, y lo hacemos realidad.",
-    en: "We don't sell complicated software. We don't leave you alone with a 200-page manual. We're your automation partner - we understand your business, identify what can be automated, and make it happen.",
+    es: "No te entregamos un documento y desaparecemos. Diagnosticamos, estrategizamos, implementamos, capacitamos y acompañamos. Somos tu socio en la transformación digital.",
+    en: "We don't hand you a document and disappear. We assess, strategize, implement, train, and support. We're your partner in digital transformation.",
   },
   "about.help.description2": {
-    es: "Desde el restaurante local hasta la empresa multinacional, cada cliente tiene procesos únicos. Nuestra misión es entender esos procesos y crear automatizaciones que realmente funcionen para ti.",
-    en: "From the local restaurant to the multinational company, each client has unique processes. Our mission is to understand those processes and create automations that really work for you.",
+    es: "Desde PyMEs hasta empresas medianas, adaptamos nuestros servicios de consultoría a la realidad, presupuesto y urgencias de cada cliente.",
+    en: "From SMEs to mid-size companies, we adapt our consulting services to each client's reality, budget, and priorities.",
   },
   "about.help.feature1.title": {
-    es: "Entendemos tu negocio",
-    en: "We Understand Your Business",
+    es: "Diagnóstico honesto",
+    en: "Honest Assessment",
   },
   "about.help.feature1.description": {
-    es: "Cada negocio es diferente. Tomamos tiempo para conocer tus procesos únicos.",
-    en: "Every business is different. We take time to understand your unique processes.",
+    es: "Te decimos qué necesitas realmente, no lo que es más fácil de vender.",
+    en: "We tell you what you really need, not what's easiest to sell.",
   },
   "about.help.feature2.title": {
-    es: "Automatizamos lo que importa",
-    en: "We Automate What Matters",
+    es: "Ejecución práctica",
+    en: "Practical Execution",
   },
   "about.help.feature2.description": {
-    es: "No automatizamos por automatizar. Nos enfocamos en lo que realmente te ahorra tiempo y dinero.",
-    en: "We don't automate for the sake of automating. We focus on what really saves you time and money.",
+    es: "No solo planeamos: implementamos soluciones que funcionan en el día a día de tu operación.",
+    en: "We don't just plan — we implement solutions that work in your daily operations.",
   },
   "about.help.feature3.title": {
-    es: "Te acompañamos siempre",
-    en: "We're Always With You",
+    es: "Capacitación incluida",
+    en: "Training Included",
   },
   "about.help.feature3.description": {
-    es: "Desde la implementación hasta el soporte continuo, estamos contigo en cada paso.",
-    en: "From implementation to ongoing support, we're with you every step of the way.",
+    es: "Tu equipo aprende a usar las nuevas herramientas y procesos. La autonomía es parte del servicio.",
+    en: "Your team learns to use new tools and processes. Autonomy is part of the service.",
   },
   "about.who.badge": {
     es: "Quiénes somos",
@@ -389,38 +389,38 @@ export const translations = {
     en: "Smartmark Consultores",
   },
   "about.who.description": {
-    es: "Somos una agencia de automatización especializada en hacer la vida más fácil a través de la tecnología. Combinamos experiencia en negocios con conocimiento técnico para crear soluciones de automatización que realmente funcionan.",
-    en: "We're an automation agency specialized in making life easier through technology. We combine business experience with technical knowledge to create automation solutions that really work.",
+    es: "Somos una firma de consultoría tecnológica especializada en transformación digital, capacitación en IA y automatización de procesos. Combinamos experiencia en negocios con conocimiento técnico para generar resultados concretos.",
+    en: "We're a technology consulting firm specialized in digital transformation, AI training, and process automation. We combine business experience with technical knowledge to deliver concrete results.",
   },
   "about.who.quote": {
-    es: "Creemos que cada hora que ahorras en tareas repetitivas es una hora que puedes invertir en hacer crecer tu negocio y vivir mejor.",
-    en: "We believe every hour you save on repetitive tasks is an hour you can invest in growing your business and living better.",
+    es: "Nuestra misión es que cada empresa que trabaje con nosotros termine más fuerte, más eficiente y más preparada para el futuro.",
+    en: "Our mission is for every company that works with us to end up stronger, more efficient, and better prepared for the future.",
   },
   "about.cta.title": {
-    es: "¿Listo para hacer tu vida más fácil?",
-    en: "Ready to Make Your Life Easier?",
+    es: "¿Hablamos?",
+    en: "Shall we talk?",
   },
   "about.cta.description": {
-    es: "Conversemos sobre cómo podemos automatizar tus procesos y darte más tiempo para lo que realmente importa",
-    en: "Let's talk about how we can automate your processes and give you more time for what really matters",
+    es: "Consulta gratuita de 30 minutos. Sin compromiso.",
+    en: "Free 30-minute consultation. No commitment.",
   },
   "about.cta.button": {
-    es: "Comencemos a automatizar",
-    en: "Let's Start Automating",
+    es: "Agendar consulta gratis",
+    en: "Book free consultation",
   },
 
   // Contact Page
   "contact.badge": {
-    es: "Comencemos a automatizar",
-    en: "Let's Start Automating",
+    es: "Contacto",
+    en: "Contact",
   },
   "contact.page.title": {
-    es: "Hablemos sobre tu proyecto",
-    en: "Let's Talk About Your Project",
+    es: "Cuéntanos tu reto",
+    en: "Tell us your challenge",
   },
   "contact.page.description": {
-    es: "Cuéntanos qué procesos quieres automatizar y te explicamos cómo podemos ayudarte",
-    en: "Tell us what processes you want to automate and we'll explain how we can help you",
+    es: "Te respondemos en menos de 24 horas con una propuesta clara.",
+    en: "We'll respond within 24 hours with a clear proposal.",
   },
   "contact.form.title": {
     es: "Envíanos un mensaje",
@@ -503,14 +503,14 @@ export const translations = {
     en: "Quick Response",
   },
   "contact.response.description": {
-    es: "Respondemos en menos de 24 horas. Estamos listos para ayudarte a automatizar tu negocio.",
-    en: "We respond in less than 24 hours. We're ready to help you automate your business.",
+    es: "Respondemos en menos de 24 horas. Estamos listos para ayudarte con tu transformación digital.",
+    en: "We respond in less than 24 hours. We're ready to help you with your digital transformation.",
   },
 
   // Footer
   "footer.description": {
-    es: "Automatizamos procesos con IA para que tu negocio ahorre tiempo, reduzca errores y escale sin complicaciones.",
-    en: "We automate processes with AI so your business saves time, reduces errors and scales without friction.",
+    es: "Consultoría en transformación digital, capacitación en IA y automatización de procesos para empresas que quieren crecer con tecnología.",
+    en: "Digital transformation consulting, AI training, and process automation for companies that want to grow with technology.",
   },
   "footer.quickLinks": {
     es: "Enlaces rápidos",
@@ -527,143 +527,107 @@ export const translations = {
 
   // Home (Landing)
   "home.badge": {
-    es: "Automatización de procesos",
-    en: "Process Automation",
+    es: "Consultoría tecnológica",
+    en: "Technology Consulting",
   },
   "home.hero.line1": {
-    es: "Automatizamos",
-    en: "We automate",
-  },
-  "home.hero.line2": {
-    es: "los procesos",
-    en: "the processes",
+    es: "Moderniza tu empresa",
+    en: "Modernize your company",
   },
   "home.hero.line3": {
-    es: "tu negocio",
-    en: "your business",
+    es: "con IA",
+    en: "with AI",
   },
   "home.hero.desc1": {
-    es: "Hacemos que las tareas repetitivas de tu empresa se hagan solas.",
-    en: "We make your company’s repetitive tasks run on their own.",
-  },
-  "home.hero.desc2": {
-    es: "Ahorra tiempo, reduce errores y enfócate en hacer crecer tu negocio.",
-    en: "Save time, reduce errors, and focus on growing your business.",
+    es: "Transformación digital, capacitaciones en IA y automatización. Te guiamos paso a paso.",
+    en: "Digital transformation, AI training, and automation. We guide you step by step.",
   },
   "home.cta.primary": {
-    es: "Quiero automatizar mi negocio",
-    en: "I want to automate my business",
+    es: "Agenda una consulta gratis",
+    en: "Book a free consultation",
+  },
+  "home.cta.secondary": {
+    es: "Ver servicios",
+    en: "View services",
+  },
+  "home.banner1.title": {
+    es: "¿No sabes por dónde empezar?",
+    en: "Don't know where to start?",
+  },
+  "home.banner1.desc": {
+    es: "En 30 minutos te explicamos qué necesita tu empresa. Sin compromiso.",
+    en: "In 30 minutes we'll explain what your company needs. No commitment.",
   },
   "home.processes.title": {
-    es: "Procesos que automatizamos",
-    en: "Processes we automate",
+    es: "¿Qué hacemos?",
+    en: "What do we do?",
   },
   "home.processes.subtitle": {
-    es: "Estos son algunos ejemplos de procesos que automatizamos frecuentemente",
-    en: "These are some examples of processes we frequently automate",
+    es: "Seis servicios para llevar tu empresa al siguiente nivel",
+    en: "Six services to take your company to the next level",
   },
   "home.processes.callout": {
-    es: "Estos son solo ejemplos - automatizamos miles de procesos diferentes",
-    en: "These are just examples — we automate thousands of different processes",
+    es: "Cada proyecto es único — diseñamos la consultoría a la medida de tu negocio",
+    en: "Every project is unique — we design consulting tailored to your business",
   },
-  // Processes cards
-  "home.proc1.title": { es: "Gestión de pedidos y ventas", en: "Order and sales management" },
+  // Services cards
+  "home.proc1.title": { es: "Transformación digital", en: "Digital Transformation" },
   "home.proc1.desc": {
-    es: "Desde que un cliente hace un pedido hasta que se entrega: todo automático. Confirmaciones, facturas, seguimiento de inventario y notificaciones.",
-    en: "From the moment a customer orders to delivery — all automated. Confirmations, invoices, inventory tracking and notifications.",
+    es: "Plan claro para modernizar sistemas, procesos y cultura de tu empresa.",
+    en: "Clear plan to modernize your company's systems, processes, and culture.",
   },
-  "home.proc1.process": { es: "Pedido → Factura → Inventario → Envío → Seguimiento", en: "Order → Invoice → Inventory → Shipping → Tracking" },
 
-  "home.proc2.title": { es: "Atención al cliente automatizada", en: "Automated customer support" },
+  "home.proc2.title": { es: "Capacitaciones en IA", en: "AI Training" },
   "home.proc2.desc": {
-    es: "Responde preguntas frecuentes, agenda citas, da seguimiento a solicitudes y escala casos complejos a tu equipo. Funciona 24/7 en WhatsApp, email y redes.",
-    en: "Answer FAQs, schedule appointments, follow up on requests and escalate complex cases to your team. Works 24/7 on WhatsApp, email and social.",
+    es: "Tu equipo aprende a usar IA en el día a día. Talleres prácticos.",
+    en: "Your team learns to use AI daily. Hands-on workshops.",
   },
-  "home.proc2.process": { es: "Consulta → Respuesta → Seguimiento → Resolución", en: "Inquiry → Response → Follow-up → Resolution" },
 
-  "home.proc3.title": { es: "Procesamiento de facturas", en: "Invoice processing" },
+  "home.proc3.title": { es: "Automatización", en: "Automation" },
   "home.proc3.desc": {
-    es: "Recibe facturas por email, extrae la información, la registra en tu sistema, programa pagos y archiva todo automáticamente. Sin errores de captura.",
-    en: "Receive invoices by email, extract data, register it in your system, schedule payments and archive everything automatically. No capture errors.",
+    es: "Tareas repetitivas que se hacen solas. Menos errores, más tiempo.",
+    en: "Repetitive tasks that run themselves. Fewer errors, more time.",
   },
-  "home.proc3.process": { es: "Recepción → Extracción → Registro → Pago → Archivo", en: "Receive → Extract → Record → Pay → Archive" },
 
-  "home.proc4.title": { es: "Gestión de cotizaciones", en: "Quotation management" },
+  "home.proc4.title": { es: "Diagnóstico y estrategia", en: "Assessment & Strategy" },
   "home.proc4.desc": {
-    es: "Recibe solicitudes de cotización, genera propuestas personalizadas, envía seguimientos automáticos y notifica cuando hay respuesta del cliente.",
-    en: "Receive quote requests, generate personalized proposals, send automatic follow-ups and notify when the client responds.",
+    es: "Evaluamos tu empresa y definimos qué hacer primero y con qué presupuesto.",
+    en: "We assess your company and define what to do first and with what budget.",
   },
-  "home.proc4.process": { es: "Solicitud → Cotización → Envío → Seguimiento → Cierre", en: "Request → Quotation → Send → Follow-up → Close" },
 
-  "home.proc5.title": { es: "Coordinación de citas y reuniones", en: "Appointment and meeting coordination" },
+  "home.proc5.title": { es: "Soluciones con IA", en: "AI Solutions" },
   "home.proc5.desc": {
-    es: "Los clientes agendan directamente en tu calendario, reciben confirmaciones y recordatorios automáticos. Reprogramaciones sin llamadas ni emails.",
-    en: "Clients book directly on your calendar, receive confirmations and automatic reminders. Rescheduling without calls or emails.",
+    es: "Chatbots, análisis de datos y asistentes inteligentes para tu negocio.",
+    en: "Chatbots, data analytics, and smart assistants for your business.",
   },
-  "home.proc5.process": { es: "Solicitud → Agenda → Confirmación → Recordatorio", en: "Request → Calendar → Confirmation → Reminder" },
 
-  "home.proc6.title": { es: "Reportes y análisis diarios", en: "Daily reports and analytics" },
+  "home.proc6.title": { es: "Acompañamiento", en: "Ongoing Support" },
   "home.proc6.desc": {
-    es: "Genera reportes automáticos de ventas, inventario, finanzas o cualquier métrica. Los recibes cada mañana sin tener que buscar la información.",
-    en: "Generate automatic reports on sales, inventory, finance or any metric. Receive them every morning without hunting for data.",
+    es: "Soporte después de implementar. Tu socio tecnológico a largo plazo.",
+    en: "Support after implementation. Your long-term technology partner.",
   },
-  "home.proc6.process": { es: "Recopilación → Análisis → Reporte → Distribución", en: "Collect → Analyze → Report → Distribute" },
 
-  // Benefits
-  "home.benefits.title": { es: "¿Qué ganas?", en: "What do you gain?" },
-  "home.benefits.subtitle": { es: "Resultados reales que impactan directamente tu negocio", en: "Real results that directly impact your business" },
-  "home.benefit.time": { es: "Ahorra tiempo", en: "Save time" },
-  "home.benefit.time.desc": { es: "Menos tiempo en tareas repetitivas. Más tiempo para hacer crecer tu negocio.", en: "Less time on repetitive tasks. More time to grow your business." },
-  "home.benefit.cost": { es: "Reduce costos", en: "Reduce costs" },
-  "home.benefit.cost.desc": { es: "Menos errores, menos reprocesos, menos personal dedicado a tareas manuales.", en: "Fewer errors, fewer reworks, less staff dedicated to manual tasks." },
-  "home.benefit.grow": { es: "Crece más rápido", en: "Grow faster" },
-  "home.benefit.grow.desc": { es: "Procesa más pedidos, atiende más clientes, sin aumentar tu equipo.", en: "Process more orders, serve more customers, without increasing your team." },
-  "home.benefit.upto": { es: "Hasta", en: "Up to" },
+  "home.benefits.title": { es: "¿Por qué trabajar con nosotros?", en: "Why work with us?" },
+  "home.benefit.time": { es: "Sabes qué hacer y cuándo", en: "You know what to do and when" },
+  "home.benefit.time.desc": { es: "Plan claro, sin adivinar.", en: "Clear plan, no guessing." },
+  "home.benefit.cost": { es: "Inviertes bien", en: "You invest wisely" },
+  "home.benefit.cost.desc": { es: "Priorizamos lo que más impacto genera.", en: "We prioritize what generates the most impact." },
+  "home.benefit.grow": { es: "Tu equipo aprende", en: "Your team learns" },
+  "home.benefit.grow.desc": { es: "Capacitación incluida en cada proyecto.", en: "Training included in every project." },
 
-  // Workflow block
-  "home.workflow.before": { es: "Antes", en: "Before" },
-  "home.workflow.steps": {
-    es: "Recibir email|Copiar datos|Abrir Excel|Llenar formulario|Enviar respuesta",
-    en: "Receive email|Copy data|Open Excel|Fill form|Send response",
-  },
-  "home.workflow.automate": { es: "Automatizamos", en: "We automate" },
-  "home.workflow.after": { es: "Después", en: "After" },
-  "home.workflow.system": { es: "Sistema automatizado", en: "Automated system" },
-  "home.workflow.auto": { es: "Todo se procesa automáticamente sin intervención humana", en: "Everything is processed automatically without human intervention" },
-  "home.workflow.time": { es: "5 minutos", en: "5 minutes" },
-  "home.workflow.fullAuto": { es: "Completamente automático", en: "Fully automatic" },
-
-  // How it works
   "home.how.title": { es: "¿Cómo funciona?", en: "How does it work?" },
-  "home.how.subtitle": { es: "Es más simple de lo que piensas", en: "It's simpler than you think" },
-  "home.how.step1.title": { es: "Nos cuentas qué haces", en: "You tell us what you do" },
-  "home.how.step1.desc": { es: "En una llamada de 30 minutos, nos explicas las tareas que se repiten en tu negocio. No necesitas saber de tecnología.", en: "In a 30-minute call, you explain the repetitive tasks in your business. No tech knowledge needed." },
-  "home.how.step2.title": { es: "Diseñamos la automatización", en: "We design the automation" },
-  "home.how.step2.desc": { es: "Creamos un plan específico para tu negocio. Te mostramos exactamente qué se va a automatizar y cómo.", en: "We create a plan tailored to your business and show exactly what and how will be automated." },
-  "home.how.step3.title": { es: "Lo implementamos", en: "We implement it" },
-  "home.how.step3.desc": { es: "Instalamos todo y capacitamos a tu equipo. En pocas semanas, tus procesos están funcionando solos.", en: "We set everything up and train your team. In a few weeks your processes run on their own." },
+  "home.how.subtitle": { es: "Tres pasos. Simple.", en: "Three steps. Simple." },
+  "home.how.step1.title": { es: "Platicamos", en: "We talk" },
+  "home.how.step1.desc": { es: "30 minutos para entender tu negocio. Gratis y sin compromiso.", en: "30 minutes to understand your business. Free, no commitment." },
+  "home.how.step2.title": { es: "Te proponemos", en: "We propose" },
+  "home.how.step2.desc": { es: "Plan con servicios, tiempos y costos claros.", en: "Plan with clear services, timelines, and costs." },
+  "home.how.step3.title": { es: "Lo hacemos", en: "We do it" },
+  "home.how.step3.desc": { es: "Implementamos, capacitamos y te acompañamos.", en: "We implement, train, and support you." },
 
-  // Understanding section
-  "home.understand.title": { es: "Cómo entendemos tu negocio", en: "How we understand your business" },
-  "home.understand.subtitle": { es: "Nuestra experiencia trabajando con cientos de empresas nos ha enseñado algo fundamental", en: "Our experience working with hundreds of companies has taught us something fundamental" },
-  "home.story1.title": { es: "Todos los negocios son diferentes", en: "Every business is different" },
-  "home.story1.desc": { es: "Pero todos tienen algo en común: tareas que se repiten una y otra vez. Pedidos, facturas, emails, reportes, seguimientos. Cada negocio las hace de forma diferente, pero todas pueden automatizarse.", en: "But they all share something: tasks that repeat over and over. Orders, invoices, emails, reports, follow-ups. Each business does them differently, but all can be automated." },
-  "home.story2.title": { es: "El tiempo es tu recurso más valioso", en: "Time is your most valuable resource" },
-  "home.story2.desc": { es: "Cada hora que tú o tu equipo pasan copiando datos, respondiendo los mismos emails o generando reportes manualmente, es tiempo que no están usando para crecer, atender mejor a los clientes o innovar.", en: "Every hour you or your team spend copying data, replying to the same emails or generating manual reports is time not spent growing, serving customers better, or innovating." },
-  "home.story3.title": { es: "La automatización no es solo para grandes empresas", en: "Automation isn't just for big companies" },
-  "home.story3.desc": { es: "Antes requería equipos técnicos grandes y presupuestos millonarios. Hoy, con IA y herramientas modernas, cualquier negocio puede automatizar sus procesos. Nosotros lo hacemos accesible y simple.", en: "It used to require big tech teams and huge budgets. Today, with AI and modern tools, any business can automate its processes. We make it accessible and simple." },
-
-  // Business types
-  "home.types.title": { es: "Para cualquier tipo de negocio", en: "For any kind of business" },
-  "home.types.subtitle": { es: "Desde el negocio más pequeño hasta la empresa más grande", en: "From the smallest business to the largest enterprise" },
-  "home.types.items": { es: "Restaurantes|Tiendas|Consultorios|Inmobiliarias|Talleres|Distribuidoras|Agencias|Manufactura", en: "Restaurants|Shops|Clinics|Real estate|Workshops|Distributors|Agencies|Manufacturing" },
-
-  // Final CTA
-  "home.final.title1": { es: "Empieza a automatizar", en: "Start automating" },
-  "home.final.title2": { es: "hoy mismo", en: "today" },
-  "home.final.desc1": { es: "Agenda una llamada gratuita de 30 minutos. Sin compromiso.", en: "Book a free 30-minute call. No commitment." },
-  "home.final.desc2": { es: "Te explicamos cómo podemos ayudarte.", en: "We'll explain how we can help you." },
-  "home.final.cta": { es: "Agendar llamada gratuita", en: "Book a free call" },
+  "home.final.title1": { es: "¿Listo para empezar?", en: "Ready to start?" },
+  "home.final.title2": { es: "Hablemos.", en: "Let's talk." },
+  "home.final.desc1": { es: "Consulta gratuita de 30 minutos. Cuéntanos tu reto.", en: "Free 30-minute consultation. Tell us your challenge." },
+  "home.final.cta": { es: "Agendar consulta gratis", en: "Book free consultation" },
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
