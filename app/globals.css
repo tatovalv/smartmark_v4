@@ -463,6 +463,87 @@ footer :focus-visible,
 .sheet-talks h3 { padding-right: 0; }
 .sheet-talks .sheet-text { color: color-mix(in srgb, white 82%, transparent); }
 
+.services-cta {
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.75rem;
+  padding: 2rem 1.45rem 1.85rem;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  background: var(--color-secondary);
+  color: white;
+  box-shadow: 0 28px 60px -30px rgb(6 78 59 / 0.85);
+}
+
+.services-cta::before {
+  content: "";
+  position: absolute;
+  right: -5rem;
+  top: -6rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-accent) 32%, transparent);
+  pointer-events: none;
+}
+
+.services-cta h3 {
+  position: relative;
+  font-size: clamp(2rem, 4.2vw, 3.05rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: white;
+}
+
+.services-cta h3::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.95em;
+  margin-right: 0.6rem;
+  vertical-align: -0.08em;
+  background: var(--color-accent);
+}
+
+.services-cta p {
+  position: relative;
+  margin-top: 0.85rem;
+  max-width: 36rem;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, white 84%, transparent);
+}
+
+.services-cta-btn {
+  position: relative;
+  justify-self: start;
+  min-height: 3.5rem;
+  padding: 1rem 1.7rem;
+  font-size: 1.08rem;
+  background: var(--color-primary);
+  color: var(--color-text);
+  box-shadow: 0 0 0 7px color-mix(in srgb, var(--color-primary) 32%, transparent);
+}
+
+.services-cta-btn:hover {
+  background: var(--color-logo);
+}
+
+@media (min-width: 800px) {
+  .services-cta {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 2.6rem;
+  }
+
+  .services-cta-btn {
+    justify-self: end;
+  }
+}
+
 .spine {
   position: relative;
   display: grid;
@@ -858,4 +939,163 @@ summary::-webkit-details-marker {
 
 .whatsapp-fab:hover {
   background: var(--color-primary-hover);
+}
+
+.cases-band {
+  padding-block: 4.5rem;
+  background-color: #f7fbf8;
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--color-secondary) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-secondary) 8%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.case-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 2.25rem;
+}
+
+.case-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  background: white;
+  padding: 1.35rem 1.35rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.case-card h3 {
+  margin-top: 0.35rem;
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.case-card > p:not(.index) {
+  margin-top: 0.7rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.case-open {
+  margin-top: 1.15rem;
+  align-self: flex-start;
+  border: 0;
+  background: transparent;
+  padding: 0.2rem 0;
+  color: var(--color-secondary);
+  font-weight: 650;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+  cursor: pointer;
+}
+
+.case-open:hover { color: var(--color-text); }
+
+.case-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.case-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: color-mix(in srgb, var(--color-secondary) 64%, transparent);
+  cursor: pointer;
+}
+
+.case-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(42rem, 100%);
+  max-height: min(86vh, 46rem);
+  overflow: auto;
+  border-radius: 1.5rem;
+  background: white;
+  padding: 1.35rem 1.35rem 1.5rem;
+  box-shadow: 0 24px 70px -28px rgb(6 78 59 / 0.7);
+}
+
+.case-dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.case-close {
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-secondary);
+  padding: 0.45rem 0.85rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.case-dialog h3 {
+  margin-top: 0.8rem;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.case-situation {
+  margin-top: 0.9rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.case-dialog ul {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.75rem;
+}
+
+.case-dialog li {
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.case-dialog li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.45rem;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.case-keeps {
+  margin-top: 1.35rem;
+  border-radius: 1.1rem;
+  background: var(--color-secondary);
+  color: white;
+  padding: 1.05rem 1.1rem 1.15rem;
+}
+
+.case-keeps .sheet-label { color: var(--color-logo); }
+
+.case-keeps p:last-child {
+  margin-top: 0.4rem;
+  line-height: 1.55;
+}
+
+@media (min-width: 800px) {
+  .cases-band { padding-block: 6.5rem; }
+  .case-grid { grid-template-columns: 1fr 1fr; }
+  .case-dialog { padding: 1.6rem 1.7rem 1.7rem; }
 }

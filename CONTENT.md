@@ -22,7 +22,7 @@ Both pages are generated on the server from the same components. Do not put sent
 | Talks band | `services.talks` | `services.talks` |
 | How we work | `how` | `how` |
 | Why SmartMark | `why` | `why` |
-| Use cases | `cases` | `cases` |
+| Use cases, including the longer explanation inside each dialog | `cases` | `cases` |
 | FAQ | `faq` | `faq` |
 | Contact heading and location line | `contact` | `contact` |
 | Form labels, placeholders, dropdowns, errors | `form` | `form` |

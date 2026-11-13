@@ -19,6 +19,7 @@
   },
   "nav": {
     "services": "Services",
+    "cases": "Use cases",
     "how": "How we work",
     "why": "Why SmartMark",
     "contact": "Contact",
@@ -110,6 +111,8 @@
     "intro": "Five ways to start, depending on how far along your team is. Each one ends with something people use, not a presentation.",
     "includes": "Includes",
     "quote": "Request a quote",
+    "ctaTitle": "Where do you want to start?",
+    "ctaText": "Tell us the area and what currently takes the time. We'll reply with a scope and a quote within 48 hours.",
     "items": [
       {
         "id": "workshop",
@@ -201,51 +204,99 @@
   },
   "why": {
     "title": "Why SmartMark",
+    "lead": "Choosing an AI partner is choosing who will explain the work to your team. This is what the advice rests on.",
     "items": [
       {
         "title": "Real experience",
-        "text": "25+ years building software, and the last year building AI agents and training teams at large companies."
+        "text": "We have spent more than 25 years building software companies actually use, and the last year building AI agents and training teams at large companies. That combination avoids two mistakes: proposing something that cannot be built, and building something the team will not use."
       },
       {
         "title": "Vendor-neutral",
-        "text": "We use what your company already has; we don't sell licenses."
+        "text": "We recommend what the company already has, or what the case justifies. We don't sell licenses and we don't push a platform. If the right tool is one you already pay for, the project starts there."
       },
       {
         "title": "We teach, not create dependency",
-        "text": "Your team learns to build and maintain its own solutions."
+        "text": "The work is documented, with templates and with the people who will maintain it. If three months later only we know how it works, the engagement was done wrong. The aim is that your team can carry on."
       },
       {
         "title": "Built for Latin America",
-        "text": "In Spanish and English, with the region's realities and budgets in mind."
+        "text": "We work in Spanish and English, with the way companies in the region actually operate: lean teams, several tools at once, and budgets that have to earn their place. The solution is designed for that context, not for an office that isn't yours."
       }
     ]
   },
   "cases": {
     "title": "Use cases",
+    "lead": "Six kinds of work we ask to see first. These are not ideas. They are pieces a business team can use on Monday, with the tools the company already pays for.",
+    "open": "Tell me more",
+    "close": "Close",
+    "builtLabel": "What can be built",
+    "keepsLabel": "What stays with the team",
     "items": [
       {
         "title": "Customer service",
-        "text": "Consistent answers to what comes in again and again, without pulling someone off the difficult cases."
+        "text": "What comes in again and again stops taking the people who should be on the difficult cases.",
+        "situation": "The team answers the same questions by email, chat, and phone. The right answer lives in a manual, in an email from months ago, or in the head of the person who has been there longest. Meanwhile, the case that actually needs judgment waits.",
+        "builds": [
+          "An assistant loaded with the company's documents, tone, and rules, to draft the first reply.",
+          "A sort of what comes in: the repeated items get an answer or a suggestion, and the sensitive ones go to a person with the context already assembled.",
+          "Ready prompts for the replies people currently write from scratch."
+        ],
+        "keeps": "The team knows which documents feed the assistant and how to correct it when a policy changes. A person still handles the cases that matter."
       },
       {
         "title": "Sales",
-        "text": "Following up a lead and drafting a proposal no longer wait for someone to have a free afternoon."
+        "text": "Following up a lead and drafting a proposal no longer wait for someone to have a free afternoon.",
+        "situation": "A prospect writes, the details stay in one person's inbox, and the proposal is built by copying the last one. What gets lost is not a tool. It is the day someone needed an answer.",
+        "builds": [
+          "A follow-up that prepares the next message from the prospect's history and the company's offer.",
+          "A first draft of a proposal from a template, the client's details, and what was already discussed.",
+          "A summary of the call or the email, so the rest of the team can pick it up without asking what was said."
+        ],
+        "keeps": "The templates and prompts stay with the sales team. They adjust the tone. They don't wait for an outsider to rewrite every proposal."
       },
       {
         "title": "Finance",
-        "text": "Invoice reading and reconciliation across systems. A person reviews the exceptions, not the whole batch."
+        "text": "Someone stops reading the whole batch. They review the exceptions.",
+        "situation": "Invoices, receipts, and spreadsheets are matched by hand across email, the bank, and the accounting system. The error doesn't show up in the total. It shows up in the line someone copied wrong on a Friday.",
+        "builds": [
+          "Invoice and receipt reading that pulls vendor, amount, date, and tax into a format the system already accepts.",
+          "A reconciliation that flags what doesn't match and lets the rest through.",
+          "A check for what's missing: incomplete documents, or vendors that don't match the master list."
+        ],
+        "keeps": "A person still approves. The difference is that they approve exceptions, instead of retyping the batch."
       },
       {
-        "title": "HR",
-        "text": "A first pass on candidates, and clear answers to the questions employees ask every week."
+        "title": "Human resources",
+        "text": "A first reading of candidates, and clear answers to what employees ask every week.",
+        "situation": "Resumes are read one by one against a job description that lives in a document. At the same time, employees ask about leave, policy, and benefits, and the answer depends on who is free.",
+        "builds": [
+          "A first reading that compares candidates with the criteria for the role and leaves a note. It does not make the decision.",
+          "Answers to the internal questions that come up often, using the current policy, and a clear path for anything a machine should not answer.",
+          "Drafts of job descriptions and messages to candidates, in the company's voice."
+        ],
+        "keeps": "Hiring stays a person's decision. The assistant does not reject anyone on its own, and the team knows which criteria it is using."
       },
       {
         "title": "Operations",
-        "text": "A report assembled from the sources someone currently pulls together by hand."
+        "text": "The report someone assembles by hand comes from the sources, not from a fresh spreadsheet.",
+        "situation": "The numbers live in email, in a sheet, in the inventory system, and in a supplier's message. One person pulls them together before the meeting. If that person is out, the report doesn't exist.",
+        "builds": [
+          "A report that takes those sources and leaves them in the format the meeting already uses.",
+          "Alerts when a figure didn't arrive, or when a number sits outside the usual range.",
+          "A short guide so someone else on the team can change a source or a column without starting over."
+        ],
+        "keeps": "The report stops belonging to one person. Where each figure comes from is written down."
       },
       {
         "title": "Management",
-        "text": "A usable summary of meetings, documents, and KPIs, ready before the next decision."
+        "text": "A usable summary of meetings, documents, and indicators, before the next decision.",
+        "situation": "The decision waits while someone reads the thread, the notes, and three dashboards. What matters is mixed in with what was already decided last week.",
+        "builds": [
+          "A meeting summary with decisions, owners, and what was left open.",
+          "A reading of long documents — contracts, reports, policies — aimed at the questions management has already been asking.",
+          "A short brief on the indicators: what moved, what didn't arrive, and what deserves a conversation, without replacing the dashboard."
+        ],
+        "keeps": "Management still decides. They get the material in order, and the team knows how to ask for the next summary."
       }
     ]
   },

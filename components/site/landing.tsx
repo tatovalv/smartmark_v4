@@ -1,7 +1,7 @@
+import { CaseBoard } from "@/components/site/case-board"
 import { ContactForm } from "@/components/site/contact-form"
 import { Header } from "@/components/site/header"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
-import { QuoteLink } from "@/components/site/quote-link"
 import { WhatsAppButton } from "@/components/site/whatsapp-button"
 import { homePath, serviceOptions, type Dictionary, type Locale } from "@/lib/i18n"
 import { EMAIL, LINKEDIN_URL, SITE_URL, whatsappHref } from "@/lib/site"
@@ -13,6 +13,7 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
   const year = new Date().getFullYear()
   const links = [
     { href: "#servicios", label: dict.nav.services },
+    { href: "#casos", label: dict.nav.cases },
     { href: "#como-trabajamos", label: dict.nav.how },
     { href: "#por-que", label: dict.nav.why },
     { href: "#contacto", label: dict.nav.contact },
@@ -118,6 +119,16 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
           </div>
         </section>
 
+        <section id="casos" className="cases-band" aria-labelledby="casos-title">
+          <div className="shell">
+            <h2 id="casos-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              {dict.cases.title}
+            </h2>
+            <p className="lede">{dict.cases.lead}</p>
+            <CaseBoard cases={dict.cases} />
+          </div>
+        </section>
+
         <section className="blueprint" aria-labelledby="criterio-title">
           <div className="shell">
             <div className="max-w-3xl">
@@ -160,19 +171,22 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
                       <li key={point}>{point}</li>
                     ))}
                   </ul>
-                  <QuoteLink serviceId={item.id} className="btn btn-primary mt-6">
-                    {dict.services.quote}
-                  </QuoteLink>
                 </article>
               ))}
             </div>
             <article className="sheet sheet-talks">
               <h3>{dict.services.talks.title}</h3>
               <p className="sheet-text">{dict.services.talks.text}</p>
-              <QuoteLink serviceId={dict.services.talks.id} className="btn btn-primary mt-6">
-                {dict.services.talks.button}
-              </QuoteLink>
             </article>
+            <div className="services-cta">
+              <div>
+                <h3>{dict.services.ctaTitle}</h3>
+                <p>{dict.services.ctaText}</p>
+              </div>
+              <a href="#contacto" className="btn services-cta-btn">
+                {dict.services.quote}
+              </a>
+            </div>
           </div>
         </section>
 
@@ -199,26 +213,11 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             <h2 id="porque-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.why.title}
             </h2>
+            <p className="lede">{dict.why.lead}</p>
             <div className="why-band">
               {dict.why.items.map((item, index) => (
                 <article key={item.title}>
                   <p className="index">{String(index + 1).padStart(2, "0")}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="section" aria-labelledby="casos-title">
-          <div className="shell">
-            <h2 id="casos-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              {dict.cases.title}
-            </h2>
-            <div className="mosaic">
-              {dict.cases.items.map((item) => (
-                <article key={item.title}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </article>

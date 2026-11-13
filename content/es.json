@@ -19,6 +19,7 @@
   },
   "nav": {
     "services": "Servicios",
+    "cases": "Casos",
     "how": "Cómo trabajamos",
     "why": "Por qué SmartMark",
     "contact": "Contacto",
@@ -110,6 +111,8 @@
     "intro": "Cinco maneras de entrar, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
     "includes": "Incluye",
     "quote": "Solicitar cotización",
+    "ctaTitle": "¿Por dónde quiere empezar?",
+    "ctaText": "Cuéntenos el área y lo que hoy consume tiempo. Le respondemos con un alcance y una cotización en 48 horas.",
     "items": [
       {
         "id": "workshop",
@@ -201,51 +204,99 @@
   },
   "why": {
     "title": "Por qué SmartMark",
+    "lead": "Elegir un socio en inteligencia artificial es elegir a quién le va a explicar el trabajo a su equipo. Esto es lo que sostiene el consejo que damos.",
     "items": [
       {
         "title": "Experiencia real",
-        "text": "Más de 25 años desarrollando software y el último año creando agentes de IA y capacitando equipos de grandes empresas."
+        "text": "Llevamos más de 25 años construyendo software que las empresas usan de verdad, y el último año creando agentes de IA y capacitando equipos de compañías grandes. Esa combinación evita dos errores: proponer algo que no se puede construir, y construir algo que el equipo no va a usar."
       },
       {
         "title": "Neutrales en tecnología",
-        "text": "Usamos lo que su empresa ya tiene; no vendemos licencias."
+        "text": "Recomendamos lo que la empresa ya tiene, o lo que el caso justifica. No vendemos licencias ni empujamos una plataforma. Si la herramienta correcta es la que ya pagan, el proyecto empieza ahí."
       },
       {
         "title": "Enseñamos, no creamos dependencia",
-        "text": "Su equipo aprende a construir y mantener sus soluciones."
+        "text": "El trabajo queda documentado, con plantillas y con las personas que lo van a mantener. Si dentro de tres meses solo nosotros sabemos cómo funciona, el encargo quedó mal hecho. El objetivo es que su equipo siga solo."
       },
       {
         "title": "Pensado para Latinoamérica",
-        "text": "En español e inglés, con la realidad y los presupuestos de la región."
+        "text": "Trabajamos en español y en inglés, con la forma en que operan las empresas de la región: equipos reducidos, varias herramientas a la vez y presupuestos que tienen que rendir. La solución se diseña para ese contexto, no para una oficina que no es la suya."
       }
     ]
   },
   "cases": {
     "title": "Casos de uso",
+    "lead": "Seis trabajos que pedimos ver primero. No son ideas: son piezas que un equipo de negocio puede usar el lunes, con las herramientas que ya paga.",
+    "open": "Dime más",
+    "close": "Cerrar",
+    "builtLabel": "Qué se puede construir",
+    "keepsLabel": "Qué se queda en el equipo",
     "items": [
       {
         "title": "Atención al cliente",
-        "text": "Respuestas consistentes a lo que llega una y otra vez, sin sacar a una persona de los casos difíciles."
+        "text": "Lo que llega una y otra vez deja de ocupar a las personas que deberían estar en los casos difíciles.",
+        "situation": "El equipo contesta las mismas preguntas por correo, chat y teléfono. La respuesta correcta está en un manual, en un correo de hace meses o en la cabeza de quien lleva más tiempo. Mientras tanto, el caso que sí necesita criterio espera.",
+        "builds": [
+          "Un asistente con los documentos, el tono y las reglas de la empresa, para armar la primera respuesta.",
+          "Una clasificación de lo que entra: lo repetido se resuelve o se sugiere, y lo sensible pasa a una persona con el contexto ya armado.",
+          "Prompts listos para las respuestas que hoy se escriben desde cero."
+        ],
+        "keeps": "El equipo sabe qué documentos alimentan al asistente y cómo corregirlo cuando cambia una política. Una persona sigue en los casos que importan."
       },
       {
         "title": "Ventas",
-        "text": "El seguimiento de un prospecto y el primer borrador de una propuesta dejan de depender de que alguien tenga la tarde libre."
+        "text": "El seguimiento de un prospecto y el primer borrador de una propuesta dejan de depender de que alguien tenga la tarde libre.",
+        "situation": "Un prospecto escribe, la información queda en el correo de una persona y la propuesta se arma copiando la anterior. Lo que se pierde no es una herramienta: es el día en que había que responder.",
+        "builds": [
+          "Un seguimiento que prepara el próximo mensaje con el historial del prospecto y la oferta de la empresa.",
+          "Un primer borrador de propuesta a partir de una plantilla, los datos del cliente y lo que ya se conversó.",
+          "Un resumen de la llamada o del correo, para que el resto del equipo retome sin preguntar qué se dijo."
+        ],
+        "keeps": "Las plantillas y los prompts quedan con el equipo comercial. Ellos ajustan el tono; no esperan a que alguien de afuera reescriba cada propuesta."
       },
       {
         "title": "Finanzas",
-        "text": "Lectura de facturas y conciliación entre sistemas. Una persona revisa las excepciones, no todo el lote."
+        "text": "Alguien deja de leer el lote completo. Revisa las excepciones.",
+        "situation": "Facturas, comprobantes y hojas de cálculo se concilian a mano entre el correo, el banco y el sistema contable. El error no aparece en el total: aparece en la línea que alguien copió mal un viernes.",
+        "builds": [
+          "Lectura de facturas y comprobantes para extraer proveedor, monto, fecha e impuesto a un formato que el sistema ya acepta.",
+          "Una conciliación que marca lo que no cuadra y deja pasar lo que sí.",
+          "Un control de lo que falta: documentos incompletos o proveedores que no coinciden con el registro."
+        ],
+        "keeps": "Una persona sigue aprobando. La diferencia es que aprueba excepciones, no reescribe el lote."
       },
       {
         "title": "Recursos humanos",
-        "text": "Un primer filtro de candidatos y respuestas claras a las preguntas que el equipo hace cada semana."
+        "text": "Una primera lectura de candidatos, y respuestas claras a lo que el equipo pregunta cada semana.",
+        "situation": "Los currículos se leen uno por uno contra una descripción que vive en un documento. Al mismo tiempo, los colaboradores preguntan por vacaciones, políticas y beneficios, y la respuesta depende de quién esté disponible.",
+        "builds": [
+          "Una primera lectura que compara candidatos con los criterios del puesto y deja una nota. No toma la decisión.",
+          "Respuestas a las preguntas internas frecuentes, con la política vigente y una ruta clara para lo que no debe contestar una máquina.",
+          "Borradores de descripciones de puesto y de mensajes al candidato, en el tono de la empresa."
+        ],
+        "keeps": "Contratar sigue siendo una decisión de una persona. El asistente no descarta solo, y el equipo sabe qué criterios está usando."
       },
       {
         "title": "Operaciones",
-        "text": "Un reporte que se arma a partir de las fuentes que hoy alguien junta a mano."
+        "text": "El reporte que alguien arma a mano sale de las fuentes, no de una hoja nueva.",
+        "situation": "Los números viven en el correo, en una hoja, en el sistema de inventarios y en el mensaje de un proveedor. Una persona los junta antes de la reunión. Si esa persona no está, el reporte no existe.",
+        "builds": [
+          "Un reporte que toma esas fuentes y las deja en el formato que la reunión ya usa.",
+          "Avisos cuando un dato no llegó o cuando una cifra se sale de lo habitual.",
+          "Una guía corta para que otra persona del área cambie una fuente o una columna sin empezar de cero."
+        ],
+        "keeps": "El reporte deja de pertenecer a una sola persona. Queda escrito de dónde sale cada cifra."
       },
       {
         "title": "Gerencia",
-        "text": "Un resumen usable de reuniones, documentos e indicadores, listo antes de la siguiente decisión."
+        "text": "Un resumen usable de reuniones, documentos e indicadores, antes de la siguiente decisión.",
+        "situation": "La decisión espera a que alguien lea el hilo, las minutas y tres tableros. Lo importante está mezclado con lo que ya se decidió la semana pasada.",
+        "builds": [
+          "Un resumen de la reunión con acuerdos, responsables y lo que quedó abierto.",
+          "Una lectura de documentos largos —contratos, informes, políticas— orientada a las preguntas que la gerencia ya hizo antes.",
+          "Un breve de indicadores: qué se movió, qué no llegó y qué merece conversación, sin reemplazar el tablero."
+        ],
+        "keeps": "La gerencia sigue decidiendo. Recibe el material ordenado, y el equipo sabe cómo pedir el próximo resumen."
       }
     ]
   },
