@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "title": "SmartMark Consultores | IA y automatización para empresas en Latinoamérica",
+    "description": "Talleres, automatizaciones y agentes de IA para equipos de negocio. Su equipo aprende a construir y usar IA con las herramientas que ya tiene.",
+    "ogAlt": "SmartMark Consultores"
+  },
+  "logoAlt": "SmartMark Consultores",
+  "a11y": {
+    "skip": "Saltar al contenido",
+    "nav": "Secciones",
+    "lang": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "banner": {
+    "message": "View this page in English?",
+    "action": "View in English",
+    "dismiss": "Dismiss"
+  },
+  "nav": {
+    "services": "Servicios",
+    "how": "Cómo trabajamos",
+    "why": "Por qué SmartMark",
+    "contact": "Contacto",
+    "cta": "Agendar conversación"
+  },
+  "hero": {
+    "eyebrow": "Consultoría en inteligencia artificial · Costa\u00a0Rica y Latinoamérica",
+    "stageLabel": "Por qué conversar con SmartMark",
+    "title": "Inteligencia artificial que su equipo realmente usa.",
+    "subtitle": "Ayudamos a equipos de negocio en Latinoamérica a automatizar procesos, crear agentes de IA y aprender a hacerlo por sí mismos — con las herramientas que ya tienen.",
+    "primary": "Agendar una conversación",
+    "secondary": "Ver servicios",
+    "trust": [
+      "Más de 25 años en tecnología",
+      "Capacitaciones y charlas para empresas multinacionales",
+      "Atención en español e inglés en toda Latinoamérica"
+    ]
+  },
+  "statement": "La diferencia no está en tener acceso a una herramienta. Está en que el lunes el equipo trabaje distinto.",
+  "problem": {
+    "title": "Lo que vemos",
+    "lead": "La mayoría de las empresas con las que conversamos no tiene un problema de tecnología. Tiene un problema de adopción: probaron herramientas y el trabajo del lunes siguió igual.",
+    "items": [
+      {
+        "title": "Mucha curiosidad, pocos resultados.",
+        "text": "Probaron ChatGPT u otras herramientas, pero nada cambió en el día a día."
+      },
+      {
+        "title": "Tareas repetitivas que consumen al equipo.",
+        "text": "Correos, reportes, copiar y pegar datos entre sistemas, responder las mismas preguntas."
+      },
+      {
+        "title": "Dependencia de terceros.",
+        "text": "Cada mejora requiere un proveedor o el área de TI, y el equipo no sabe por dónde empezar."
+      }
+    ]
+  },
+  "audience": {
+    "title": "Con quién trabajamos",
+    "lead": "Hablamos con quienes responden por la operación, no con un equipo de desarrollo. El lenguaje es el del negocio: tiempo, errores, respuesta y autonomía.",
+    "items": ["Operaciones", "Atención al cliente", "Ventas", "Finanzas", "Recursos humanos", "Gerencia general"]
+  },
+  "outcomes": {
+    "title": "Qué cambia en la operación",
+    "lead": "No prometemos una transformación abstracta. Buscamos unos pocos procesos donde la IA se nota en la semana.",
+    "items": [
+      {
+        "title": "Menos horas en lo repetitivo",
+        "text": "Correos, reportes y traspasos de datos dejan de ocupar a las personas que deberían estar decidiendo."
+      },
+      {
+        "title": "Menos errores de mano en mano",
+        "text": "Cuando la información deja de copiarse a mano, bajan los reprocesos y las conciliaciones de último momento."
+      },
+      {
+        "title": "Respuestas más rápidas",
+        "text": "Clientes, prospectos y colaboradores reciben una respuesta consistente, sin esperar a quien “lo tiene en la cabeza”."
+      },
+      {
+        "title": "Un equipo que sigue solo",
+        "text": "Documentamos, dejamos plantillas y formamos a quien va a mantener lo que construimos."
+      }
+    ]
+  },
+  "approach": {
+    "title": "Cómo pensamos el trabajo",
+    "lead": "Llevamos más de 25 años construyendo software y el último año creando agentes de IA y capacitando equipos de empresas grandes. Esa combinación cambia el consejo: sabemos qué se puede hacer de verdad, y también qué no vale la pena construir.",
+    "items": [
+      {
+        "title": "Partimos de la operación",
+        "text": "Entrevistamos a quien hace el trabajo. Si un proceso no duele cada semana, no es el primero."
+      },
+      {
+        "title": "Somos neutrales",
+        "text": "Usamos lo que la empresa ya tiene. No vendemos licencias ni empujamos una plataforma."
+      },
+      {
+        "title": "Enseñamos mientras construimos",
+        "text": "La solución queda en manos del equipo. Si dentro de tres meses solo nosotros sabemos cómo funciona, el trabajo quedó mal hecho."
+      },
+      {
+        "title": "Decimos que no",
+        "text": "Si el caso no justifica IA, lo decimos. A veces el mejor resultado es un proceso más simple, no un agente."
+      }
+    ]
+  },
+  "services": {
+    "title": "Servicios",
+    "intro": "Cinco maneras de entrar, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
+    "includes": "Incluye",
+    "quote": "Solicitar cotización",
+    "items": [
+      {
+        "id": "workshop",
+        "title": "Taller de IA para equipos de negocio",
+        "text": "Un taller práctico donde su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
+        "points": [
+          "Uso efectivo de asistentes de IA en tareas reales del área",
+          "Construcción guiada de su primera automatización o agente, sin programar",
+          "Material y plantillas reutilizables",
+          "Modalidad presencial o virtual, de medio día a 3 días"
+        ]
+      },
+      {
+        "id": "assessment",
+        "title": "Diagnóstico de oportunidades de IA y automatización",
+        "text": "Identificamos dónde la IA y la automatización generan más impacto en su operación, y en qué orden abordarlo.",
+        "points": [
+          "Entrevistas con las áreas clave y mapeo de procesos",
+          "Priorización por impacto, esfuerzo y riesgo",
+          "Recomendación de herramientas según lo que ya tienen",
+          "Hoja de ruta de 90 días"
+        ]
+      },
+      {
+        "id": "automation",
+        "title": "Automatizaciones y agentes de IA (con su equipo)",
+        "text": "Construimos junto a su equipo automatizaciones y agentes que resuelven problemas reales — y les enseñamos a mantenerlos y crear los siguientes.",
+        "points": [
+          "Plataformas sin código (no-code) para equipos no técnicos",
+          "Desarrollo a la medida cuando el caso lo requiere",
+          "Integración con sus herramientas actuales (correo, hojas de cálculo, CRM, ERP, etc.)",
+          "Capacitación y documentación para que el equipo sea autónomo"
+        ]
+      },
+      {
+        "id": "prompts",
+        "title": "Prompts y contexto: IA que responde lo que usted necesita",
+        "text": "La calidad de la IA depende de cómo se le pide y de la información que recibe. Diseñamos con su equipo los prompts y el contexto correctos para sus procesos.",
+        "points": [
+          "Biblioteca de prompts para las tareas clave de cada área",
+          "Cómo darle a la IA el contexto correcto (documentos, datos, reglas del negocio)",
+          "Prompts para automatizaciones y agentes que funcionan de forma consistente",
+          "Buenas prácticas de calidad, seguridad y privacidad"
+        ]
+      },
+      {
+        "id": "advisory",
+        "title": "Acompañamiento continuo en IA",
+        "text": "Un aliado experto mes a mes para que su empresa avance con IA sin perder tiempo ni dinero.",
+        "points": [
+          "Sesiones mensuales de seguimiento y priorización",
+          "Revisión de automatizaciones, agentes y prompts del equipo",
+          "Soporte por correo o chat para dudas y decisiones",
+          "Actualización sobre herramientas y oportunidades nuevas"
+        ]
+      }
+    ],
+    "talks": {
+      "id": "talks",
+      "title": "Charlas y conferencias",
+      "text": "Charlas ejecutivas y conferencias sobre IA aplicada a negocios para eventos, asociaciones y equipos directivos.",
+      "button": "Solicitar información"
+    }
+  },
+  "how": {
+    "title": "Cómo trabajamos",
+    "steps": [
+      {
+        "title": "Conversación inicial",
+        "text": "45 minutos, sin costo, para entender su operación y objetivos.",
+        "detail": "Revisamos cómo opera hoy el área, qué herramientas ya están pagadas y dónde se va el tiempo."
+      },
+      {
+        "title": "Propuesta clara",
+        "text": "Alcance, entregables, tiempos y cotización en 48 horas.",
+        "detail": "Recibe un documento concreto: qué haremos, qué no, en qué plazo y la cotización. Sin letra pequeña."
+      },
+      {
+        "title": "Construimos y capacitamos",
+        "text": "Trabajamos con su equipo, no solo para su equipo.",
+        "detail": "La primera solución se construye con las personas que la van a usar. Salen sabiendo cómo cambiarla."
+      },
+      {
+        "title": "Su equipo sigue solo",
+        "text": "Documentación, plantillas y acompañamiento opcional.",
+        "detail": "Quedan los prompts, las plantillas y una guía. El acompañamiento mensual está si quieren seguir, no como condición."
+      }
+    ]
+  },
+  "why": {
+    "title": "Por qué SmartMark",
+    "items": [
+      {
+        "title": "Experiencia real",
+        "text": "Más de 25 años desarrollando software y el último año creando agentes de IA y capacitando equipos de grandes empresas."
+      },
+      {
+        "title": "Neutrales en tecnología",
+        "text": "Usamos lo que su empresa ya tiene; no vendemos licencias."
+      },
+      {
+        "title": "Enseñamos, no creamos dependencia",
+        "text": "Su equipo aprende a construir y mantener sus soluciones."
+      },
+      {
+        "title": "Pensado para Latinoamérica",
+        "text": "En español e inglés, con la realidad y los presupuestos de la región."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Casos de uso",
+    "items": [
+      {
+        "title": "Atención al cliente",
+        "text": "Respuestas consistentes a lo que llega una y otra vez, sin sacar a una persona de los casos difíciles."
+      },
+      {
+        "title": "Ventas",
+        "text": "El seguimiento de un prospecto y el primer borrador de una propuesta dejan de depender de que alguien tenga la tarde libre."
+      },
+      {
+        "title": "Finanzas",
+        "text": "Lectura de facturas y conciliación entre sistemas. Una persona revisa las excepciones, no todo el lote."
+      },
+      {
+        "title": "Recursos humanos",
+        "text": "Un primer filtro de candidatos y respuestas claras a las preguntas que el equipo hace cada semana."
+      },
+      {
+        "title": "Operaciones",
+        "text": "Un reporte que se arma a partir de las fuentes que hoy alguien junta a mano."
+      },
+      {
+        "title": "Gerencia",
+        "text": "Un resumen usable de reuniones, documentos e indicadores, listo antes de la siguiente decisión."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Necesitamos conocimientos técnicos?",
+        "a": "No. Muchas soluciones se construyen con plataformas sin código que su equipo puede aprender a usar."
+      },
+      {
+        "q": "¿Qué herramientas usan?",
+        "a": "Las que mejor se adapten a su empresa y a lo que ya tienen. Somos neutrales."
+      },
+      {
+        "q": "¿Es seguro usar IA con información de la empresa?",
+        "a": "Diseñamos cada solución considerando privacidad, permisos y buenas prácticas de seguridad."
+      },
+      {
+        "q": "¿Trabajan con empresas fuera de Costa Rica?",
+        "a": "Sí, en toda Latinoamérica, de forma virtual o presencial, en español o inglés."
+      },
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Depende del alcance. Cuéntenos su necesidad y le enviamos una cotización en 48 horas."
+      }
+    ]
+  },
+  "contact": {
+    "title": "¿Listo para que la IA trabaje para su equipo?",
+    "text": "Cuéntenos qué quiere mejorar y le respondemos en menos de 48 horas.",
+    "emailLabel": "Correo",
+    "whatsappLabel": "WhatsApp",
+    "linkedinLabel": "LinkedIn",
+    "location": "San José, Costa Rica · Atención en toda Latinoamérica"
+  },
+  "form": {
+    "name": "Nombre",
+    "namePlaceholder": "Su nombre",
+    "company": "Empresa",
+    "companyPlaceholder": "Nombre de la empresa",
+    "role": "Cargo",
+    "rolePlaceholder": "Su cargo",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "correo@empresa.com",
+    "phone": "Teléfono / WhatsApp (opcional)",
+    "phonePlaceholder": "+506 0000 0000",
+    "country": "País",
+    "countryPlaceholder": "Seleccione un país",
+    "service": "Servicio de interés",
+    "servicePlaceholder": "Seleccione un servicio",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntenos qué quiere mejorar.",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando…",
+    "requiredNote": "Los campos con * son obligatorios.",
+    "required": "Complete este campo.",
+    "emailInvalid": "Ingrese un correo válido.",
+    "success": "Mensaje enviado. Le responderemos en menos de 48 horas.",
+    "error": "No pudimos enviar el mensaje. Inténtelo de nuevo o escríbanos por correo.",
+    "countries": [
+      { "value": "AR", "label": "Argentina" },
+      { "value": "BO", "label": "Bolivia" },
+      { "value": "BR", "label": "Brasil" },
+      { "value": "CL", "label": "Chile" },
+      { "value": "CO", "label": "Colombia" },
+      { "value": "CR", "label": "Costa Rica" },
+      { "value": "CU", "label": "Cuba" },
+      { "value": "DO", "label": "República Dominicana" },
+      { "value": "EC", "label": "Ecuador" },
+      { "value": "SV", "label": "El Salvador" },
+      { "value": "GT", "label": "Guatemala" },
+      { "value": "HT", "label": "Haití" },
+      { "value": "HN", "label": "Honduras" },
+      { "value": "MX", "label": "México" },
+      { "value": "NI", "label": "Nicaragua" },
+      { "value": "PA", "label": "Panamá" },
+      { "value": "PY", "label": "Paraguay" },
+      { "value": "PE", "label": "Perú" },
+      { "value": "PR", "label": "Puerto Rico" },
+      { "value": "UY", "label": "Uruguay" },
+      { "value": "VE", "label": "Venezuela" },
+      { "value": "OTHER", "label": "Otro" }
+    ]
+  },
+  "whatsapp": {
+    "label": "Escribir por WhatsApp",
+    "message": "Hola, quisiera conversar sobre cómo la inteligencia artificial puede ayudar a mi equipo."
+  },
+  "footer": {
+    "blurb": "Consultoría en inteligencia artificial y automatización para empresas en Latinoamérica",
+    "rights": "© {year} SmartMark Consultores",
+    "linksLabel": "Secciones"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Esa dirección ya no existe. Puede volver al inicio.",
+    "home": "Ir al inicio"
+  }
+}

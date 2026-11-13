@@ -1,19 +1,27 @@
 {
   "name": "SmartMark Consultores",
   "short_name": "SmartMark",
-  "description": "Especialistas en automatización IA que transforman operaciones empresariales",
+  "description": "Consultoría en inteligencia artificial y automatización para empresas en Latinoamérica",
   "icons": [
     {
-      "src": "/logo.png",
-      "sizes": "any",
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-mark.png",
+      "sizes": "940x405",
       "type": "image/png"
     }
   ],
-  "theme_color": "#10b981",
-  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone",
   "start_url": "/",
   "scope": "/"
 }
-
-

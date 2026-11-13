@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "title": "SmartMark Consultores | AI & Automation for Companies in Latin America",
+    "description": "Workshops, automations, and AI agents for business teams. Your team learns to build and use AI with the tools it already has.",
+    "ogAlt": "SmartMark Consultores"
+  },
+  "logoAlt": "SmartMark Consultores",
+  "a11y": {
+    "skip": "Skip to content",
+    "nav": "Sections",
+    "lang": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "banner": {
+    "message": "View this page in English?",
+    "action": "View in English",
+    "dismiss": "Dismiss"
+  },
+  "nav": {
+    "services": "Services",
+    "how": "How we work",
+    "why": "Why SmartMark",
+    "contact": "Contact",
+    "cta": "Book a call"
+  },
+  "hero": {
+    "eyebrow": "AI consulting · Costa\u00a0Rica and Latin America",
+    "stageLabel": "Why talk with SmartMark",
+    "title": "AI your team will actually use.",
+    "subtitle": "We help business teams across Latin America automate processes, build AI agents, and learn to do it themselves — using the tools they already have.",
+    "primary": "Book a call",
+    "secondary": "See services",
+    "trust": [
+      "25+ years in technology",
+      "Training and talks for multinational companies",
+      "Serving all of Latin America in English and Spanish"
+    ]
+  },
+  "statement": "The difference is not access to a tool. It's that on Monday the team works differently.",
+  "problem": {
+    "title": "What we see",
+    "lead": "Most companies we talk with don't have a technology problem. They have an adoption problem: they tried the tools, and Monday morning looked the same.",
+    "items": [
+      {
+        "title": "Lots of curiosity, few results.",
+        "text": "Your team tried ChatGPT or other tools, but day-to-day work hasn't changed."
+      },
+      {
+        "title": "Repetitive work eating up your team's time.",
+        "text": "Emails, reports, copying data between systems, answering the same questions."
+      },
+      {
+        "title": "Always depending on someone else.",
+        "text": "Every improvement needs a vendor or IT, and your team doesn't know where to start."
+      }
+    ]
+  },
+  "audience": {
+    "title": "Who we work with",
+    "lead": "We sit with the people accountable for the operation, not with a development team. The language is the language of the business: time, errors, response, and independence.",
+    "items": ["Operations", "Customer service", "Sales", "Finance", "Human resources", "General management"]
+  },
+  "outcomes": {
+    "title": "What changes in the operation",
+    "lead": "We don't promise an abstract transformation. We look for a few processes where AI shows up in the week.",
+    "items": [
+      {
+        "title": "Fewer hours on repetitive work",
+        "text": "Email, reports, and moving data stop occupying the people who should be making decisions."
+      },
+      {
+        "title": "Fewer handoff errors",
+        "text": "When information is no longer copied by hand, rework and last-minute reconciliations drop."
+      },
+      {
+        "title": "Faster answers",
+        "text": "Customers, prospects, and employees get a consistent answer without waiting for the person who has it in their head."
+      },
+      {
+        "title": "A team that can carry on",
+        "text": "We document, leave templates, and train the people who will maintain what we build."
+      }
+    ]
+  },
+  "approach": {
+    "title": "How we think about the work",
+    "lead": "We have spent more than 25 years building software, and the last year building AI agents and training teams at large companies. That combination changes the advice: we know what can actually be done, and what is not worth building.",
+    "items": [
+      {
+        "title": "We start from the operation",
+        "text": "We interview the people who do the work. If a process doesn't hurt every week, it is not the first one."
+      },
+      {
+        "title": "We stay vendor-neutral",
+        "text": "We use what the company already has. We don't sell licenses or push a platform."
+      },
+      {
+        "title": "We teach while we build",
+        "text": "The solution stays with the team. If three months later only we know how it works, the work was done wrong."
+      },
+      {
+        "title": "We will say no",
+        "text": "If the case doesn't justify AI, we say so. Sometimes the better result is a simpler process, not an agent."
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Five ways to start, depending on how far along your team is. Each one ends with something people use, not a presentation.",
+    "includes": "Includes",
+    "quote": "Request a quote",
+    "items": [
+      {
+        "id": "workshop",
+        "title": "AI Workshop for Business Teams",
+        "text": "A hands-on workshop where your team learns to use AI in their daily work — and leaves with working solutions.",
+        "points": [
+          "Effective use of AI assistants on real tasks from their area",
+          "Guided build of their first automation or agent, no coding required",
+          "Reusable materials and templates",
+          "On-site or virtual, from half a day to 3 days"
+        ]
+      },
+      {
+        "id": "assessment",
+        "title": "AI & Automation Opportunity Assessment",
+        "text": "We identify where AI and automation will have the biggest impact on your operation — and in what order to tackle it.",
+        "points": [
+          "Interviews with key teams and process mapping",
+          "Prioritization by impact, effort, and risk",
+          "Tool recommendations based on what you already have",
+          "90-day roadmap"
+        ]
+      },
+      {
+        "id": "automation",
+        "title": "Automations & AI Agents (built with your team)",
+        "text": "We build automations and agents that solve real problems together with your team — and teach them to maintain them and build the next ones.",
+        "points": [
+          "No-code platforms for non-technical teams",
+          "Custom development when the use case requires it",
+          "Integration with your current tools (email, spreadsheets, CRM, ERP, etc.)",
+          "Training and documentation so your team becomes self-sufficient"
+        ]
+      },
+      {
+        "id": "prompts",
+        "title": "Prompts & Context: AI that gives you the answers you need",
+        "text": "AI is only as good as how you ask and what information it gets. We design the right prompts and context for your processes, together with your team.",
+        "points": [
+          "Prompt library for each team's key tasks",
+          "How to give AI the right context (documents, data, business rules)",
+          "Prompts for automations and agents that work consistently",
+          "Best practices for quality, security, and privacy"
+        ]
+      },
+      {
+        "id": "advisory",
+        "title": "Ongoing AI Advisory",
+        "text": "An expert partner, month after month, so your company moves forward with AI without wasting time or money.",
+        "points": [
+          "Monthly follow-up and prioritization sessions",
+          "Review of your team's automations, agents, and prompts",
+          "Email or chat support for questions and decisions",
+          "Updates on new tools and opportunities"
+        ]
+      }
+    ],
+    "talks": {
+      "id": "talks",
+      "title": "Talks & keynotes",
+      "text": "Executive talks and keynotes on AI for business, for events, associations, and leadership teams.",
+      "button": "Request info"
+    }
+  },
+  "how": {
+    "title": "How we work",
+    "steps": [
+      {
+        "title": "Intro call",
+        "text": "45 minutes, free, to understand your operation and goals.",
+        "detail": "We look at how the area works today, which tools you already pay for, and where the time goes."
+      },
+      {
+        "title": "Clear proposal",
+        "text": "Scope, deliverables, timeline, and quote within 48 hours.",
+        "detail": "You get a concrete document: what we will do, what we won't, the timeline, and the quote. No fine print."
+      },
+      {
+        "title": "We build and train",
+        "text": "We work with your team, not just for them.",
+        "detail": "The first solution is built with the people who will use it. They leave knowing how to change it."
+      },
+      {
+        "title": "Your team takes it from there",
+        "text": "Documentation, templates, and optional ongoing support.",
+        "detail": "You keep the prompts, the templates, and a guide. Monthly support is there if you want to continue, not as a condition."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why SmartMark",
+    "items": [
+      {
+        "title": "Real experience",
+        "text": "25+ years building software, and the last year building AI agents and training teams at large companies."
+      },
+      {
+        "title": "Vendor-neutral",
+        "text": "We use what your company already has; we don't sell licenses."
+      },
+      {
+        "title": "We teach, not create dependency",
+        "text": "Your team learns to build and maintain its own solutions."
+      },
+      {
+        "title": "Built for Latin America",
+        "text": "In Spanish and English, with the region's realities and budgets in mind."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Use cases",
+    "items": [
+      {
+        "title": "Customer service",
+        "text": "Consistent answers to what comes in again and again, without pulling someone off the difficult cases."
+      },
+      {
+        "title": "Sales",
+        "text": "Following up a lead and drafting a proposal no longer wait for someone to have a free afternoon."
+      },
+      {
+        "title": "Finance",
+        "text": "Invoice reading and reconciliation across systems. A person reviews the exceptions, not the whole batch."
+      },
+      {
+        "title": "HR",
+        "text": "A first pass on candidates, and clear answers to the questions employees ask every week."
+      },
+      {
+        "title": "Operations",
+        "text": "A report assembled from the sources someone currently pulls together by hand."
+      },
+      {
+        "title": "Management",
+        "text": "A usable summary of meetings, documents, and KPIs, ready before the next decision."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Do we need technical skills?",
+        "a": "No. Many solutions are built on no-code platforms your team can learn to use."
+      },
+      {
+        "q": "Which tools do you use?",
+        "a": "Whatever fits your company best and what you already have. We're vendor-neutral."
+      },
+      {
+        "q": "Is it safe to use AI with company data?",
+        "a": "Every solution is designed with privacy, permissions, and security best practices in mind."
+      },
+      {
+        "q": "Do you work with companies outside Costa Rica?",
+        "a": "Yes — across Latin America, virtually or on-site, in English or Spanish."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "It depends on scope. Tell us what you need and we'll send a quote within 48 hours."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ready to put AI to work for your team?",
+    "text": "Tell us what you want to improve and we'll get back to you within 48 hours.",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "linkedinLabel": "LinkedIn",
+    "location": "San José, Costa Rica · Serving all of Latin America"
+  },
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "company": "Company",
+    "companyPlaceholder": "Company name",
+    "role": "Role",
+    "rolePlaceholder": "Your role",
+    "email": "Email",
+    "emailPlaceholder": "name@company.com",
+    "phone": "Phone / WhatsApp (optional)",
+    "phonePlaceholder": "+1 000 000 0000",
+    "country": "Country",
+    "countryPlaceholder": "Select a country",
+    "service": "Service of interest",
+    "servicePlaceholder": "Select a service",
+    "message": "Message",
+    "messagePlaceholder": "Tell us what you want to improve.",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "requiredNote": "Fields marked with * are required.",
+    "required": "Please fill in this field.",
+    "emailInvalid": "Enter a valid email.",
+    "success": "Message sent. We'll get back to you within 48 hours.",
+    "error": "We couldn't send your message. Try again or email us.",
+    "countries": [
+      { "value": "AR", "label": "Argentina" },
+      { "value": "BO", "label": "Bolivia" },
+      { "value": "BR", "label": "Brazil" },
+      { "value": "CL", "label": "Chile" },
+      { "value": "CO", "label": "Colombia" },
+      { "value": "CR", "label": "Costa Rica" },
+      { "value": "CU", "label": "Cuba" },
+      { "value": "DO", "label": "Dominican Republic" },
+      { "value": "EC", "label": "Ecuador" },
+      { "value": "SV", "label": "El Salvador" },
+      { "value": "GT", "label": "Guatemala" },
+      { "value": "HT", "label": "Haiti" },
+      { "value": "HN", "label": "Honduras" },
+      { "value": "MX", "label": "Mexico" },
+      { "value": "NI", "label": "Nicaragua" },
+      { "value": "PA", "label": "Panama" },
+      { "value": "PY", "label": "Paraguay" },
+      { "value": "PE", "label": "Peru" },
+      { "value": "PR", "label": "Puerto Rico" },
+      { "value": "UY", "label": "Uruguay" },
+      { "value": "VE", "label": "Venezuela" },
+      { "value": "OTHER", "label": "Other" }
+    ]
+  },
+  "whatsapp": {
+    "label": "Chat on WhatsApp",
+    "message": "Hi, I'd like to talk about how AI can help my team."
+  },
+  "footer": {
+    "blurb": "AI and automation consulting for companies across Latin America",
+    "rights": "© {year} SmartMark Consultores",
+    "linksLabel": "Sections"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "That address no longer exists. You can go back to the home page.",
+    "home": "Back to home"
+  }
+}

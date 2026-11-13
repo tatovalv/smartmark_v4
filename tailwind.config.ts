@@ -20,6 +20,15 @@ const config = {
     },
     extend: {
       colors: {
+        brand: {
+          primary: "var(--color-primary)",
+          secondary: "var(--color-secondary)",
+          accent: "var(--color-accent)",
+          text: "var(--color-text)",
+          muted: "var(--color-muted)",
+          surface: "var(--color-surface)",
+          line: "var(--color-line)",
+        },
         emerald: {
           "50": "#ecfdf5",
           "100": "#d1fae5",
