@@ -6,7 +6,7 @@
     "pages": {
       "home": {
         "title": "Consultoría en IA y automatización | SmartMark Consultores",
-        "description": "Consultoría de IA y automatización para equipos de negocio en Latinoamérica. Aplicamos la IA al trabajo que se repite."
+        "description": "Consultoría en inteligencia artificial para empresas en Costa Rica y Latinoamérica. Le ayudamos a aplicar IA donde importa: procesos, equipo y resultados."
       },
       "services": {
         "title": "Servicios de IA y automatización para empresas | SmartMark",
@@ -57,8 +57,8 @@
   "hero": {
     "eyebrow": "Consultoría en inteligencia artificial · Costa\u00a0Rica y Latinoamérica",
     "stageLabel": "Por qué conversar con SmartMark",
-    "title": "Su empresa necesita IA en el trabajo que se repite.",
-    "subtitle": "Hemos visto sistemas de inteligencia artificial cobrados muy por encima de lo que el proceso pide. Lo que necesitan es aplicar esa IA al trabajo repetitivo: el que se puede automatizar.",
+    "title": "Su empresa necesita IA. Apliquémosla donde realmente importa.",
+    "subtitle": "Le ayudamos a definir dónde aplicar la inteligencia artificial en su operación, cómo implementarla con su equipo y qué resultados esperar, con las herramientas que ya tiene.",
     "primary": "Agendar una conversación",
     "secondary": "Ver servicios",
     "trust": [
@@ -68,14 +68,14 @@
     ]
   },
   "position": {
-    "title": "Su equipo, potenciado con IA.",
-    "lines": [
-      "Inteligencia artificial donde aporta.",
-      "Automatización donde alcanza.",
-      "Criterio para saber la diferencia."
+    "title": "La IA correcta empieza con tres preguntas.",
+    "pillars": [
+      { "label": "Dónde", "text": "En los procesos que más tiempo, errores o dinero le cuestan." },
+      { "label": "Cómo", "text": "Con su equipo y con las herramientas que ya tiene, para que aprendan a hacerlo." },
+      { "label": "Para qué", "text": "Resultados que se miden: horas recuperadas, menos errores, respuestas más rápidas." }
     ]
   },
-  "statement": "La inteligencia artificial que su empresa necesita automatiza el trabajo que se repite.",
+  "statement": "No se trata de usar IA en todo. Se trata de usarla donde cambia los resultados.",
   "problem": {
     "title": "Lo que vemos",
     "lead": "Conversamos con empresas a las que les cotizaron un sistema de inteligencia artificial por un monto muy alto. El trabajo de fondo era repetitivo: se podía automatizar, y el equipo podía aprender a mantenerlo.",
@@ -94,13 +94,8 @@
       }
     ]
   },
-  "audience": {
-    "title": "Con quién trabajamos",
-    "lead": "Hablamos con quienes responden por la operación, no con un equipo de desarrollo. El lenguaje es el del negocio: tiempo, errores, respuesta y autonomía.",
-    "items": ["Operaciones", "Atención al cliente", "Ventas", "Finanzas", "Recursos humanos", "Gerencia general"]
-  },
   "outcomes": {
-    "title": "Qué cambia en la operación",
+    "title": "Los resultados que buscamos",
     "lead": "No prometemos una transformación abstracta. Buscamos unos pocos procesos donde la IA se nota en la semana.",
     "items": [
       {
@@ -123,7 +118,7 @@
   },
   "approach": {
     "title": "Cómo pensamos el trabajo",
-    "lead": "Llevamos más de 25 años construyendo software y el último año creando agentes de IA y capacitando equipos de empresas grandes. Esa combinación cambia el consejo: sabemos cuándo un sistema de IA está de más, y cuándo el trabajo repetitivo sí se puede automatizar.",
+    "lead": "Llevamos más de 25 años construyendo software y el último año creando agentes de IA y capacitando equipos de empresas grandes. Esa combinación cambia el consejo: sabemos dónde la IA cambia los resultados, y cuándo basta con automatizar lo que ya tienen.",
     "items": [
       {
         "title": "Partimos de la operación",
@@ -145,11 +140,8 @@
   },
   "services": {
     "title": "Servicios",
-    "intro": "Cinco maneras de entrar, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
+    "intro": "Cinco maneras de aplicar IA donde importa, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
     "includes": "Incluye",
-    "quote": "Solicitar cotización",
-    "ctaTitle": "¿Por dónde quiere empezar?",
-    "ctaText": "Cuéntenos el área y lo que hoy consume tiempo. Le respondemos con un alcance y una cotización en 48 horas.",
     "items": [
       {
         "id": "workshop",
@@ -216,6 +208,7 @@
   },
   "how": {
     "title": "Cómo trabajamos",
+    "lead": "Dónde, cómo y para qué: así decidimos con usted en qué procesos aplicar la IA, la implementamos con su equipo y medimos el resultado.",
     "steps": [
       {
         "title": "Conversación inicial",
@@ -241,7 +234,7 @@
   },
   "why": {
     "title": "Por qué SmartMark",
-    "lead": "Elegir un socio en inteligencia artificial es elegir a quién le va a decir si hace falta un sistema, o si el trabajo repetitivo se puede automatizar. Esto es lo que sostiene el consejo que damos.",
+    "lead": "Cualquiera puede venderle inteligencia artificial. Nosotros le decimos dónde la necesita, cómo aplicarla para que funcione y qué resultado esperar. Y también dónde no hace falta.",
     "items": [
       {
         "title": "Experiencia real",
@@ -263,7 +256,7 @@
   },
   "cases": {
     "title": "Casos de uso",
-    "lead": "Seis trabajos que pedimos ver primero. No son sistemas a la medida: son piezas que un equipo de negocio puede usar el lunes, con las herramientas que ya paga.",
+    "lead": "Aquí es donde la IA suele marcar la diferencia primero: trabajos que se repiten, consumen horas y se pueden mejorar con las herramientas que ya paga.",
     "open": "Ver más",
     "close": "Cerrar",
     "builtLabel": "Qué se puede construir",
@@ -363,8 +356,8 @@
     ]
   },
   "contact": {
-    "title": "¿Listo para que la IA trabaje para su equipo?",
-    "text": "Cuéntenos qué quiere mejorar y le respondemos en menos de 48 horas.",
+    "title": "Hablemos de dónde la IA puede marcar la diferencia en su empresa.",
+    "text": "Cuéntenos qué quiere mejorar. En una conversación de 45 minutos, sin costo, le decimos dónde conviene aplicar IA y qué resultados puede esperar.",
     "emailLabel": "Correo",
     "whatsappLabel": "WhatsApp",
     "linkedinLabel": "LinkedIn",
@@ -419,12 +412,44 @@
       { "value": "OTHER", "label": "Otro" }
     ]
   },
+  "finalCta": {
+    "home": {
+      "title": "¿Dónde le conviene aplicar IA a su empresa?",
+      "text": "Lo descubrimos juntos en una conversación de 45 minutos, sin costo.",
+      "button": "Agendar conversación"
+    },
+    "services": {
+      "title": "¿No sabe cuál servicio le conviene?",
+      "text": "En una conversación de 45 minutos, sin costo, le decimos por dónde empezar y qué resultado esperar.",
+      "button": "Agendar conversación"
+    },
+    "cases": {
+      "title": "¿Reconoce alguno de estos casos en su empresa?",
+      "text": "Cuéntenos cuál. En 45 minutos, sin costo, vemos juntos dónde aplicar IA primero.",
+      "button": "Agendar conversación"
+    },
+    "how": {
+      "title": "El primer paso es una conversación.",
+      "text": "45 minutos, sin costo, para entender su operación y decirle dónde la IA puede marcar la diferencia.",
+      "button": "Agendar conversación"
+    },
+    "why": {
+      "title": "Pónganos a prueba con un proceso real.",
+      "text": "Tráiganos el trabajo que más se repite. En 45 minutos, sin costo, le decimos dónde conviene aplicar IA y cómo.",
+      "button": "Agendar conversación"
+    },
+    "contact": {
+      "title": "¿Prefiere ver primero qué hacemos?",
+      "text": "Revise los servicios y los casos de uso antes de la conversación.",
+      "button": "Ver servicios"
+    }
+  },
   "whatsapp": {
     "label": "Escribir por WhatsApp",
     "message": "Hola, me interesa conversar sobre IA y automatización para mi empresa."
   },
   "footer": {
-    "blurb": "Consultoría en inteligencia artificial y automatización para empresas en Latinoamérica",
+    "blurb": "Consultoría en inteligencia artificial para empresas en Latinoamérica. IA aplicada donde importa, con su equipo y con resultados.",
     "rights": "© {year} SmartMark Consultores",
     "linksLabel": "Secciones"
   },

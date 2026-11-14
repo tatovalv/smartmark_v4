@@ -15,7 +15,7 @@ Both pages are generated on the server from the same components. Do not put sent
 | Header links and “Agendar conversación” / “Book a call” | `nav` | `nav` |
 | Hero, including the trust line | `hero` | `hero` |
 | Opening statement | `statement` | `statement` |
-| Who we work with, and what changes | `audience`, `outcomes` | `audience`, `outcomes` |
+| The results we aim for | `outcomes` | `outcomes` |
 | What we see | `problem` | `problem` |
 | How we think about the work | `approach` | `approach` |
 | Five services, the “Includes” label, and quote buttons | `services` | `services` |

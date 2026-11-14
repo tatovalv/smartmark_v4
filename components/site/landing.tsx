@@ -56,7 +56,13 @@ export default function Landing({
           </div>
           <div className="hero-copy">
             <p className="eyebrow">{dict.hero.eyebrow}</p>
-            <h1 className="display">{dict.hero.title}</h1>
+            <h1 className="display">
+              {dict.hero.title.split(/(?<=\.)\s+/).map((sentence) => (
+                <span key={sentence} className="block">
+                  {sentence}
+                </span>
+              ))}
+            </h1>
             <p className="lede">{dict.hero.subtitle}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <TrackedLink href={contactHref} className="btn btn-primary" event="cta_click">
@@ -80,13 +86,14 @@ export default function Landing({
         <section className="position-banner" aria-labelledby="posicion-title">
           <div className="shell">
             <h2 id="posicion-title">{dict.position.title}</h2>
-            <p className="position-lines">
-              {dict.position.lines.map((line, index) => (
-                <span key={line} className={index === dict.position.lines.length - 1 ? "is-accent" : undefined}>
-                  {line}
-                </span>
+            <ul className="position-pillars">
+              {dict.position.pillars.map((pillar) => (
+                <li key={pillar.label}>
+                  <p className="position-label">{pillar.label}</p>
+                  <p className="position-text">{pillar.text}</p>
+                </li>
               ))}
-            </p>
+            </ul>
           </div>
         </section>
 
@@ -94,26 +101,16 @@ export default function Landing({
           <p className="shell">{dict.statement}</p>
         </section>
 
-        <section className="section" aria-labelledby="audiencia-title">
+        <section className="section" aria-labelledby="resultados-title">
           <div className="shell map-grid">
             <div>
-              <h2 id="audiencia-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                {dict.audience.title}
+              <h2 id="resultados-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                {dict.outcomes.title}
               </h2>
-              <p className="lede">{dict.audience.lead}</p>
-              <ul className="rail">
-                {dict.audience.items.map((item) => (
-                  <li key={item}>
-                    <i aria-hidden="true" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="lede">{dict.outcomes.lead}</p>
             </div>
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">{dict.outcomes.title}</h2>
-              <p className="lede">{dict.outcomes.lead}</p>
-              <div className="stair">
+              <div className="stair stair-solo">
                 {dict.outcomes.items.map((item, index) => (
                   <article key={item.title} className={index % 2 === 0 ? "stair-ink" : "stair-paper"}>
                     <p className="index">{String(index + 1).padStart(2, "0")}</p>
@@ -216,15 +213,6 @@ export default function Landing({
               <h2>{dict.services.talks.title}</h2>
               <p className="sheet-text">{dict.services.talks.text}</p>
             </article>
-            <div className="services-cta">
-              <div>
-                <h2>{dict.services.ctaTitle}</h2>
-                <p>{dict.services.ctaText}</p>
-              </div>
-              <a href={contactHref} className="btn services-cta-btn">
-                {dict.services.quote}
-              </a>
-            </div>
           </div>
         </section>
         ) : null}
@@ -235,6 +223,7 @@ export default function Landing({
             <h1 id="como-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.how.title}
             </h1>
+            <p className="lede">{dict.how.lead}</p>
             <ol className="spine">
               {dict.how.steps.map((step, index) => (
                 <li key={step.title}>
@@ -334,6 +323,26 @@ export default function Landing({
           </div>
         </section>
         ) : null}
+
+        <section className={page === "home" ? "final-cta-band bg-white" : "final-cta-band"} aria-labelledby="cta-final-title">
+          <div className="shell">
+            <div className="final-cta">
+              <div>
+                <h2 id="cta-final-title">{dict.finalCta[page].title}</h2>
+                <p>{dict.finalCta[page].text}</p>
+              </div>
+              {page === "contact" ? (
+                <a href={pagePath(locale, "services")} className="btn final-cta-btn">
+                  {dict.finalCta[page].button}
+                </a>
+              ) : (
+                <TrackedLink href={contactHref} className="btn final-cta-btn" event="cta_click">
+                  {dict.finalCta[page].button}
+                </TrackedLink>
+              )}
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="bg-brand-secondary text-white">

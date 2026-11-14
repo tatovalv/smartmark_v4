@@ -6,7 +6,7 @@
     "pages": {
       "home": {
         "title": "AI & Automation Consulting in Latin America | SmartMark",
-        "description": "AI and automation consulting for business teams in Latin America. We apply AI to the work that repeats."
+        "description": "AI consulting for companies in Costa Rica and Latin America. We help you apply AI where it matters: the right processes, your team, real results."
       },
       "services": {
         "title": "AI & Automation Services for Business Teams | SmartMark",
@@ -57,8 +57,8 @@
   "hero": {
     "eyebrow": "AI consulting · Costa\u00a0Rica and Latin America",
     "stageLabel": "Why talk with SmartMark",
-    "title": "Your company needs AI on the work that repeats.",
-    "subtitle": "We have seen AI systems priced far above what the process calls for. What you need is to apply that AI to repetitive work: the work that can be automated.",
+    "title": "Your company needs AI. Let's apply it where it really matters.",
+    "subtitle": "We help you decide where AI belongs in your operation, how to implement it with your team, and what results to expect, using the tools you already have.",
     "primary": "Book a call",
     "secondary": "See services",
     "trust": [
@@ -68,14 +68,14 @@
     ]
   },
   "position": {
-    "title": "Your team, powered by AI.",
-    "lines": [
-      "AI where it adds value.",
-      "Automation where it's enough.",
-      "The judgment to know the difference."
+    "title": "The right AI starts with three questions.",
+    "pillars": [
+      { "label": "Where", "text": "In the processes that cost you the most time, errors, or money." },
+      { "label": "How", "text": "With your team and the tools you already have, so they learn to do it themselves." },
+      { "label": "What for", "text": "Results you can measure: hours saved, fewer errors, faster responses." }
     ]
   },
-  "statement": "The AI your company needs is the kind that automates the work that repeats.",
+  "statement": "It's not about using AI everywhere. It's about using it where it changes the results.",
   "problem": {
     "title": "What we see",
     "lead": "We talk with companies that were quoted a very high price for an AI system. The work underneath was repetitive: it could be automated, and the team could learn to maintain it.",
@@ -94,13 +94,8 @@
       }
     ]
   },
-  "audience": {
-    "title": "Who we work with",
-    "lead": "We sit with the people accountable for the operation, not with a development team. The language is the language of the business: time, errors, response, and independence.",
-    "items": ["Operations", "Customer service", "Sales", "Finance", "Human resources", "General management"]
-  },
   "outcomes": {
-    "title": "What changes in the operation",
+    "title": "The results we aim for",
     "lead": "We don't promise an abstract transformation. We look for a few processes where AI shows up in the week.",
     "items": [
       {
@@ -123,7 +118,7 @@
   },
   "approach": {
     "title": "How we think about the work",
-    "lead": "We have spent more than 25 years building software, and the last year building AI agents and training teams at large companies. That combination changes the advice: we know when an AI system is more than the work calls for, and when repetitive work can actually be automated.",
+    "lead": "We have spent more than 25 years building software, and the last year building AI agents and training teams at large companies. That combination changes the advice: we know where AI changes the results, and when automating what you already have is enough.",
     "items": [
       {
         "title": "We start from the operation",
@@ -145,11 +140,8 @@
   },
   "services": {
     "title": "Services",
-    "intro": "Five ways to start, depending on how far along your team is. Each one ends with something people use, not a presentation.",
+    "intro": "Five ways to apply AI where it matters, depending on where your team is today. Each one ends with something people use, not a presentation.",
     "includes": "Includes",
-    "quote": "Request a quote",
-    "ctaTitle": "Where do you want to start?",
-    "ctaText": "Tell us the area and what currently takes the time. We'll reply with a scope and a quote within 48 hours.",
     "items": [
       {
         "id": "workshop",
@@ -216,6 +208,7 @@
   },
   "how": {
     "title": "How we work",
+    "lead": "Where, how, and what for: that's how we decide with you which processes need AI, implement it with your team, and measure the results.",
     "steps": [
       {
         "title": "Intro call",
@@ -241,7 +234,7 @@
   },
   "why": {
     "title": "Why SmartMark",
-    "lead": "Choosing an AI partner is choosing who will tell you whether you need a system, or whether the repetitive work can be automated. This is what the advice rests on.",
+    "lead": "Anyone can sell you AI. We tell you where you need it, how to apply it so it works, and what results to expect. And where you don't need it.",
     "items": [
       {
         "title": "Real experience",
@@ -263,7 +256,7 @@
   },
   "cases": {
     "title": "Use cases",
-    "lead": "Six kinds of work we ask to see first. These are not custom systems. They are pieces a business team can use on Monday, with the tools the company already pays for.",
+    "lead": "This is where AI usually makes a difference first: work that repeats, eats up hours, and can be improved with the tools you already pay for.",
     "open": "Learn more",
     "close": "Close",
     "builtLabel": "What can be built",
@@ -363,8 +356,8 @@
     ]
   },
   "contact": {
-    "title": "Ready to put AI to work for your team?",
-    "text": "Tell us what you want to improve and we'll get back to you within 48 hours.",
+    "title": "Let's talk about where AI can make a difference in your company.",
+    "text": "Tell us what you want to improve. In a free 45-minute call, we'll tell you where AI makes sense and what results to expect.",
     "emailLabel": "Email",
     "whatsappLabel": "WhatsApp",
     "linkedinLabel": "LinkedIn",
@@ -419,12 +412,44 @@
       { "value": "OTHER", "label": "Other" }
     ]
   },
+  "finalCta": {
+    "home": {
+      "title": "Where should your company apply AI?",
+      "text": "Let's find out together in a free 45-minute call.",
+      "button": "Book a call"
+    },
+    "services": {
+      "title": "Not sure which service fits?",
+      "text": "In a free 45-minute call, we'll tell you where to start and what results to expect.",
+      "button": "Book a call"
+    },
+    "cases": {
+      "title": "Do any of these look like your company?",
+      "text": "Tell us which one. In a free 45-minute call, we'll work out together where to apply AI first.",
+      "button": "Book a call"
+    },
+    "how": {
+      "title": "The first step is a conversation.",
+      "text": "45 minutes, free, to understand your operation and tell you where AI can make a difference.",
+      "button": "Book a call"
+    },
+    "why": {
+      "title": "Put us to the test with a real process.",
+      "text": "Bring us the work that repeats the most. In a free 45-minute call, we'll tell you where AI makes sense and how.",
+      "button": "Book a call"
+    },
+    "contact": {
+      "title": "Want to see what we do first?",
+      "text": "Look through our services and use cases before we talk.",
+      "button": "See services"
+    }
+  },
   "whatsapp": {
     "label": "Message us on WhatsApp",
     "message": "Hi, I'd like to talk about AI and automation for my company."
   },
   "footer": {
-    "blurb": "AI and automation consulting for companies across Latin America",
+    "blurb": "AI consulting for companies across Latin America. AI applied where it matters, with your team, for real results.",
     "rights": "© {year} SmartMark Consultores",
     "linksLabel": "Sections"
   },

@@ -168,6 +168,10 @@ footer :focus-visible,
   padding: 0 1rem 1.5rem;
 }
 
+.hero .display {
+  font-size: clamp(2.15rem, 8vw, 3.4rem);
+}
+
 .hero-notes {
   position: relative;
   z-index: 1;
@@ -195,9 +199,9 @@ footer :focus-visible,
 }
 
 .position-banner {
-  background: white;
-  border-bottom: 1px solid var(--color-line);
-  padding: 1.15rem 0 2.6rem;
+  background: var(--color-secondary);
+  color: white;
+  padding: 2.4rem 0 3rem;
 }
 
 .position-banner h2 {
@@ -205,36 +209,42 @@ footer :focus-visible,
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.2;
+  color: white;
 }
 
-.position-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  margin-top: 0.45rem;
-  color: var(--color-muted);
-  font-size: 1rem;
-  line-height: 1.45;
+.position-pillars {
+  display: grid;
+  gap: 1.4rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.position-lines .is-accent {
-  color: var(--color-secondary);
+.position-pillars li {
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, white 18%, transparent);
+}
+
+.position-label {
+  color: var(--color-accent);
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
   font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.position-text {
+  margin-top: 0.45rem;
+  max-width: 24rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 800px) {
-  .position-lines {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0;
-  }
-
-  .position-lines span:not(:last-child)::after {
-    content: "·";
-    margin-inline: 0.55rem;
-    color: var(--color-accent);
-    font-weight: 650;
+  .position-pillars {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
   }
 }
 
@@ -271,42 +281,6 @@ footer :focus-visible,
   font-weight: 650;
   letter-spacing: 0.08em;
   color: var(--color-secondary);
-}
-
-.rail {
-  position: relative;
-  display: grid;
-  gap: 0.15rem;
-  margin-top: 2rem;
-}
-
-.rail::before {
-  content: "";
-  position: absolute;
-  left: 0.42rem;
-  top: 0.7rem;
-  bottom: 0.7rem;
-  width: 1px;
-  background: linear-gradient(var(--color-secondary), var(--color-accent));
-}
-
-.rail li {
-  display: grid;
-  grid-template-columns: 1rem 1fr;
-  gap: 0.85rem;
-  align-items: center;
-  padding-block: 0.55rem;
-  font-size: clamp(1.2rem, 2vw, 1.55rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-}
-
-.rail i {
-  width: 0.85rem;
-  height: 0.85rem;
-  border-radius: 999px;
-  background: var(--color-logo);
-  box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-primary) 28%, white);
 }
 
 .stair {
@@ -507,11 +481,14 @@ footer :focus-visible,
 .sheet-talks h2 { padding-right: 0; }
 .sheet-talks .sheet-text { color: color-mix(in srgb, white 82%, transparent); }
 
-.services-cta {
+.final-cta-band {
+  padding-bottom: 4.5rem;
+}
+
+.final-cta {
   position: relative;
   display: grid;
   gap: 1.5rem;
-  margin-top: 2.75rem;
   padding: 2rem 1.45rem 1.85rem;
   overflow: hidden;
   border-radius: 1.75rem;
@@ -520,7 +497,7 @@ footer :focus-visible,
   box-shadow: 0 28px 60px -30px rgb(6 78 59 / 0.85);
 }
 
-.services-cta::before {
+.final-cta::before {
   content: "";
   position: absolute;
   right: -5rem;
@@ -532,7 +509,7 @@ footer :focus-visible,
   pointer-events: none;
 }
 
-.services-cta h2 {
+.final-cta h2 {
   position: relative;
   font-size: clamp(2rem, 4.2vw, 3.05rem);
   font-weight: 600;
@@ -541,7 +518,7 @@ footer :focus-visible,
   color: white;
 }
 
-.services-cta h2::before {
+.final-cta h2::before {
   content: "";
   display: inline-block;
   width: 0.55rem;
@@ -551,7 +528,7 @@ footer :focus-visible,
   background: var(--color-accent);
 }
 
-.services-cta p {
+.final-cta p {
   position: relative;
   margin-top: 0.85rem;
   max-width: 36rem;
@@ -560,7 +537,7 @@ footer :focus-visible,
   color: color-mix(in srgb, white 84%, transparent);
 }
 
-.services-cta-btn {
+.final-cta-btn {
   position: relative;
   justify-self: start;
   min-height: 3.5rem;
@@ -571,19 +548,19 @@ footer :focus-visible,
   box-shadow: 0 0 0 7px color-mix(in srgb, var(--color-primary) 32%, transparent);
 }
 
-.services-cta-btn:hover {
+.final-cta-btn:hover {
   background: var(--color-logo);
 }
 
 @media (min-width: 800px) {
-  .services-cta {
+  .final-cta {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
     gap: 2.5rem;
     padding: 2.5rem 2.6rem;
   }
 
-  .services-cta-btn {
+  .final-cta-btn {
     justify-self: end;
   }
 }
@@ -766,11 +743,12 @@ footer :focus-visible,
   }
 
   .hero-copy {
-    width: min(52rem, 70%);
+    --hero-gutter: max(1.5rem, calc((100vw - 76rem) / 2 + 1.5rem));
+    width: calc(var(--hero-gutter) + min(46rem, 60vw));
     max-width: none;
     padding-top: 3rem;
     padding-bottom: 2.5rem;
-    padding-left: max(1.5rem, calc((100vw - 76rem) / 2 + 1.5rem));
+    padding-left: var(--hero-gutter);
     background: linear-gradient(90deg, #f7fbf8 72%, transparent);
   }
 
@@ -783,6 +761,8 @@ footer :focus-visible,
   }
 
   .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+  .map-grid > div:first-child { position: sticky; top: 7rem; }
+  .stair-solo { margin-top: 0; }
   .diagnosis { grid-template-columns: 1fr 1fr 1fr; }
   .blueprint-grid,
   .why-band { grid-template-columns: 1fr 1fr; }
