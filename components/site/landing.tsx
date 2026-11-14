@@ -1,4 +1,3 @@
-import { CaseBoard } from "@/components/site/case-board"
 import { ContactForm } from "@/components/site/contact-form"
 import { Header } from "@/components/site/header"
 import { StructuredData } from "@/components/site/json-ld"
@@ -180,7 +179,51 @@ export default function Landing({
               {dict.cases.title}
             </h1>
             <p className="lede">{dict.cases.lead}</p>
-            <CaseBoard cases={dict.cases} />
+            <nav className="case-index" aria-label={dict.cases.indexLabel}>
+              <ul className="chip-row">
+                {dict.cases.items.map((item) => (
+                  <li key={item.slug}>
+                    <a href={`#${item.slug}`} className="chip">
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="case-list">
+              {dict.cases.items.map((item, index) => {
+                const service = dict.services.items.find((entry) => entry.id === item.service)
+                return (
+                  <article key={item.slug} id={item.slug} className="case-card">
+                    <div>
+                      <p className="sheet-index" aria-hidden="true">
+                        {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <h2>{item.title}</h2>
+                      <p className="case-summary">{item.text}</p>
+                    </div>
+                    <div>
+                      <p className="case-situation">{item.situation}</p>
+                      <p className="sheet-label">{dict.cases.builtLabel}</p>
+                      <ul>
+                        {item.builds.map((build) => (
+                          <li key={build}>{build}</li>
+                        ))}
+                      </ul>
+                      <div className="case-keeps">
+                        <p className="sheet-label">{dict.cases.keepsLabel}</p>
+                        <p>{item.keeps}</p>
+                      </div>
+                      {service ? (
+                        <a href={`${pagePath(locale, "services")}#${service.id}`} className="preview-link">
+                          {dict.cases.implementLabel} {service.title} →
+                        </a>
+                      ) : null}
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
           </div>
         </section>
         ) : null}
@@ -214,8 +257,8 @@ export default function Landing({
             </h2>
             <ul className="chip-row">
               {dict.cases.items.map((item) => (
-                <li key={item.id}>
-                  <a href={`${pagePath(locale, "cases")}#${item.id}`} className="chip">
+                <li key={item.slug}>
+                  <a href={`${pagePath(locale, "cases")}#${item.slug}`} className="chip">
                     {item.title}
                   </a>
                 </li>

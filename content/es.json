@@ -11,7 +11,7 @@
       },
       "cases": {
         "title": "Casos de uso de IA para equipos de negocio | SmartMark",
-        "description": "Cómo se ve la IA en atención, ventas, finanzas, recursos humanos, operaciones y gerencia. Una persona sigue decidiendo."
+        "description": "Ejemplos de IA y automatización en atención al cliente, ventas, finanzas, recursos humanos, operaciones y gerencia, con las herramientas que ya tiene."
       },
       "how": {
         "title": "Cómo implementamos IA en su empresa | SmartMark",
@@ -276,10 +276,10 @@
     ]
   },
   "cases": {
-    "title": "Casos de uso",
+    "title": "Casos de uso de inteligencia artificial por área",
     "lead": "Aquí es donde la IA suele marcar la diferencia primero: trabajos que se repiten, consumen horas y se pueden mejorar con las herramientas que ya paga.",
-    "open": "Ver más",
-    "close": "Cerrar",
+    "indexLabel": "Áreas",
+    "implementLabel": "Cómo lo implementamos:",
     "builtLabel": "Qué se puede construir",
     "keepsLabel": "Qué se queda en el equipo",
     "preview": {
@@ -288,7 +288,8 @@
     },
     "items": [
       {
-        "id": "atencion-al-cliente",
+        "slug": "atencion-al-cliente",
+        "service": "automation",
         "title": "Atención al cliente",
         "text": "Lo que llega una y otra vez deja de ocupar a las personas que deberían estar en los casos difíciles.",
         "situation": "El equipo contesta las mismas preguntas por correo, chat y teléfono. La respuesta correcta está en un manual, en un correo de hace meses o en la cabeza de quien lleva más tiempo. Mientras tanto, el caso que sí necesita criterio espera.",
@@ -300,7 +301,8 @@
         "keeps": "El equipo sabe qué documentos alimentan al asistente y cómo corregirlo cuando cambia una política. Una persona sigue en los casos que importan."
       },
       {
-        "id": "ventas",
+        "slug": "ventas",
+        "service": "automation",
         "title": "Ventas",
         "text": "El seguimiento de un prospecto y el primer borrador de una propuesta dejan de depender de que alguien tenga la tarde libre.",
         "situation": "Un prospecto escribe, la información queda en el correo de una persona y la propuesta se arma copiando la anterior. Lo que se pierde no es una herramienta: es el día en que había que responder.",
@@ -312,7 +314,8 @@
         "keeps": "Las plantillas y los prompts quedan con el equipo comercial. Ellos ajustan el tono; no esperan a que alguien de afuera reescriba cada propuesta."
       },
       {
-        "id": "finanzas",
+        "slug": "finanzas",
+        "service": "automation",
         "title": "Finanzas",
         "text": "Alguien deja de leer el lote completo. Revisa las excepciones.",
         "situation": "Facturas, comprobantes y hojas de cálculo se concilian a mano entre el correo, el banco y el sistema contable. El error no aparece en el total: aparece en la línea que alguien copió mal un viernes.",
@@ -324,7 +327,8 @@
         "keeps": "Una persona sigue aprobando. La diferencia es que aprueba excepciones, no reescribe el lote."
       },
       {
-        "id": "recursos-humanos",
+        "slug": "recursos-humanos",
+        "service": "automation",
         "title": "Recursos humanos",
         "text": "Una primera lectura de candidatos, y respuestas claras a lo que el equipo pregunta cada semana.",
         "situation": "Los currículos se leen uno por uno contra una descripción que vive en un documento. Al mismo tiempo, los colaboradores preguntan por vacaciones, políticas y beneficios, y la respuesta depende de quién esté disponible.",
@@ -336,7 +340,8 @@
         "keeps": "Contratar sigue siendo una decisión de una persona. El asistente no descarta solo, y el equipo sabe qué criterios está usando."
       },
       {
-        "id": "operaciones",
+        "slug": "operaciones",
+        "service": "automation",
         "title": "Operaciones",
         "text": "El reporte que alguien arma a mano sale de las fuentes, no de una hoja nueva.",
         "situation": "Los números viven en el correo, en una hoja, en el sistema de inventarios y en el mensaje de un proveedor. Una persona los junta antes de la reunión. Si esa persona no está, el reporte no existe.",
@@ -348,7 +353,8 @@
         "keeps": "El reporte deja de pertenecer a una sola persona. Queda escrito de dónde sale cada cifra."
       },
       {
-        "id": "gerencia",
+        "slug": "gerencia",
+        "service": "assessment",
         "title": "Gerencia",
         "text": "Un resumen usable de reuniones, documentos e indicadores, antes de la siguiente decisión.",
         "situation": "La decisión espera a que alguien lea el hilo, las minutas y tres tableros. Lo importante está mezclado con lo que ya se decidió la semana pasada.",
