@@ -9,6 +9,7 @@ import { EnglishBanner } from "@/components/site/english-banner"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
 
 type LinkItem = { href: string; label: string }
+type Booking = { href: string; target?: string; rel?: string }
 
 export function Header({
   locale,
@@ -16,7 +17,8 @@ export function Header({
   homeHref,
   links,
   cta,
-  ctaHref,
+  ctaShort,
+  booking,
   labels,
   page,
   banner,
@@ -26,7 +28,8 @@ export function Header({
   homeHref: string
   links: LinkItem[]
   cta: string
-  ctaHref: string
+  ctaShort: string
+  booking: Booking
   labels: { nav: string; lang: string; openMenu: string; closeMenu: string }
   page: SitePage
   banner: { message: string; action: string; dismiss: string } | null
@@ -81,17 +84,20 @@ export function Header({
 
         <div className="ml-auto hidden items-center gap-4 lg:flex">
           <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
-          <a href={ctaHref} className="btn btn-primary" onClick={() => track("cta_click")}>
+          <a {...booking} className="btn btn-primary" onClick={() => track("cta_click")}>
             {cta}
           </a>
         </div>
 
-        <div className="ml-auto flex items-center gap-3 lg:hidden">
+        <div className="ml-auto flex items-center gap-2 sm:gap-3 lg:hidden">
           <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
+          <a {...booking} className="btn btn-primary btn-sm" onClick={() => track("cta_click")}>
+            {ctaShort}
+          </a>
           <button
             ref={buttonRef}
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-line"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-line"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? labels.closeMenu : labels.openMenu}
@@ -117,7 +123,7 @@ export function Header({
               </a>
             ))}
             <a
-              href={ctaHref}
+              {...booking}
               className="btn btn-primary mt-3 w-full"
               onClick={() => {
                 track("cta_click")

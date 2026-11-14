@@ -14,7 +14,7 @@ Both pages are generated on the server from the same components. Do not put sent
 | Page title and meta description | `content/es.json` → `meta` | `content/en.json` → `meta` |
 | Header links and “Agendar conversación” / “Book a call” | `nav` | `nav` |
 | Hero, including the trust line | `hero` | `hero` |
-| Opening statement | `statement` | `statement` |
+| Closing line of the three pillars | `position.closing` | `position.closing` |
 | The results we aim for | `outcomes` | `outcomes` |
 | What we see | `problem` | `problem` |
 | How we think about the work | `approach` | `approach` |

@@ -49,7 +49,8 @@
     "how": "How we work",
     "why": "Why SmartMark",
     "contact": "Contact",
-    "cta": "Book a call"
+    "cta": "Book a call",
+    "ctaShort": "Book a call"
   },
   "hero": {
     "eyebrow": "AI consulting",
@@ -70,9 +71,9 @@
       { "label": "Where", "text": "In the processes that cost you the most time, errors, or money." },
       { "label": "How", "text": "With your team and the tools you already have, so they learn to do it themselves." },
       { "label": "What for", "text": "Results you can measure: hours saved, fewer errors, faster responses." }
-    ]
+    ],
+    "closing": "It's not about using AI everywhere. It's about using it where it changes the results."
   },
-  "statement": "It's not about using AI everywhere. It's about using it where it changes the results.",
   "problem": {
     "title": "What we see",
     "lead": "We talk with companies that were quoted a very high price for an AI system. The work underneath was repetitive: it could be automated, and the team could learn to maintain it.",

@@ -8,7 +8,7 @@ import { TrackedLink } from "@/components/site/tracked-link"
 import { WhatsAppButton } from "@/components/site/whatsapp-button"
 import { homePath, serviceOptions, type Dictionary, type Locale } from "@/lib/i18n"
 import { pagePath, type SitePage } from "@/lib/routes"
-import { EMAIL, LINKEDIN_URL, whatsappHref } from "@/lib/site"
+import { bookingLink, EMAIL, LINKEDIN_URL, whatsappHref } from "@/lib/site"
 
 export default function Landing({
   locale,
@@ -21,6 +21,7 @@ export default function Landing({
 }) {
   const home = homePath(locale)
   const contactHref = pagePath(locale, "contact")
+  const booking = bookingLink(contactHref)
   const options = serviceOptions(dict)
   const whatsapp = whatsappHref(dict.whatsapp.message)
   const year = new Date().getFullYear()
@@ -43,7 +44,8 @@ export default function Landing({
         homeHref={home}
         links={links}
         cta={dict.nav.cta}
-        ctaHref={contactHref}
+        ctaShort={dict.nav.ctaShort}
+        booking={booking}
         labels={dict.a11y}
         page={page}
         banner={locale === "es" ? dict.banner : null}
@@ -66,7 +68,7 @@ export default function Landing({
             </h1>
             <p className="lede">{dict.hero.subtitle}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <TrackedLink href={contactHref} className="btn btn-primary" event="cta_click">
+              <TrackedLink {...booking} className="btn btn-primary" event="cta_click">
                 {dict.hero.primary}
               </TrackedLink>
               <a href={pagePath(locale, "services")} className="btn btn-ghost">
@@ -95,11 +97,8 @@ export default function Landing({
                 </li>
               ))}
             </ul>
+            <p className="position-closing">{dict.position.closing}</p>
           </div>
-        </section>
-
-        <section className="statement" aria-label={dict.statement}>
-          <p className="shell">{dict.statement}</p>
         </section>
 
         <section className="section" aria-labelledby="resultados-title">
@@ -482,7 +481,7 @@ export default function Landing({
                     {dict.finalCta[page].button}
                   </a>
                 ) : (
-                  <TrackedLink href={contactHref} className="btn final-cta-btn" event="cta_click">
+                  <TrackedLink {...booking} className="btn final-cta-btn" event="cta_click">
                     {dict.finalCta[page].button}
                   </TrackedLink>
                 )}

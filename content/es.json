@@ -49,7 +49,8 @@
     "how": "Cómo trabajamos",
     "why": "Por qué SmartMark",
     "contact": "Contacto",
-    "cta": "Agendar conversación"
+    "cta": "Agendar conversación",
+    "ctaShort": "Agendar"
   },
   "hero": {
     "eyebrow": "Consultoría en inteligencia artificial",
@@ -70,9 +71,9 @@
       { "label": "Dónde", "text": "En los procesos que más tiempo, errores o dinero le cuestan." },
       { "label": "Cómo", "text": "Con su equipo y con las herramientas que ya tiene, para que aprendan a hacerlo." },
       { "label": "Para qué", "text": "Resultados que se miden: horas recuperadas, menos errores, respuestas más rápidas." }
-    ]
+    ],
+    "closing": "No se trata de usar IA en todo. Se trata de usarla donde cambia los resultados."
   },
-  "statement": "No se trata de usar IA en todo. Se trata de usarla donde cambia los resultados.",
   "problem": {
     "title": "Lo que vemos",
     "lead": "Conversamos con empresas a las que les cotizaron un sistema de inteligencia artificial por un monto muy alto. El trabajo de fondo era repetitivo: se podía automatizar, y el equipo podía aprender a mantenerlo.",
