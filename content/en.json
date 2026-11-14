@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "Contact: Book a Call About AI | SmartMark",
-        "description": "Tell us what repeats in your operation. We schedule a conversation and reply with a scope within 48 hours."
+        "description": "Tell us what you want to improve in your operation. We reply within 48 hours. In English and Spanish, remote or on-site."
       }
     }
   },
@@ -419,6 +419,11 @@
   "contact": {
     "title": "Let's talk about where AI can make a difference in your company.",
     "text": "Tell us what you want to improve. In a free 45-minute call, we'll tell you where AI makes sense and what results to expect.",
+    "promises": [
+      "Reply within 48 hours",
+      "First 45-minute call is free",
+      "No commitment, no license sales"
+    ],
     "emailLabel": "Email",
     "whatsappLabel": "WhatsApp",
     "linkedinLabel": "LinkedIn"
@@ -428,16 +433,23 @@
     "namePlaceholder": "Your name",
     "company": "Company",
     "companyPlaceholder": "Company name",
-    "role": "Role",
-    "rolePlaceholder": "Your role",
     "email": "Email",
     "emailPlaceholder": "name@company.com",
     "phone": "Phone / WhatsApp (optional)",
     "phonePlaceholder": "+1 000 000 0000",
+    "contactMethod": "How would you like us to contact you?",
+    "contactMethodPlaceholder": "Select an option",
+    "contactMethods": [
+      { "value": "call", "label": "Phone call" },
+      { "value": "whatsapp", "label": "WhatsApp" },
+      { "value": "email", "label": "Email" }
+    ],
+    "phoneNeeded": "Add a phone number so we can call you or message you on WhatsApp.",
     "country": "Country",
     "countryPlaceholder": "Select a country",
     "service": "Service of interest",
     "servicePlaceholder": "Select a service",
+    "serviceOther": "Something else",
     "message": "Message",
     "messagePlaceholder": "Tell us what you want to improve.",
     "submit": "Send message",
@@ -445,7 +457,7 @@
     "requiredNote": "Fields marked with * are required.",
     "required": "Please fill in this field.",
     "emailInvalid": "Enter a valid email.",
-    "success": "Message sent. We'll get back to you within 48 hours.",
+    "success": "Thank you. We'll write back within 48 hours to schedule the call.",
     "error": "We couldn't send your message. Try again or email us.",
     "countries": [
       { "value": "AR", "label": "Argentina" },

@@ -58,6 +58,11 @@ function assertParity() {
     es.form.countries.map((country) => country.value),
     en.form.countries.map((country) => country.value),
   )
+  assertSameList(
+    "contact methods",
+    es.form.contactMethods.map((method) => method.value),
+    en.form.contactMethods.map((method) => method.value),
+  )
   assertMetaLength("es", es.meta.pages)
   assertMetaLength("en", en.meta.pages)
 }
@@ -98,6 +103,7 @@ export function serviceOptions(dict: Dictionary) {
   return [
     ...dict.services.items.map((item) => ({ value: item.id, label: item.title })),
     { value: dict.services.talks.id, label: dict.services.talks.title },
+    { value: "other", label: dict.form.serviceOther },
   ]
 }
 

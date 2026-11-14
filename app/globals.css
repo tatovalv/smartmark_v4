@@ -993,6 +993,37 @@ footer :focus-visible,
 .contact-note .text-brand-secondary { color: var(--color-logo); }
 .contact-note a { color: white; }
 
+.form-trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-promises {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid color-mix(in srgb, white 18%, transparent);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.contact-promises li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.contact-promises li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
 @media (min-width: 640px) {
   .shell { padding-inline: 1.5rem; }
   .hero-copy,
@@ -1095,7 +1126,11 @@ footer :focus-visible,
     align-items: start;
   }
 
-  .contact-note { margin-top: 3.25rem; }
+  .contact-note {
+    position: sticky;
+    top: calc(var(--header-offset) + 1.5rem);
+    margin-top: 3.25rem;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

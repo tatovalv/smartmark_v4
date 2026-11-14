@@ -7,9 +7,10 @@ export const LINKEDIN_URL = "https://www.linkedin.com/company/smartmark-consulto
 /**
  * WhatsApp number in international format, digits only.
  * Example for Costa Rica: "50688888888".
- * Leave empty until the number is ready — the button stays hidden.
+ * Non-digits are ignored, so the placeholder keeps the button hidden until
+ * the real number replaces it.
  */
-export const WHATSAPP_NUMBER = ""
+export const WHATSAPP_NUMBER = "[NUMERO_WHATSAPP]"
 
 export function whatsappHref(message: string): string | null {
   const digits = WHATSAPP_NUMBER.replace(/\D/g, "")

@@ -104,12 +104,28 @@ function servicesJsonLd(locale: Locale, dict: Dictionary) {
   }
 }
 
+function contactPageJsonLd(locale: Locale, dict: Dictionary) {
+  const url = absolute(locale, "contact")
+
+  return {
+    "@type": "ContactPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: dict.meta.pages.contact.title,
+    description: dict.meta.pages.contact.description,
+    inLanguage: locale === "en" ? "en" : "es",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    mainEntity: { "@id": `${SITE_URL}/#organization` },
+  }
+}
+
 export function StructuredData({ locale, dict, page }: { locale: Locale; dict: Dictionary; page: SitePage }) {
   const graph = [
     organizationJsonLd(locale, dict),
     websiteJsonLd(locale),
     ...(page === "home" ? [] : [breadcrumbJsonLd(locale, page, dict)]),
     ...(page === "services" ? [servicesJsonLd(locale, dict)] : []),
+    ...(page === "contact" ? [contactPageJsonLd(locale, dict)] : []),
   ]
 
   return (

@@ -20,9 +20,51 @@ function clean(value: unknown, max: number) {
   return value.trim().slice(0, max)
 }
 
+const MIN_FILL_MS = 3000
+const RATE_LIMIT = 5
+const RATE_WINDOW_MS = 10 * 60 * 1000
+
+// In-memory and per server instance: enough for this volume, but it resets on
+// redeploys and is not shared between instances. Move to a shared store
+// (Redis, DynamoDB) if spam grows.
+const submissions = new Map<string, number[]>()
+
+function rateLimited(ip: string) {
+  const now = Date.now()
+  const recent = (submissions.get(ip) ?? []).filter((time) => now - time < RATE_WINDOW_MS)
+  if (recent.length >= RATE_LIMIT) {
+    submissions.set(ip, recent)
+    return true
+  }
+  recent.push(now)
+  submissions.set(ip, recent)
+  if (submissions.size > 5000) {
+    for (const [key, times] of submissions) {
+      if (times.every((time) => now - time >= RATE_WINDOW_MS)) submissions.delete(key)
+    }
+  }
+  return false
+}
+
+function clientIp(request: NextRequest) {
+  return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "unknown"
+}
+
 export async function POST(request: NextRequest) {
   try {
+    if (rateLimited(clientIp(request))) {
+      return NextResponse.json({ error: "rate" }, { status: 429 })
+    }
+
     const body = await request.json()
+
+    // Honeypot filled or form sent faster than a person can type: answer as if
+    // it worked so bots don't learn to adapt, but send nothing.
+    const elapsed = typeof body.elapsed === "number" ? body.elapsed : 0
+    if (clean(body.website, 200) || elapsed < MIN_FILL_MS) {
+      return NextResponse.json({ ok: true })
+    }
+
     const idioma = clean(body.idioma, 2)
     if (!isLocale(idioma)) {
       return NextResponse.json({ error: "missing" }, { status: 400 })
@@ -32,18 +74,20 @@ export async function POST(request: NextRequest) {
     const dict = getDictionary(locale)
     const name = clean(body.name, 120)
     const company = clean(body.company, 160)
-    const role = clean(body.role, 120)
     const email = clean(body.email, 160)
     const phone = clean(body.phone, 40)
+    const contactMethod = clean(body.contactMethod, 12)
     const country = clean(body.country, 12)
     const service = clean(body.service, 40)
     const message = clean(body.message, 5000)
 
     const countryLabel = dict.form.countries.find((item) => item.value === country)?.label
     const serviceLabel = serviceOptions(dict).find((item) => item.value === service)?.label
+    const methodLabel = dict.form.contactMethods.find((item) => item.value === contactMethod)?.label
     const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    const phoneOk = contactMethod === "email" || Boolean(phone)
 
-    if (!name || !company || !role || !email || !countryLabel || !serviceLabel || !message || !emailOk) {
+    if (!name || !company || !email || !methodLabel || !phoneOk || !countryLabel || !serviceLabel || !message || !emailOk) {
       return NextResponse.json({ error: email && !emailOk ? "email" : "missing" }, { status: 400 })
     }
 
@@ -54,14 +98,17 @@ export async function POST(request: NextRequest) {
     }
 
     const resend = new Resend(apiKey)
+    // onboarding@resend.dev is Resend's test sender and usually lands in spam.
+    // In production, set RESEND_FROM_EMAIL to an address on smartmarkconsultores.com
+    // after verifying the domain in Resend.
     const fromEmail = process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"
-    const toEmail = process.env.RESEND_TO_EMAIL || "jc@smartmarkconsultores.com"
+    const toEmail = process.env.RESEND_TO_EMAIL || "info@smartmarkconsultores.com"
     const safe = {
       name: escapeHtml(name),
       company: escapeHtml(company),
-      role: escapeHtml(role),
       email: escapeHtml(email),
       phone: escapeHtml(phone || "—"),
+      method: escapeHtml(methodLabel),
       country: escapeHtml(countryLabel),
       service: escapeHtml(serviceLabel),
       message: escapeHtml(message).replace(/\n/g, "<br>"),
@@ -79,9 +126,9 @@ export async function POST(request: NextRequest) {
           <p><strong>Idioma:</strong> ${safe.idioma}</p>
           <p><strong>Nombre:</strong> ${safe.name}</p>
           <p><strong>Empresa:</strong> ${safe.company}</p>
-          <p><strong>Cargo:</strong> ${safe.role}</p>
           <p><strong>Email:</strong> ${safe.email}</p>
           <p><strong>Teléfono:</strong> ${safe.phone}</p>
+          <p><strong>Prefiere contacto por:</strong> ${safe.method}</p>
           <p><strong>País:</strong> ${safe.country}</p>
           <p><strong>Servicio:</strong> ${safe.service}</p>
           <p><strong>Mensaje:</strong><br>${safe.message}</p>
@@ -92,9 +139,9 @@ export async function POST(request: NextRequest) {
         `Idioma: ${locale}`,
         `Nombre: ${name}`,
         `Empresa: ${company}`,
-        `Cargo: ${role}`,
         `Email: ${email}`,
         `Teléfono: ${phone || "—"}`,
+        `Prefiere contacto por: ${methodLabel}`,
         `País: ${countryLabel}`,
         `Servicio: ${serviceLabel}`,
         "",

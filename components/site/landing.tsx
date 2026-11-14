@@ -436,6 +436,11 @@ export default function Landing({
                 <ContactForm locale={locale} copy={dict.form} services={options} />
               </div>
               <aside className="contact-note">
+              <ul className="contact-promises">
+                {dict.contact.promises.map((promise) => (
+                  <li key={promise}>{promise}</li>
+                ))}
+              </ul>
               <ul className="space-y-5">
                 <li>
                   <p className="text-sm font-semibold text-brand-secondary">{dict.contact.emailLabel}</p>

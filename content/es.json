@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "Contacto: agende una conversación sobre IA | SmartMark",
-        "description": "Cuéntenos qué se repite en su operación. Agendamos una conversación y respondemos con un alcance en 48 horas."
+        "description": "Cuéntenos qué quiere mejorar en su operación. Le respondemos en menos de 48 horas. Atención en español e inglés, virtual o presencial."
       }
     }
   },
@@ -419,6 +419,11 @@
   "contact": {
     "title": "Hablemos de dónde la IA puede marcar la diferencia en su empresa.",
     "text": "Cuéntenos qué quiere mejorar. En una conversación de 45 minutos, sin costo, le decimos dónde conviene aplicar IA y qué resultados puede esperar.",
+    "promises": [
+      "Respuesta en menos de 48 horas",
+      "Primera conversación de 45 minutos sin costo",
+      "Sin compromiso ni venta de licencias"
+    ],
     "emailLabel": "Correo",
     "whatsappLabel": "WhatsApp",
     "linkedinLabel": "LinkedIn"
@@ -428,16 +433,23 @@
     "namePlaceholder": "Su nombre",
     "company": "Empresa",
     "companyPlaceholder": "Nombre de la empresa",
-    "role": "Cargo",
-    "rolePlaceholder": "Su cargo",
     "email": "Correo electrónico",
     "emailPlaceholder": "correo@empresa.com",
     "phone": "Teléfono / WhatsApp (opcional)",
     "phonePlaceholder": "+506 0000 0000",
+    "contactMethod": "¿Cómo prefiere que le contactemos?",
+    "contactMethodPlaceholder": "Seleccione una opción",
+    "contactMethods": [
+      { "value": "call", "label": "Llamada" },
+      { "value": "whatsapp", "label": "WhatsApp" },
+      { "value": "email", "label": "Correo" }
+    ],
+    "phoneNeeded": "Indique un teléfono para contactarle por llamada o WhatsApp.",
     "country": "País",
     "countryPlaceholder": "Seleccione un país",
     "service": "Servicio de interés",
     "servicePlaceholder": "Seleccione un servicio",
+    "serviceOther": "Otra necesidad",
     "message": "Mensaje",
     "messagePlaceholder": "Cuéntenos qué quiere mejorar.",
     "submit": "Enviar mensaje",
@@ -445,7 +457,7 @@
     "requiredNote": "Los campos con * son obligatorios.",
     "required": "Complete este campo.",
     "emailInvalid": "Ingrese un correo válido.",
-    "success": "Mensaje enviado. Le responderemos en menos de 48 horas.",
+    "success": "Gracias. Le escribiremos en menos de 48 horas para coordinar la conversación.",
     "error": "No pudimos enviar el mensaje. Inténtelo de nuevo o escríbanos por correo.",
     "countries": [
       { "value": "AR", "label": "Argentina" },

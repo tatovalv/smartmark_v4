@@ -1,6 +1,7 @@
 "use client"
 
-import { useEffect, useState, type FormEvent, type ReactNode } from "react"
+import { useSearchParams } from "next/navigation"
+import { Suspense, useCallback, useEffect, useRef, useState, type FormEvent, type ReactNode } from "react"
 import { track } from "@/lib/analytics"
 import type { Dictionary, Locale } from "@/lib/i18n"
 import { EMAIL } from "@/lib/site"
@@ -8,14 +9,14 @@ import { EMAIL } from "@/lib/site"
 type FormCopy = Dictionary["form"]
 type Option = { value: string; label: string }
 type Status = "idle" | "sending" | "success" | "error"
-type Errors = Partial<Record<"name" | "company" | "role" | "email" | "country" | "service" | "message", string>>
+type Errors = Partial<Record<"name" | "company" | "email" | "phone" | "contactMethod" | "country" | "service" | "message", string>>
 
 const empty = {
   name: "",
   company: "",
-  role: "",
   email: "",
   phone: "",
+  contactMethod: "",
   country: "",
   service: "",
   message: "",
@@ -33,29 +34,17 @@ export function ContactForm({
   const [values, setValues] = useState(empty)
   const [errors, setErrors] = useState<Errors>({})
   const [status, setStatus] = useState<Status>("idle")
+  const [website, setWebsite] = useState("")
+  const loadedAt = useRef(0)
 
   useEffect(() => {
-    const apply = () => {
-      const selected = new URLSearchParams(window.location.search).get("servicio")
-      if (selected && services.some((service) => service.value === selected)) {
-        setValues((current) => ({ ...current, service: selected }))
-        setErrors((current) => ({ ...current, service: undefined }))
-      }
-    }
-    apply()
-    const onSelect = (event: Event) => {
-      const selected = (event as CustomEvent<string>).detail
-      if (!services.some((service) => service.value === selected)) return
-      setValues((current) => ({ ...current, service: selected }))
-      setErrors((current) => ({ ...current, service: undefined }))
-    }
-    window.addEventListener("sm:select-service", onSelect)
-    window.addEventListener("popstate", apply)
-    return () => {
-      window.removeEventListener("sm:select-service", onSelect)
-      window.removeEventListener("popstate", apply)
-    }
-  }, [services])
+    loadedAt.current = Date.now()
+  }, [])
+
+  const selectService = useCallback((selected: string) => {
+    setValues((current) => ({ ...current, service: selected }))
+    setErrors((current) => ({ ...current, service: undefined }))
+  }, [])
 
   function update(field: keyof typeof empty, value: string) {
     setValues((current) => ({ ...current, [field]: value }))
@@ -68,9 +57,10 @@ export function ContactForm({
     const next: Errors = {}
     if (!values.name.trim()) next.name = copy.required
     if (!values.company.trim()) next.company = copy.required
-    if (!values.role.trim()) next.role = copy.required
     if (!values.email.trim()) next.email = copy.required
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email.trim())) next.email = copy.emailInvalid
+    if (!values.contactMethod) next.contactMethod = copy.required
+    else if (values.contactMethod !== "email" && !values.phone.trim()) next.phone = copy.phoneNeeded
     if (!values.country) next.country = copy.required
     if (!values.service) next.service = copy.required
     if (!values.message.trim()) next.message = copy.required
@@ -90,13 +80,15 @@ export function ContactForm({
         body: JSON.stringify({
           name: values.name.trim(),
           company: values.company.trim(),
-          role: values.role.trim(),
           email: values.email.trim(),
           phone: values.phone.trim(),
+          contactMethod: values.contactMethod,
           country: values.country,
           service: values.service,
           message: values.message.trim(),
           idioma: locale,
+          website,
+          elapsed: loadedAt.current ? Date.now() - loadedAt.current : 0,
         }),
       })
       if (!response.ok) {
@@ -128,6 +120,21 @@ export function ContactForm({
   return (
     <form className="grid gap-4" onSubmit={onSubmit} noValidate>
       <input type="hidden" name="idioma" value={locale} />
+      <Suspense fallback={null}>
+        <ServiceFromUrl locale={locale} services={services} onSelect={selectService} />
+      </Suspense>
+      <div className="form-trap" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={website}
+          onChange={(event) => setWebsite(event.target.value)}
+        />
+      </div>
       <p className="text-sm text-brand-muted">{copy.requiredNote}</p>
 
       {status === "error" ? (
@@ -163,18 +170,6 @@ export function ContactForm({
           onChange={(event) => update("company", event.target.value)}
         />
       </Field>
-      <Field id="role" label={copy.role} required error={errors.role}>
-        <input
-          id="role"
-          name="role"
-          autoComplete="organization-title"
-          placeholder={copy.rolePlaceholder}
-          value={values.role}
-          aria-invalid={errors.role ? true : undefined}
-          aria-describedby={errors.role ? "role-error" : undefined}
-          onChange={(event) => update("role", event.target.value)}
-        />
-      </Field>
       <Field id="email" label={copy.email} required error={errors.email}>
         <input
           id="email"
@@ -189,7 +184,7 @@ export function ContactForm({
           onChange={(event) => update("email", event.target.value)}
         />
       </Field>
-      <Field id="phone" label={copy.phone}>
+      <Field id="phone" label={copy.phone} error={errors.phone}>
         <input
           id="phone"
           name="phone"
@@ -198,8 +193,30 @@ export function ContactForm({
           inputMode="tel"
           placeholder={copy.phonePlaceholder}
           value={values.phone}
+          aria-invalid={errors.phone ? true : undefined}
+          aria-describedby={errors.phone ? "phone-error" : undefined}
           onChange={(event) => update("phone", event.target.value)}
         />
+      </Field>
+      <Field id="contactMethod" label={copy.contactMethod} required error={errors.contactMethod}>
+        <select
+          id="contactMethod"
+          name="contactMethod"
+          value={values.contactMethod}
+          aria-invalid={errors.contactMethod ? true : undefined}
+          aria-describedby={errors.contactMethod ? "contactMethod-error" : undefined}
+          onChange={(event) => {
+            update("contactMethod", event.target.value)
+            setErrors((current) => ({ ...current, phone: undefined }))
+          }}
+        >
+          <option value="">{copy.contactMethodPlaceholder}</option>
+          {copy.contactMethods.map((method) => (
+            <option key={method.value} value={method.value}>
+              {method.label}
+            </option>
+          ))}
+        </select>
       </Field>
       <Field id="country" label={copy.country} required error={errors.country}>
         <select
@@ -254,6 +271,24 @@ export function ContactForm({
       </button>
     </form>
   )
+}
+
+function ServiceFromUrl({
+  locale,
+  services,
+  onSelect,
+}: {
+  locale: Locale
+  services: Option[]
+  onSelect: (value: string) => void
+}) {
+  const selected = useSearchParams().get(locale === "en" ? "service" : "servicio")
+
+  useEffect(() => {
+    if (selected && services.some((service) => service.value === selected)) onSelect(selected)
+  }, [selected, services, onSelect])
+
+  return null
 }
 
 function Field({
