@@ -6,10 +6,10 @@ import { buildMetadata } from "@/lib/seo"
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   if (!isLocale(params.locale)) return {}
-  return buildMetadata(params.locale)
+  return buildMetadata(params.locale, "home")
 }
 
 export default function Page({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) notFound()
-  return <Landing locale={params.locale} dict={getDictionary(params.locale)} />
+  return <Landing locale={params.locale} dict={getDictionary(params.locale)} page="home" />
 }

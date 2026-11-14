@@ -4,19 +4,29 @@ import { Header } from "@/components/site/header"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
 import { WhatsAppButton } from "@/components/site/whatsapp-button"
 import { homePath, serviceOptions, type Dictionary, type Locale } from "@/lib/i18n"
+import { pagePath, type SitePage } from "@/lib/routes"
 import { EMAIL, LINKEDIN_URL, SITE_URL, whatsappHref } from "@/lib/site"
 
-export default function Landing({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+export default function Landing({
+  locale,
+  dict,
+  page,
+}: {
+  locale: Locale
+  dict: Dictionary
+  page: SitePage
+}) {
   const home = homePath(locale)
+  const contactHref = pagePath(locale, "contact")
   const options = serviceOptions(dict)
   const whatsapp = whatsappHref(dict.whatsapp.message)
   const year = new Date().getFullYear()
   const links = [
-    { href: "#servicios", label: dict.nav.services },
-    { href: "#casos", label: dict.nav.cases },
-    { href: "#como-trabajamos", label: dict.nav.how },
-    { href: "#por-que", label: dict.nav.why },
-    { href: "#contacto", label: dict.nav.contact },
+    { href: pagePath(locale, "services"), label: dict.nav.services },
+    { href: pagePath(locale, "cases"), label: dict.nav.cases },
+    { href: pagePath(locale, "how"), label: dict.nav.how },
+    { href: pagePath(locale, "why"), label: dict.nav.why },
+    { href: contactHref, label: dict.nav.contact },
   ]
 
   return (
@@ -30,10 +40,14 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
         homeHref={home}
         links={links}
         cta={dict.nav.cta}
+        ctaHref={contactHref}
         labels={dict.a11y}
+        page={page}
         banner={locale === "es" ? dict.banner : null}
       />
       <main id="contenido">
+        {page === "home" ? (
+        <>
         <section className="hero">
           <div className="hero-constellation">
             <KnowledgeField />
@@ -43,10 +57,10 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             <h1 className="display">{dict.hero.title}</h1>
             <p className="lede">{dict.hero.subtitle}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#contacto" className="btn btn-primary">
+              <a href={contactHref} className="btn btn-primary">
                 {dict.hero.primary}
               </a>
-              <a href="#servicios" className="btn btn-ghost">
+              <a href={pagePath(locale, "services")} className="btn btn-ghost">
                 {dict.hero.secondary}
               </a>
             </div>
@@ -59,6 +73,19 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
               </li>
             ))}
           </ol>
+        </section>
+
+        <section className="position-banner" aria-labelledby="posicion-title">
+          <div className="shell">
+            <h2 id="posicion-title">{dict.position.title}</h2>
+            <p className="position-lines">
+              {dict.position.lines.map((line, index) => (
+                <span key={line} className={index === dict.position.lines.length - 1 ? "is-accent" : undefined}>
+                  {line}
+                </span>
+              ))}
+            </p>
+          </div>
         </section>
 
         <section className="statement" aria-label={dict.statement}>
@@ -118,17 +145,23 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             </div>
           </div>
         </section>
+        </>
+        ) : null}
 
+        {page === "cases" ? (
         <section id="casos" className="cases-band" aria-labelledby="casos-title">
           <div className="shell">
-            <h2 id="casos-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 id="casos-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.cases.title}
-            </h2>
+            </h1>
             <p className="lede">{dict.cases.lead}</p>
             <CaseBoard cases={dict.cases} />
           </div>
         </section>
+        ) : null}
 
+        {page === "home" ? (
+        <>
         <section className="blueprint" aria-labelledby="criterio-title">
           <div className="shell">
             <div className="max-w-3xl">
@@ -148,13 +181,16 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             </div>
           </div>
         </section>
+        </>
+        ) : null}
 
+        {page === "services" ? (
         <section id="servicios" className="section" aria-labelledby="servicios-title">
           <div className="shell">
             <div className="max-w-3xl">
-              <h2 id="servicios-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h1 id="servicios-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
                 {dict.services.title}
-              </h2>
+              </h1>
               <p className="lede">{dict.services.intro}</p>
             </div>
             <div className="sheet-list">
@@ -183,18 +219,20 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
                 <h3>{dict.services.ctaTitle}</h3>
                 <p>{dict.services.ctaText}</p>
               </div>
-              <a href="#contacto" className="btn services-cta-btn">
+              <a href={contactHref} className="btn services-cta-btn">
                 {dict.services.quote}
               </a>
             </div>
           </div>
         </section>
+        ) : null}
 
+        {page === "how" ? (
         <section id="como-trabajamos" className="section" aria-labelledby="como-title">
           <div className="shell">
-            <h2 id="como-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 id="como-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.how.title}
-            </h2>
+            </h1>
             <ol className="spine">
               {dict.how.steps.map((step, index) => (
                 <li key={step.title}>
@@ -207,12 +245,14 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             </ol>
           </div>
         </section>
+        ) : null}
 
+        {page === "why" ? (
         <section id="por-que" className="section" aria-labelledby="porque-title">
           <div className="shell">
-            <h2 id="porque-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 id="porque-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.why.title}
-            </h2>
+            </h1>
             <p className="lede">{dict.why.lead}</p>
             <div className="why-band">
               {dict.why.items.map((item, index) => (
@@ -225,7 +265,9 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             </div>
           </div>
         </section>
+        ) : null}
 
+        {page === "home" ? (
         <section className="section bg-white" aria-labelledby="faq-title">
           <div className="shell">
           <div className="max-w-3xl">
@@ -248,12 +290,14 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
           </div>
           </div>
         </section>
+        ) : null}
 
+        {page === "contact" ? (
         <section id="contacto" className="section" aria-labelledby="contacto-title">
           <div className="shell">
-            <h2 id="contacto-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 id="contacto-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {dict.contact.title}
-            </h2>
+            </h1>
             <p className="lede">{dict.contact.text}</p>
             <div className="contact-stage">
               <div className="contact-sheet">
@@ -287,6 +331,7 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
             </div>
           </div>
         </section>
+        ) : null}
       </main>
 
       <footer className="bg-brand-secondary text-white">
@@ -308,7 +353,7 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
                 {dict.contact.linkedinLabel}
               </a>
             </nav>
-            <LanguageSwitcher locale={locale} label={dict.a11y.lang} tone="dark" />
+            <LanguageSwitcher locale={locale} label={dict.a11y.lang} page={page} tone="dark" />
           </div>
         </div>
         <div className="border-t border-white/15">
@@ -319,7 +364,7 @@ export default function Landing({ locale, dict }: { locale: Locale; dict: Dictio
       </footer>
 
       {whatsapp ? <WhatsAppButton href={whatsapp} label={dict.whatsapp.label} /> : null}
-      <JsonLd locale={locale} dict={dict} />
+      {page === "home" ? <JsonLd locale={locale} dict={dict} /> : null}
     </>
   )
 }

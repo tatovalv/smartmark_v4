@@ -2,47 +2,40 @@
 
 import { useEffect, useState, type MouseEvent } from "react"
 import type { Locale } from "@/lib/i18n"
+import { pagePath, type SitePage } from "@/lib/routes"
 import { rememberLocale } from "@/components/site/locale-storage"
-
-function hrefFor(target: Locale) {
-  const { hash, search } = window.location
-  const base = target === "en" ? "/en" : "/"
-  return `${base}${search}${hash}`
-}
 
 export function LanguageSwitcher({
   locale,
   label,
+  page,
   tone = "light",
 }: {
   locale: Locale
   label: string
+  page: SitePage
   tone?: "light" | "dark"
 }) {
-  const [suffix, setSuffix] = useState("")
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
-    const read = () => setSuffix(`${window.location.search}${window.location.hash}`)
+    const read = () => setSearch(window.location.search)
     read()
-    window.addEventListener("hashchange", read)
     window.addEventListener("popstate", read)
-    return () => {
-      window.removeEventListener("hashchange", read)
-      window.removeEventListener("popstate", read)
-    }
+    return () => window.removeEventListener("popstate", read)
   }, [])
 
   const go = (target: Locale) => (event: MouseEvent<HTMLAnchorElement>) => {
     rememberLocale(target)
-    const next = hrefFor(target)
+    const next = `${pagePath(target, page)}${window.location.search}`
     event.currentTarget.href = next
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
     event.preventDefault()
     window.location.assign(next)
   }
 
-  const esHref = `/${suffix}`
-  const enHref = `/en${suffix}`
+  const esHref = `${pagePath("es", page)}${search}`
+  const enHref = `${pagePath("en", page)}${search}`
 
   const itemClass = (active: boolean) => {
     if (tone === "dark") {

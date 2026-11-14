@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "SmartMark Consultores | AI & Automation for Companies in Latin America",
-    "description": "Workshops, automations, and AI agents for business teams. Your team learns to build and use AI with the tools it already has.",
+    "description": "Artificial intelligence applies to repetitive work, not to a giant system. We automate that work with your team and the tools you already have.",
     "ogAlt": "SmartMark Consultores"
   },
   "logoAlt": "SmartMark Consultores",
@@ -28,8 +28,8 @@
   "hero": {
     "eyebrow": "AI consulting · Costa\u00a0Rica and Latin America",
     "stageLabel": "Why talk with SmartMark",
-    "title": "AI your team will actually use.",
-    "subtitle": "We help business teams across Latin America automate processes, build AI agents, and learn to do it themselves — using the tools they already have.",
+    "title": "Your company needs AI on the work that repeats.",
+    "subtitle": "We have seen AI systems priced far above what the process calls for. What you need is to apply that AI to repetitive work: the work that can be automated.",
     "primary": "Book a call",
     "secondary": "See services",
     "trust": [
@@ -38,22 +38,30 @@
       "Serving all of Latin America in English and Spanish"
     ]
   },
-  "statement": "The difference is not access to a tool. It's that on Monday the team works differently.",
+  "position": {
+    "title": "Your team, powered by AI.",
+    "lines": [
+      "AI where it adds value.",
+      "Automation where it's enough.",
+      "The judgment to know the difference."
+    ]
+  },
+  "statement": "The AI your company needs is the kind that automates the work that repeats.",
   "problem": {
     "title": "What we see",
-    "lead": "Most companies we talk with don't have a technology problem. They have an adoption problem: they tried the tools, and Monday morning looked the same.",
+    "lead": "We talk with companies that were quoted a very high price for an AI system. The work underneath was repetitive: it could be automated, and the team could learn to maintain it.",
     "items": [
       {
-        "title": "Lots of curiosity, few results.",
-        "text": "Your team tried ChatGPT or other tools, but day-to-day work hasn't changed."
+        "title": "A system priced far above the problem.",
+        "text": "A custom platform gets proposed when the case is an email, a report, or an answer that already exists somewhere."
       },
       {
-        "title": "Repetitive work eating up your team's time.",
-        "text": "Emails, reports, copying data between systems, answering the same questions."
+        "title": "The repetitive work stays with the team.",
+        "text": "Email, reports, copying data between systems, answering the same questions. That is where AI applies, and where it can be automated."
       },
       {
-        "title": "Always depending on someone else.",
-        "text": "Every improvement needs a vendor or IT, and your team doesn't know where to start."
+        "title": "The team is left depending on whoever sold it.",
+        "text": "If only the vendor knows how the system works, every change costs again. The solution has to stay with the company."
       }
     ]
   },
@@ -86,7 +94,7 @@
   },
   "approach": {
     "title": "How we think about the work",
-    "lead": "We have spent more than 25 years building software, and the last year building AI agents and training teams at large companies. That combination changes the advice: we know what can actually be done, and what is not worth building.",
+    "lead": "We have spent more than 25 years building software, and the last year building AI agents and training teams at large companies. That combination changes the advice: we know when an AI system is more than the work calls for, and when repetitive work can actually be automated.",
     "items": [
       {
         "title": "We start from the operation",
@@ -102,7 +110,7 @@
       },
       {
         "title": "We will say no",
-        "text": "If the case doesn't justify AI, we say so. Sometimes the better result is a simpler process, not an agent."
+        "text": "If the process is repetitive, we don't build a custom system. We automate it with what you already have. If AI isn't justified, we say that too."
       }
     ]
   },
@@ -204,7 +212,7 @@
   },
   "why": {
     "title": "Why SmartMark",
-    "lead": "Choosing an AI partner is choosing who will explain the work to your team. This is what the advice rests on.",
+    "lead": "Choosing an AI partner is choosing who will tell you whether you need a system, or whether the repetitive work can be automated. This is what the advice rests on.",
     "items": [
       {
         "title": "Real experience",
@@ -226,8 +234,8 @@
   },
   "cases": {
     "title": "Use cases",
-    "lead": "Six kinds of work we ask to see first. These are not ideas. They are pieces a business team can use on Monday, with the tools the company already pays for.",
-    "open": "Tell me more",
+    "lead": "Six kinds of work we ask to see first. These are not custom systems. They are pieces a business team can use on Monday, with the tools the company already pays for.",
+    "open": "Learn more",
     "close": "Close",
     "builtLabel": "What can be built",
     "keepsLabel": "What stays with the team",
@@ -321,7 +329,7 @@
       },
       {
         "q": "How much does it cost?",
-        "a": "It depends on scope. Tell us what you need and we'll send a quote within 48 hours."
+        "a": "Most cases don't call for a custom system. It depends on the process. Tell us what repeats and we'll send a quote within 48 hours."
       }
     ]
   },
@@ -383,8 +391,8 @@
     ]
   },
   "whatsapp": {
-    "label": "Chat on WhatsApp",
-    "message": "Hi, I'd like to talk about how AI can help my team."
+    "label": "Message us on WhatsApp",
+    "message": "Hi, I'd like to talk about AI and automation for my company."
   },
   "footer": {
     "blurb": "AI and automation consulting for companies across Latin America",

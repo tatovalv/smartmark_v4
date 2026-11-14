@@ -8,16 +8,18 @@ export function EnglishBanner({
   message,
   action,
   dismiss,
+  englishHref,
 }: {
   message: string
   action: string
   dismiss: string
+  englishHref: string
 }) {
   const [open, setOpen] = useState(false)
-  const [hash, setHash] = useState("")
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
-    setHash(window.location.hash)
+    setSearch(window.location.search)
     const language = (navigator.language || "").toLowerCase()
     if (!language.startsWith("en")) return
     if (readStorage(LOCALE_KEY) || readStorage(BANNER_KEY)) return
@@ -32,12 +34,12 @@ export function EnglishBanner({
         <p>
           {message}{" "}
           <a
-            href={hash ? `/en${hash}` : "/en"}
+            href={`${englishHref}${search}`}
             hrefLang="en"
             className="font-semibold underline underline-offset-4"
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               rememberLocale("en")
-              const next = `/en${window.location.search}${window.location.hash}`
+              const next = `${englishHref}${window.location.search}`
               event.currentTarget.href = next
               if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
               event.preventDefault()

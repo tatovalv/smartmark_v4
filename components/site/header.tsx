@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Menu, X } from "lucide-react"
 import type { Locale } from "@/lib/i18n"
+import { pagePath, type SitePage } from "@/lib/routes"
 import { EnglishBanner } from "@/components/site/english-banner"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
 
@@ -14,7 +15,9 @@ export function Header({
   homeHref,
   links,
   cta,
+  ctaHref,
   labels,
+  page,
   banner,
 }: {
   locale: Locale
@@ -22,7 +25,9 @@ export function Header({
   homeHref: string
   links: LinkItem[]
   cta: string
+  ctaHref: string
   labels: { nav: string; lang: string; openMenu: string; closeMenu: string }
+  page: SitePage
   banner: { message: string; action: string; dismiss: string } | null
 }) {
   const [open, setOpen] = useState(false)
@@ -54,7 +59,7 @@ export function Header({
   return (
     <header className="sticky top-0 z-50 border-b border-brand-line bg-white/95 backdrop-blur">
       <div className="h-1 bg-brand-primary" />
-      {banner ? <EnglishBanner {...banner} /> : null}
+      {banner ? <EnglishBanner {...banner} englishHref={pagePath("en", page)} /> : null}
       <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
         <a href={homeHref} className="shrink-0 rounded-md" aria-label={logoAlt}>
           <img src="/logo-mark.png" alt="" width={188} height={81} className="h-11 w-auto sm:h-12" />
@@ -62,21 +67,26 @@ export function Header({
 
         <nav aria-label={labels.nav} className="ml-6 hidden items-center gap-5 lg:flex">
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm font-medium text-brand-text hover:text-brand-secondary">
+            <a
+              key={link.href}
+              href={link.href}
+              aria-current={link.href === pagePath(locale, page) ? "page" : undefined}
+              className="text-sm font-medium text-brand-text hover:text-brand-secondary"
+            >
               {link.label}
             </a>
           ))}
         </nav>
 
         <div className="ml-auto hidden items-center gap-4 lg:flex">
-          <LanguageSwitcher locale={locale} label={labels.lang} />
-          <a href="#contacto" className="btn btn-primary">
+          <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
+          <a href={ctaHref} className="btn btn-primary">
             {cta}
           </a>
         </div>
 
         <div className="ml-auto flex items-center gap-3 lg:hidden">
-          <LanguageSwitcher locale={locale} label={labels.lang} />
+          <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
           <button
             ref={buttonRef}
             type="button"
@@ -98,17 +108,18 @@ export function Header({
               <a
                 key={link.href}
                 href={link.href}
+                aria-current={link.href === pagePath(locale, page) ? "page" : undefined}
                 className="rounded-xl px-3 py-3 text-base font-medium hover:bg-brand-surface"
                 onClick={close}
               >
                 {link.label}
               </a>
             ))}
-            <a href="#contacto" className="btn btn-primary mt-3 w-full" onClick={close}>
+            <a href={ctaHref} className="btn btn-primary mt-3 w-full" onClick={close}>
               {cta}
             </a>
             <div className="mt-4 border-t border-brand-line pt-4">
-              <LanguageSwitcher locale={locale} label={labels.lang} />
+              <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
             </div>
           </nav>
         </div>
