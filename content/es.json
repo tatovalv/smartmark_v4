@@ -1,16 +1,13 @@
 {
   "meta": {
-    "title": "SmartMark Consultores | IA y automatización para empresas en Latinoamérica",
-    "description": "La inteligencia artificial se aplica al trabajo repetitivo, no a un sistema enorme. Automatizamos ese trabajo con su equipo y con las herramientas que ya tienen.",
-    "ogAlt": "SmartMark Consultores",
     "pages": {
       "home": {
         "title": "Consultoría en IA y automatización | SmartMark Consultores",
-        "description": "Consultoría en inteligencia artificial para empresas en Costa Rica y Latinoamérica. Le ayudamos a aplicar IA donde importa: procesos, equipo y resultados."
+        "description": "Consultoría en inteligencia artificial para empresas. Le ayudamos a aplicar IA donde importa: en los procesos correctos, con su equipo y con resultados."
       },
       "services": {
         "title": "Servicios de IA y automatización para empresas | SmartMark",
-        "description": "Cinco formas de aplicar IA en su empresa: taller, diagnóstico, automatizaciones, prompts y acompañamiento."
+        "description": "Talleres de IA, diagnóstico de oportunidades, automatizaciones, agentes de IA, prompts y acompañamiento para equipos de negocio."
       },
       "cases": {
         "title": "Casos de uso de IA para equipos de negocio | SmartMark",
@@ -55,7 +52,7 @@
     "cta": "Agendar conversación"
   },
   "hero": {
-    "eyebrow": "Consultoría en inteligencia artificial · Costa\u00a0Rica y Latinoamérica",
+    "eyebrow": "Consultoría en inteligencia artificial",
     "stageLabel": "Por qué conversar con SmartMark",
     "title": "Su empresa necesita IA. Apliquémosla donde realmente importa.",
     "subtitle": "Le ayudamos a definir dónde aplicar la inteligencia artificial en su operación, cómo implementarla con su equipo y qué resultados esperar, con las herramientas que ya tiene.",
@@ -64,7 +61,7 @@
     "trust": [
       "Más de 25 años en tecnología",
       "Capacitaciones y charlas para empresas multinacionales",
-      "Atención en español e inglés en toda Latinoamérica"
+      "Atención en español e inglés, virtual o presencial"
     ]
   },
   "position": {
@@ -139,13 +136,24 @@
     ]
   },
   "services": {
-    "title": "Servicios",
+    "title": "Servicios de inteligencia artificial y automatización para empresas",
     "intro": "Cinco maneras de aplicar IA donde importa, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
     "includes": "Incluye",
+    "audienceLabel": "Para quién",
+    "quote": "Solicitar cotización",
+    "casesLink": "Ver casos de uso →",
+    "preview": {
+      "title": "Cinco maneras de empezar",
+      "lead": "Desde un taller de un día hasta acompañamiento mes a mes, según qué tan adelante esté su equipo.",
+      "link": "Ver todos los servicios →"
+    },
     "items": [
       {
         "id": "workshop",
         "title": "Taller de IA para equipos de negocio",
+        "short": "Su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
+        "audience": "Equipos que quieren empezar a usar IA en su trabajo diario.",
+        "serviceType": "Capacitación en inteligencia artificial",
         "text": "Un taller práctico donde su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
         "points": [
           "Uso efectivo de asistentes de IA en tareas reales del área",
@@ -157,6 +165,9 @@
       {
         "id": "assessment",
         "title": "Diagnóstico de oportunidades de IA y automatización",
+        "short": "Dónde la IA genera más impacto en su operación, y en qué orden abordarlo.",
+        "audience": "Empresas que no saben por dónde empezar o tienen pilotos sin resultados.",
+        "serviceType": "Consultoría en inteligencia artificial",
         "text": "Identificamos dónde la IA y la automatización generan más impacto en su operación, y en qué orden abordarlo.",
         "points": [
           "Entrevistas con las áreas clave y mapeo de procesos",
@@ -168,6 +179,9 @@
       {
         "id": "automation",
         "title": "Automatizaciones y agentes de IA (con su equipo)",
+        "short": "Automatizaciones y agentes construidos con su equipo, que después ellos mantienen.",
+        "audience": "Áreas con tareas repetitivas que consumen horas cada semana.",
+        "serviceType": "Automatización de procesos con IA",
         "text": "Construimos junto a su equipo automatizaciones y agentes que resuelven problemas reales — y les enseñamos a mantenerlos y crear los siguientes.",
         "points": [
           "Plataformas sin código (no-code) para equipos no técnicos",
@@ -179,6 +193,9 @@
       {
         "id": "prompts",
         "title": "Prompts y contexto: IA que responde lo que usted necesita",
+        "short": "Las instrucciones y el contexto correctos para que la IA responda lo que necesita.",
+        "audience": "Equipos que ya usan IA pero no obtienen respuestas consistentes.",
+        "serviceType": "Ingeniería de prompts",
         "text": "La calidad de la IA depende de cómo se le pide y de la información que recibe. Diseñamos con su equipo los prompts y el contexto correctos para sus procesos.",
         "points": [
           "Biblioteca de prompts para las tareas clave de cada área",
@@ -190,6 +207,9 @@
       {
         "id": "advisory",
         "title": "Acompañamiento continuo en IA",
+        "short": "Un aliado experto mes a mes, para avanzar con IA sin perder tiempo ni dinero.",
+        "audience": "Empresas que quieren avanzar con IA mes a mes, con un experto al lado.",
+        "serviceType": "Asesoría continua en inteligencia artificial",
         "text": "Un aliado experto mes a mes para que su empresa avance con IA sin perder tiempo ni dinero.",
         "points": [
           "Sesiones mensuales de seguimiento y priorización",
@@ -202,6 +222,7 @@
     "talks": {
       "id": "talks",
       "title": "Charlas y conferencias",
+      "serviceType": "Conferencias sobre inteligencia artificial",
       "text": "Charlas ejecutivas y conferencias sobre IA aplicada a negocios para eventos, asociaciones y equipos directivos.",
       "button": "Solicitar información"
     }
@@ -249,8 +270,8 @@
         "text": "El trabajo queda documentado, con plantillas y con las personas que lo van a mantener. Si dentro de tres meses solo nosotros sabemos cómo funciona, el encargo quedó mal hecho. El objetivo es que su equipo siga solo."
       },
       {
-        "title": "Pensado para Latinoamérica",
-        "text": "Trabajamos en español y en inglés, con la forma en que operan las empresas de la región: equipos reducidos, varias herramientas a la vez y presupuestos que tienen que rendir. La solución se diseña para ese contexto, no para una oficina que no es la suya."
+        "title": "Pensado para cómo opera su empresa",
+        "text": "Trabajamos en español y en inglés, con la forma en que operan la mayoría de las empresas: equipos reducidos, varias herramientas a la vez y presupuestos que tienen que rendir. La solución se diseña para ese contexto, no para una oficina que no es la suya."
       }
     ]
   },
@@ -261,8 +282,13 @@
     "close": "Cerrar",
     "builtLabel": "Qué se puede construir",
     "keepsLabel": "Qué se queda en el equipo",
+    "preview": {
+      "title": "Dónde se nota primero",
+      "link": "Ver casos de uso →"
+    },
     "items": [
       {
+        "id": "atencion-al-cliente",
         "title": "Atención al cliente",
         "text": "Lo que llega una y otra vez deja de ocupar a las personas que deberían estar en los casos difíciles.",
         "situation": "El equipo contesta las mismas preguntas por correo, chat y teléfono. La respuesta correcta está en un manual, en un correo de hace meses o en la cabeza de quien lleva más tiempo. Mientras tanto, el caso que sí necesita criterio espera.",
@@ -274,6 +300,7 @@
         "keeps": "El equipo sabe qué documentos alimentan al asistente y cómo corregirlo cuando cambia una política. Una persona sigue en los casos que importan."
       },
       {
+        "id": "ventas",
         "title": "Ventas",
         "text": "El seguimiento de un prospecto y el primer borrador de una propuesta dejan de depender de que alguien tenga la tarde libre.",
         "situation": "Un prospecto escribe, la información queda en el correo de una persona y la propuesta se arma copiando la anterior. Lo que se pierde no es una herramienta: es el día en que había que responder.",
@@ -285,6 +312,7 @@
         "keeps": "Las plantillas y los prompts quedan con el equipo comercial. Ellos ajustan el tono; no esperan a que alguien de afuera reescriba cada propuesta."
       },
       {
+        "id": "finanzas",
         "title": "Finanzas",
         "text": "Alguien deja de leer el lote completo. Revisa las excepciones.",
         "situation": "Facturas, comprobantes y hojas de cálculo se concilian a mano entre el correo, el banco y el sistema contable. El error no aparece en el total: aparece en la línea que alguien copió mal un viernes.",
@@ -296,6 +324,7 @@
         "keeps": "Una persona sigue aprobando. La diferencia es que aprueba excepciones, no reescribe el lote."
       },
       {
+        "id": "recursos-humanos",
         "title": "Recursos humanos",
         "text": "Una primera lectura de candidatos, y respuestas claras a lo que el equipo pregunta cada semana.",
         "situation": "Los currículos se leen uno por uno contra una descripción que vive en un documento. Al mismo tiempo, los colaboradores preguntan por vacaciones, políticas y beneficios, y la respuesta depende de quién esté disponible.",
@@ -307,6 +336,7 @@
         "keeps": "Contratar sigue siendo una decisión de una persona. El asistente no descarta solo, y el equipo sabe qué criterios está usando."
       },
       {
+        "id": "operaciones",
         "title": "Operaciones",
         "text": "El reporte que alguien arma a mano sale de las fuentes, no de una hoja nueva.",
         "situation": "Los números viven en el correo, en una hoja, en el sistema de inventarios y en el mensaje de un proveedor. Una persona los junta antes de la reunión. Si esa persona no está, el reporte no existe.",
@@ -318,6 +348,7 @@
         "keeps": "El reporte deja de pertenecer a una sola persona. Queda escrito de dónde sale cada cifra."
       },
       {
+        "id": "gerencia",
         "title": "Gerencia",
         "text": "Un resumen usable de reuniones, documentos e indicadores, antes de la siguiente decisión.",
         "situation": "La decisión espera a que alguien lea el hilo, las minutas y tres tableros. Lo importante está mezclado con lo que ya se decidió la semana pasada.",
@@ -346,8 +377,8 @@
         "a": "Diseñamos cada solución considerando privacidad, permisos y buenas prácticas de seguridad."
       },
       {
-        "q": "¿Trabajan con empresas fuera de Costa Rica?",
-        "a": "Sí, en toda Latinoamérica, de forma virtual o presencial, en español o inglés."
+        "q": "¿Trabajan de forma virtual o presencial?",
+        "a": "De las dos formas, en español o en inglés, según lo que necesite su equipo."
       },
       {
         "q": "¿Cuánto cuesta?",
@@ -360,8 +391,7 @@
     "text": "Cuéntenos qué quiere mejorar. En una conversación de 45 minutos, sin costo, le decimos dónde conviene aplicar IA y qué resultados puede esperar.",
     "emailLabel": "Correo",
     "whatsappLabel": "WhatsApp",
-    "linkedinLabel": "LinkedIn",
-    "location": "San José, Costa Rica · Atención en toda Latinoamérica"
+    "linkedinLabel": "LinkedIn"
   },
   "form": {
     "name": "Nombre",
@@ -449,7 +479,7 @@
     "message": "Hola, me interesa conversar sobre IA y automatización para mi empresa."
   },
   "footer": {
-    "blurb": "Consultoría en inteligencia artificial para empresas en Latinoamérica. IA aplicada donde importa, con su equipo y con resultados.",
+    "blurb": "Consultoría en inteligencia artificial para empresas. IA aplicada donde importa, con su equipo y con resultados.",
     "rights": "© {year} SmartMark Consultores",
     "linksLabel": "Secciones"
   },

@@ -1,33 +1,29 @@
-"use client"
-
 import type { ReactNode } from "react"
+import { TrackedLink } from "@/components/site/tracked-link"
+import type { Locale } from "@/lib/i18n"
+import { pagePath } from "@/lib/routes"
 
 export function QuoteLink({
+  locale,
   serviceId,
   className,
   children,
 }: {
+  locale: Locale
   serviceId: string
   className?: string
   children: ReactNode
 }) {
+  const param = locale === "en" ? "service" : "servicio"
+
   return (
-    <a
-      href={`?servicio=${serviceId}#contacto`}
+    <TrackedLink
+      href={`${pagePath(locale, "contact")}?${param}=${encodeURIComponent(serviceId)}`}
       data-service={serviceId}
       className={className}
-      onClick={(event) => {
-        event.preventDefault()
-        const url = new URL(window.location.href)
-        url.searchParams.set("servicio", serviceId)
-        url.hash = "contacto"
-        window.history.pushState({}, "", `${url.pathname}${url.search}${url.hash}`)
-        window.dispatchEvent(new HashChangeEvent("hashchange"))
-        window.dispatchEvent(new CustomEvent("sm:select-service", { detail: serviceId }))
-        document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })
-      }}
+      event="cta_click"
     >
       {children}
-    </a>
+    </TrackedLink>
   )
 }

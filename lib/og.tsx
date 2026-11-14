@@ -5,8 +5,8 @@ import type { SitePage } from "@/lib/routes"
 export const ogSize = { width: 1200, height: 630 }
 
 const TAGLINE: Record<Locale, string> = {
-  es: "IA y automatización para empresas en Latinoamérica",
-  en: "AI & automation for companies in Latin America",
+  es: "IA y automatización para empresas",
+  en: "AI & automation for companies",
 }
 
 export function ogAlt(locale: Locale, page: SitePage) {

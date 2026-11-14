@@ -12,6 +12,16 @@ export function CaseBoard({ cases }: { cases: Cases }) {
   const item = open === null ? null : cases.items[open]
 
   useEffect(() => {
+    const openFromHash = () => {
+      const index = cases.items.findIndex((entry) => `#${entry.id}` === window.location.hash)
+      if (index >= 0) setOpen(index)
+    }
+    openFromHash()
+    window.addEventListener("hashchange", openFromHash)
+    return () => window.removeEventListener("hashchange", openFromHash)
+  }, [cases.items])
+
+  useEffect(() => {
     if (open === null) return
     const previous = document.activeElement as HTMLElement | null
     const dialog = dialogRef.current
@@ -50,7 +60,7 @@ export function CaseBoard({ cases }: { cases: Cases }) {
     <>
       <div className="case-grid">
         {cases.items.map((entry, index) => (
-          <article key={entry.title} className="case-card">
+          <article key={entry.id} id={entry.id} className="case-card">
             <p className="index">{String(index + 1).padStart(2, "0")}</p>
             <h2>{entry.title}</h2>
             <p>{entry.text}</p>

@@ -1,16 +1,13 @@
 {
   "meta": {
-    "title": "SmartMark Consultores | AI & Automation for Companies in Latin America",
-    "description": "Artificial intelligence applies to repetitive work, not to a giant system. We automate that work with your team and the tools you already have.",
-    "ogAlt": "SmartMark Consultores",
     "pages": {
       "home": {
-        "title": "AI & Automation Consulting in Latin America | SmartMark",
-        "description": "AI consulting for companies in Costa Rica and Latin America. We help you apply AI where it matters: the right processes, your team, real results."
+        "title": "AI & Automation Consulting for Companies | SmartMark",
+        "description": "AI consulting for companies. We help you apply AI where it matters: in the right processes, with your team, and with results you can measure."
       },
       "services": {
         "title": "AI & Automation Services for Business Teams | SmartMark",
-        "description": "Five ways to put AI to work: workshop, assessment, automations, prompts, and ongoing advisory."
+        "description": "AI workshops, opportunity assessments, automations, AI agents, prompt design, and ongoing advisory for business teams."
       },
       "cases": {
         "title": "AI Use Cases for Business Teams | SmartMark",
@@ -55,7 +52,7 @@
     "cta": "Book a call"
   },
   "hero": {
-    "eyebrow": "AI consulting · Costa\u00a0Rica and Latin America",
+    "eyebrow": "AI consulting",
     "stageLabel": "Why talk with SmartMark",
     "title": "Your company needs AI. Let's apply it where it really matters.",
     "subtitle": "We help you decide where AI belongs in your operation, how to implement it with your team, and what results to expect, using the tools you already have.",
@@ -64,7 +61,7 @@
     "trust": [
       "25+ years in technology",
       "Training and talks for multinational companies",
-      "Serving all of Latin America in English and Spanish"
+      "In English and Spanish, remote or on-site"
     ]
   },
   "position": {
@@ -139,13 +136,24 @@
     ]
   },
   "services": {
-    "title": "Services",
+    "title": "AI and automation services for business teams",
     "intro": "Five ways to apply AI where it matters, depending on where your team is today. Each one ends with something people use, not a presentation.",
     "includes": "Includes",
+    "audienceLabel": "Who it's for",
+    "quote": "Request a quote",
+    "casesLink": "See use cases →",
+    "preview": {
+      "title": "Five ways to get started",
+      "lead": "From a one-day workshop to month-by-month advisory, depending on where your team is today.",
+      "link": "See all services →"
+    },
     "items": [
       {
         "id": "workshop",
         "title": "AI Workshop for Business Teams",
+        "short": "Your team learns to use AI in their daily work and leaves with working solutions.",
+        "audience": "Teams ready to start using AI in their daily work.",
+        "serviceType": "AI training",
         "text": "A hands-on workshop where your team learns to use AI in their daily work — and leaves with working solutions.",
         "points": [
           "Effective use of AI assistants on real tasks from their area",
@@ -157,6 +165,9 @@
       {
         "id": "assessment",
         "title": "AI & Automation Opportunity Assessment",
+        "short": "Where AI will have the biggest impact on your operation, and in what order to tackle it.",
+        "audience": "Companies unsure where to start, or with pilots that haven't delivered.",
+        "serviceType": "AI consulting",
         "text": "We identify where AI and automation will have the biggest impact on your operation — and in what order to tackle it.",
         "points": [
           "Interviews with key teams and process mapping",
@@ -168,6 +179,9 @@
       {
         "id": "automation",
         "title": "Automations & AI Agents (built with your team)",
+        "short": "Automations and agents built with your team, which they then maintain themselves.",
+        "audience": "Teams with repetitive work that eats hours every week.",
+        "serviceType": "AI process automation",
         "text": "We build automations and agents that solve real problems together with your team — and teach them to maintain them and build the next ones.",
         "points": [
           "No-code platforms for non-technical teams",
@@ -179,6 +193,9 @@
       {
         "id": "prompts",
         "title": "Prompts & Context: AI that gives you the answers you need",
+        "short": "The right instructions and context so AI answers what you actually need.",
+        "audience": "Teams already using AI but not getting consistent answers.",
+        "serviceType": "Prompt engineering",
         "text": "AI is only as good as how you ask and what information it gets. We design the right prompts and context for your processes, together with your team.",
         "points": [
           "Prompt library for each team's key tasks",
@@ -190,6 +207,9 @@
       {
         "id": "advisory",
         "title": "Ongoing AI Advisory",
+        "short": "An expert partner, month by month, so you move forward with AI without wasting time or money.",
+        "audience": "Companies that want to keep moving with AI, with an expert alongside.",
+        "serviceType": "Ongoing AI advisory",
         "text": "An expert partner, month after month, so your company moves forward with AI without wasting time or money.",
         "points": [
           "Monthly follow-up and prioritization sessions",
@@ -201,6 +221,7 @@
     ],
     "talks": {
       "id": "talks",
+      "serviceType": "AI conference talks",
       "title": "Talks & keynotes",
       "text": "Executive talks and keynotes on AI for business, for events, associations, and leadership teams.",
       "button": "Request info"
@@ -249,8 +270,8 @@
         "text": "The work is documented, with templates and with the people who will maintain it. If three months later only we know how it works, the engagement was done wrong. The aim is that your team can carry on."
       },
       {
-        "title": "Built for Latin America",
-        "text": "We work in Spanish and English, with the way companies in the region actually operate: lean teams, several tools at once, and budgets that have to earn their place. The solution is designed for that context, not for an office that isn't yours."
+        "title": "Built around how your company works",
+        "text": "We work in Spanish and English, with the way most companies actually operate: lean teams, several tools at once, and budgets that have to earn their place. The solution is designed for that context, not for an office that isn't yours."
       }
     ]
   },
@@ -261,8 +282,13 @@
     "close": "Close",
     "builtLabel": "What can be built",
     "keepsLabel": "What stays with the team",
+    "preview": {
+      "title": "Where you'll notice it first",
+      "link": "See use cases →"
+    },
     "items": [
       {
+        "id": "customer-service",
         "title": "Customer service",
         "text": "What comes in again and again stops taking the people who should be on the difficult cases.",
         "situation": "The team answers the same questions by email, chat, and phone. The right answer lives in a manual, in an email from months ago, or in the head of the person who has been there longest. Meanwhile, the case that actually needs judgment waits.",
@@ -274,6 +300,7 @@
         "keeps": "The team knows which documents feed the assistant and how to correct it when a policy changes. A person still handles the cases that matter."
       },
       {
+        "id": "sales",
         "title": "Sales",
         "text": "Following up a lead and drafting a proposal no longer wait for someone to have a free afternoon.",
         "situation": "A prospect writes, the details stay in one person's inbox, and the proposal is built by copying the last one. What gets lost is not a tool. It is the day someone needed an answer.",
@@ -285,6 +312,7 @@
         "keeps": "The templates and prompts stay with the sales team. They adjust the tone. They don't wait for an outsider to rewrite every proposal."
       },
       {
+        "id": "finance",
         "title": "Finance",
         "text": "Someone stops reading the whole batch. They review the exceptions.",
         "situation": "Invoices, receipts, and spreadsheets are matched by hand across email, the bank, and the accounting system. The error doesn't show up in the total. It shows up in the line someone copied wrong on a Friday.",
@@ -296,6 +324,7 @@
         "keeps": "A person still approves. The difference is that they approve exceptions, instead of retyping the batch."
       },
       {
+        "id": "human-resources",
         "title": "Human resources",
         "text": "A first reading of candidates, and clear answers to what employees ask every week.",
         "situation": "Resumes are read one by one against a job description that lives in a document. At the same time, employees ask about leave, policy, and benefits, and the answer depends on who is free.",
@@ -307,6 +336,7 @@
         "keeps": "Hiring stays a person's decision. The assistant does not reject anyone on its own, and the team knows which criteria it is using."
       },
       {
+        "id": "operations",
         "title": "Operations",
         "text": "The report someone assembles by hand comes from the sources, not from a fresh spreadsheet.",
         "situation": "The numbers live in email, in a sheet, in the inventory system, and in a supplier's message. One person pulls them together before the meeting. If that person is out, the report doesn't exist.",
@@ -318,6 +348,7 @@
         "keeps": "The report stops belonging to one person. Where each figure comes from is written down."
       },
       {
+        "id": "management",
         "title": "Management",
         "text": "A usable summary of meetings, documents, and indicators, before the next decision.",
         "situation": "The decision waits while someone reads the thread, the notes, and three dashboards. What matters is mixed in with what was already decided last week.",
@@ -346,8 +377,8 @@
         "a": "Every solution is designed with privacy, permissions, and security best practices in mind."
       },
       {
-        "q": "Do you work with companies outside Costa Rica?",
-        "a": "Yes — across Latin America, virtually or on-site, in English or Spanish."
+        "q": "Do you work remotely or on-site?",
+        "a": "Both, in English or Spanish, depending on what your team needs."
       },
       {
         "q": "How much does it cost?",
@@ -360,8 +391,7 @@
     "text": "Tell us what you want to improve. In a free 45-minute call, we'll tell you where AI makes sense and what results to expect.",
     "emailLabel": "Email",
     "whatsappLabel": "WhatsApp",
-    "linkedinLabel": "LinkedIn",
-    "location": "San José, Costa Rica · Serving all of Latin America"
+    "linkedinLabel": "LinkedIn"
   },
   "form": {
     "name": "Name",
@@ -449,7 +479,7 @@
     "message": "Hi, I'd like to talk about AI and automation for my company."
   },
   "footer": {
-    "blurb": "AI consulting for companies across Latin America. AI applied where it matters, with your team, for real results.",
+    "blurb": "AI consulting for companies. AI applied where it matters, with your team, for real results.",
     "rights": "© {year} SmartMark Consultores",
     "linksLabel": "Sections"
   },

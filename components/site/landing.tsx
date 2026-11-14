@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/site/contact-form"
 import { Header } from "@/components/site/header"
 import { StructuredData } from "@/components/site/json-ld"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
+import { QuoteLink } from "@/components/site/quote-link"
 import { TrackedLink } from "@/components/site/tracked-link"
 import { WhatsAppButton } from "@/components/site/whatsapp-button"
 import { homePath, serviceOptions, type Dictionary, type Locale } from "@/lib/i18n"
@@ -144,6 +145,31 @@ export default function Landing({
             </div>
           </div>
         </section>
+
+        <section className="section bg-white" aria-labelledby="adelanto-servicios-title">
+          <div className="shell">
+            <div className="max-w-3xl">
+              <h2 id="adelanto-servicios-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                {dict.services.preview.title}
+              </h2>
+              <p className="lede">{dict.services.preview.lead}</p>
+            </div>
+            <ul className="preview-grid">
+              {dict.services.items.map((item, index) => (
+                <li key={item.id}>
+                  <a href={`${pagePath(locale, "services")}#${item.id}`} className="preview-card">
+                    <p className="index">{String(index + 1).padStart(2, "0")}</p>
+                    <h3>{item.title}</h3>
+                    <p>{item.short}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <a href={pagePath(locale, "services")} className="preview-link">
+              {dict.services.preview.link}
+            </a>
+          </div>
+        </section>
         </>
         ) : null}
 
@@ -180,6 +206,26 @@ export default function Landing({
             </div>
           </div>
         </section>
+
+        <section className="section" aria-labelledby="adelanto-casos-title">
+          <div className="shell">
+            <h2 id="adelanto-casos-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              {dict.cases.preview.title}
+            </h2>
+            <ul className="chip-row">
+              {dict.cases.items.map((item) => (
+                <li key={item.id}>
+                  <a href={`${pagePath(locale, "cases")}#${item.id}`} className="chip">
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <a href={pagePath(locale, "cases")} className="preview-link">
+              {dict.cases.preview.link}
+            </a>
+          </div>
+        </section>
         </>
         ) : null}
 
@@ -194,24 +240,42 @@ export default function Landing({
             </div>
             <div className="sheet-list">
               {dict.services.items.map((item, index) => (
-                <article key={item.id} className="sheet">
+                <article key={item.id} id={item.id} className="sheet">
                   <p className="sheet-index" aria-hidden="true">
                     {String(index + 1).padStart(2, "0")}
                   </p>
                   <h2>{item.title}</h2>
                   <p className="sheet-text">{item.text}</p>
+                  <p className="sheet-audience">
+                    <span>{dict.services.audienceLabel}</span> {item.audience}
+                  </p>
                   <p className="sheet-label">{dict.services.includes}</p>
                   <ul>
                     {item.points.map((point) => (
                       <li key={point}>{point}</li>
                     ))}
                   </ul>
+                  <div className="sheet-actions">
+                    <QuoteLink locale={locale} serviceId={item.id} className="btn btn-primary">
+                      {dict.services.quote}
+                    </QuoteLink>
+                    {item.id === "automation" ? (
+                      <a href={pagePath(locale, "cases")} className="preview-link">
+                        {dict.services.casesLink}
+                      </a>
+                    ) : null}
+                  </div>
                 </article>
               ))}
             </div>
-            <article className="sheet sheet-talks">
+            <article id={dict.services.talks.id} className="sheet sheet-talks">
               <h2>{dict.services.talks.title}</h2>
               <p className="sheet-text">{dict.services.talks.text}</p>
+              <div className="sheet-actions">
+                <QuoteLink locale={locale} serviceId={dict.services.talks.id} className="btn btn-primary">
+                  {dict.services.talks.button}
+                </QuoteLink>
+              </div>
             </article>
           </div>
         </section>
@@ -317,29 +381,35 @@ export default function Landing({
                   </a>
                 </li>
               </ul>
-              <p className="contact-where">{dict.contact.location}</p>
             </aside>
             </div>
           </div>
         </section>
         ) : null}
 
-        <section className={page === "home" ? "final-cta-band bg-white" : "final-cta-band"} aria-labelledby="cta-final-title">
+        <section className={page === "home" ? "final-cta-band is-full bg-white" : "final-cta-band"} aria-labelledby="cta-final-title">
           <div className="shell">
             <div className="final-cta">
               <div>
                 <h2 id="cta-final-title">{dict.finalCta[page].title}</h2>
                 <p>{dict.finalCta[page].text}</p>
               </div>
-              {page === "contact" ? (
-                <a href={pagePath(locale, "services")} className="btn final-cta-btn">
-                  {dict.finalCta[page].button}
-                </a>
-              ) : (
-                <TrackedLink href={contactHref} className="btn final-cta-btn" event="cta_click">
-                  {dict.finalCta[page].button}
-                </TrackedLink>
-              )}
+              <div className="final-cta-actions">
+                {page === "contact" ? (
+                  <a href={pagePath(locale, "services")} className="btn final-cta-btn">
+                    {dict.finalCta[page].button}
+                  </a>
+                ) : (
+                  <TrackedLink href={contactHref} className="btn final-cta-btn" event="cta_click">
+                    {dict.finalCta[page].button}
+                  </TrackedLink>
+                )}
+                {page === "home" && whatsapp ? (
+                  <TrackedLink href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn final-cta-ghost" event="whatsapp_click">
+                    {dict.whatsapp.label}
+                  </TrackedLink>
+                ) : null}
+              </div>
             </div>
           </div>
         </section>

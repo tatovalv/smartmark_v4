@@ -2,30 +2,6 @@ import type { Dictionary, Locale } from "@/lib/i18n"
 import { pagePath, type SitePage } from "@/lib/routes"
 import { EMAIL, LINKEDIN_URL, SITE_URL } from "@/lib/site"
 
-const AREAS = [
-  "Argentina",
-  "Bolivia",
-  "Brasil",
-  "Chile",
-  "Colombia",
-  "Costa Rica",
-  "Cuba",
-  "República Dominicana",
-  "Ecuador",
-  "El Salvador",
-  "Guatemala",
-  "Haití",
-  "Honduras",
-  "México",
-  "Nicaragua",
-  "Panamá",
-  "Paraguay",
-  "Perú",
-  "Puerto Rico",
-  "Uruguay",
-  "Venezuela",
-]
-
 const KNOWS_ABOUT = [
   "Inteligencia artificial",
   "Automatización de procesos",
@@ -53,7 +29,6 @@ function organizationJsonLd(locale: Locale, dict: Dictionary) {
       addressLocality: "San José",
       addressCountry: "CR",
     },
-    areaServed: AREAS.map((name) => ({ "@type": "Country", name })),
     contactPoint: {
       "@type": "ContactPoint",
       email: EMAIL,
@@ -105,11 +80,36 @@ export function breadcrumbJsonLd(locale: Locale, page: Exclude<SitePage, "home">
   }
 }
 
+function servicesJsonLd(locale: Locale, dict: Dictionary) {
+  const pageUrl = absolute(locale, "services")
+  const services = [...dict.services.items, dict.services.talks]
+
+  return {
+    "@type": "ItemList",
+    "@id": `${pageUrl}#services`,
+    name: dict.services.title,
+    itemListElement: services.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Service",
+        "@id": `${pageUrl}#${service.id}`,
+        name: service.title,
+        description: service.text,
+        serviceType: service.serviceType,
+        url: `${pageUrl}#${service.id}`,
+        provider: { "@id": `${SITE_URL}/#organization` },
+      },
+    })),
+  }
+}
+
 export function StructuredData({ locale, dict, page }: { locale: Locale; dict: Dictionary; page: SitePage }) {
   const graph = [
     organizationJsonLd(locale, dict),
     websiteJsonLd(locale),
     ...(page === "home" ? [] : [breadcrumbJsonLd(locale, page, dict)]),
+    ...(page === "services" ? [servicesJsonLd(locale, dict)] : []),
   ]
 
   return (
