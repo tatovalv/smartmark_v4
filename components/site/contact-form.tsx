@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState, type FormEvent, type ReactNode } from "react"
+import { track } from "@/lib/analytics"
 import type { Dictionary, Locale } from "@/lib/i18n"
 import { EMAIL } from "@/lib/site"
 
@@ -103,6 +104,7 @@ export function ContactForm({
         return
       }
       setValues(empty)
+      track("generate_lead")
       setStatus("success")
       document.getElementById("form-success")?.focus()
     } catch {

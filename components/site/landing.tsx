@@ -1,11 +1,13 @@
 import { CaseBoard } from "@/components/site/case-board"
 import { ContactForm } from "@/components/site/contact-form"
 import { Header } from "@/components/site/header"
+import { StructuredData } from "@/components/site/json-ld"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
+import { TrackedLink } from "@/components/site/tracked-link"
 import { WhatsAppButton } from "@/components/site/whatsapp-button"
 import { homePath, serviceOptions, type Dictionary, type Locale } from "@/lib/i18n"
 import { pagePath, type SitePage } from "@/lib/routes"
-import { EMAIL, LINKEDIN_URL, SITE_URL, whatsappHref } from "@/lib/site"
+import { EMAIL, LINKEDIN_URL, whatsappHref } from "@/lib/site"
 
 export default function Landing({
   locale,
@@ -57,9 +59,9 @@ export default function Landing({
             <h1 className="display">{dict.hero.title}</h1>
             <p className="lede">{dict.hero.subtitle}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href={contactHref} className="btn btn-primary">
+              <TrackedLink href={contactHref} className="btn btn-primary" event="cta_click">
                 {dict.hero.primary}
-              </a>
+              </TrackedLink>
               <a href={pagePath(locale, "services")} className="btn btn-ghost">
                 {dict.hero.secondary}
               </a>
@@ -199,7 +201,7 @@ export default function Landing({
                   <p className="sheet-index" aria-hidden="true">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h3>{item.title}</h3>
+                  <h2>{item.title}</h2>
                   <p className="sheet-text">{item.text}</p>
                   <p className="sheet-label">{dict.services.includes}</p>
                   <ul>
@@ -211,12 +213,12 @@ export default function Landing({
               ))}
             </div>
             <article className="sheet sheet-talks">
-              <h3>{dict.services.talks.title}</h3>
+              <h2>{dict.services.talks.title}</h2>
               <p className="sheet-text">{dict.services.talks.text}</p>
             </article>
             <div className="services-cta">
               <div>
-                <h3>{dict.services.ctaTitle}</h3>
+                <h2>{dict.services.ctaTitle}</h2>
                 <p>{dict.services.ctaText}</p>
               </div>
               <a href={contactHref} className="btn services-cta-btn">
@@ -237,7 +239,7 @@ export default function Landing({
               {dict.how.steps.map((step, index) => (
                 <li key={step.title}>
                   <p className="index">{String(index + 1).padStart(2, "0")}</p>
-                  <h3>{step.title}</h3>
+                  <h2>{step.title}</h2>
                   <p className="spine-lead">{step.text}</p>
                   <p className="spine-detail">{step.detail}</p>
                 </li>
@@ -258,7 +260,7 @@ export default function Landing({
               {dict.why.items.map((item, index) => (
                 <article key={item.title}>
                   <p className="index">{String(index + 1).padStart(2, "0")}</p>
-                  <h3>{item.title}</h3>
+                  <h2>{item.title}</h2>
                   <p>{item.text}</p>
                 </article>
               ))}
@@ -314,9 +316,9 @@ export default function Landing({
                 {whatsapp ? (
                   <li>
                     <p className="text-sm font-semibold text-brand-secondary">{dict.contact.whatsappLabel}</p>
-                    <a className="mt-1 inline-block font-medium underline-offset-4 hover:underline" href={whatsapp} target="_blank" rel="noopener noreferrer">
+                    <TrackedLink className="mt-1 inline-block font-medium underline-offset-4 hover:underline" href={whatsapp} target="_blank" rel="noopener noreferrer" event="whatsapp_click">
                       {dict.whatsapp.label}
-                    </a>
+                    </TrackedLink>
                   </li>
                 ) : null}
                 <li>
@@ -364,7 +366,7 @@ export default function Landing({
       </footer>
 
       {whatsapp ? <WhatsAppButton href={whatsapp} label={dict.whatsapp.label} /> : null}
-      {page === "home" ? <JsonLd locale={locale} dict={dict} /> : null}
+      <StructuredData locale={locale} dict={dict} page={page} />
     </>
   )
 }
@@ -424,26 +426,4 @@ function KnowledgeField() {
       </g>
     </svg>
   )
-}
-
-function JsonLd({ locale, dict }: { locale: Locale; dict: Dictionary }) {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "SmartMark Consultores",
-    url: new URL(homePath(locale), SITE_URL).toString(),
-    image: `${SITE_URL}/logo.png`,
-    description: dict.meta.description,
-    email: EMAIL,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "San José",
-      addressCountry: "CR",
-    },
-    areaServed: "Latin America",
-    availableLanguage: ["Spanish", "English"],
-    sameAs: [LINKEDIN_URL],
-  }
-
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }

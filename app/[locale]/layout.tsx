@@ -1,8 +1,12 @@
 import type { ReactNode } from "react"
 import type { Metadata, Viewport } from "next"
+import Script from "next/script"
 import { GeistSans } from "geist/font/sans"
 import { SITE_URL } from "@/lib/site"
 import "../globals.css"
+
+const gaId = process.env.NEXT_PUBLIC_GA_ID
+const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -23,6 +27,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  ...(gscVerification ? { verification: { google: gscVerification } } : {}),
 }
 
 export const viewport: Viewport = {
@@ -47,7 +52,17 @@ export default function LocaleLayout({
   const lang = params.locale === "en" ? "en" : "es"
   return (
     <html lang={lang}>
-      <body className={`${GeistSans.className} antialiased`}>{children}</body>
+      <body className={`${GeistSans.className} antialiased`}>
+        {children}
+        {gaId && /^G-[A-Z0-9]+$/.test(gaId) ? (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+            <Script id="ga4" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaId}');`}
+            </Script>
+          </>
+        ) : null}
+      </body>
     </html>
   )
 }

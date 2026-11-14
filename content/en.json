@@ -2,7 +2,36 @@
   "meta": {
     "title": "SmartMark Consultores | AI & Automation for Companies in Latin America",
     "description": "Artificial intelligence applies to repetitive work, not to a giant system. We automate that work with your team and the tools you already have.",
-    "ogAlt": "SmartMark Consultores"
+    "ogAlt": "SmartMark Consultores",
+    "pages": {
+      "home": {
+        "title": "AI & Automation Consulting in Latin America | SmartMark",
+        "description": "AI and automation consulting for business teams in Latin America. We apply AI to the work that repeats."
+      },
+      "services": {
+        "title": "AI & Automation Services for Business Teams | SmartMark",
+        "description": "Five ways to put AI to work: workshop, assessment, automations, prompts, and ongoing advisory."
+      },
+      "cases": {
+        "title": "AI Use Cases for Business Teams | SmartMark",
+        "description": "What AI looks like in service, sales, finance, HR, operations, and management. A person still decides."
+      },
+      "how": {
+        "title": "How We Implement AI in Your Company | SmartMark",
+        "description": "A first conversation, a clear proposal, building with your team, and a handoff so they can continue alone."
+      },
+      "why": {
+        "title": "Why SmartMark: AI Consulting with Judgment",
+        "description": "More than 25 years in technology, applied to repetitive work: AI where it helps, automation where it is enough."
+      },
+      "contact": {
+        "title": "Contact: Book a Call About AI | SmartMark",
+        "description": "Tell us what repeats in your operation. We schedule a conversation and reply with a scope within 48 hours."
+      }
+    }
+  },
+  "breadcrumb": {
+    "home": "Home"
   },
   "logoAlt": "SmartMark Consultores",
   "a11y": {

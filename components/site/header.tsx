@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Menu, X } from "lucide-react"
 import type { Locale } from "@/lib/i18n"
+import { track } from "@/lib/analytics"
 import { pagePath, type SitePage } from "@/lib/routes"
 import { EnglishBanner } from "@/components/site/english-banner"
 import { LanguageSwitcher } from "@/components/site/language-switcher"
@@ -80,7 +81,7 @@ export function Header({
 
         <div className="ml-auto hidden items-center gap-4 lg:flex">
           <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
-          <a href={ctaHref} className="btn btn-primary">
+          <a href={ctaHref} className="btn btn-primary" onClick={() => track("cta_click")}>
             {cta}
           </a>
         </div>
@@ -115,7 +116,14 @@ export function Header({
                 {link.label}
               </a>
             ))}
-            <a href={ctaHref} className="btn btn-primary mt-3 w-full" onClick={close}>
+            <a
+              href={ctaHref}
+              className="btn btn-primary mt-3 w-full"
+              onClick={() => {
+                track("cta_click")
+                close()
+              }}
+            >
               {cta}
             </a>
             <div className="mt-4 border-t border-brand-line pt-4">

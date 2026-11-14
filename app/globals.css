@@ -448,7 +448,7 @@ footer :focus-visible,
   pointer-events: none;
 }
 
-.sheet h3 {
+.sheet h2 {
   position: relative;
   max-width: 28rem;
   padding-right: 4rem;
@@ -504,7 +504,7 @@ footer :focus-visible,
   box-shadow: none;
 }
 
-.sheet-talks h3 { padding-right: 0; }
+.sheet-talks h2 { padding-right: 0; }
 .sheet-talks .sheet-text { color: color-mix(in srgb, white 82%, transparent); }
 
 .services-cta {
@@ -532,7 +532,7 @@ footer :focus-visible,
   pointer-events: none;
 }
 
-.services-cta h3 {
+.services-cta h2 {
   position: relative;
   font-size: clamp(2rem, 4.2vw, 3.05rem);
   font-weight: 600;
@@ -541,7 +541,7 @@ footer :focus-visible,
   color: white;
 }
 
-.services-cta h3::before {
+.services-cta h2::before {
   content: "";
   display: inline-block;
   width: 0.55rem;
@@ -622,7 +622,7 @@ footer :focus-visible,
   background: var(--color-logo);
 }
 
-.spine h3 {
+.spine h2 {
   margin-top: 0.3rem;
   font-size: 1.55rem;
   font-weight: 600;
@@ -657,7 +657,7 @@ footer :focus-visible,
 
 .why-band article:last-child { border-bottom: 0; }
 
-.why-band h3 {
+.why-band h2 {
   margin-top: 0.4rem;
   font-size: 1.3rem;
   font-weight: 600;
@@ -1021,7 +1021,7 @@ summary::-webkit-details-marker {
   box-shadow: var(--shadow);
 }
 
-.case-card h3 {
+.case-card h2 {
   margin-top: 0.35rem;
   font-size: clamp(1.45rem, 2vw, 1.85rem);
   font-weight: 600;

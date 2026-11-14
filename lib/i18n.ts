@@ -58,6 +58,25 @@ function assertParity() {
     es.form.countries.map((country) => country.value),
     en.form.countries.map((country) => country.value),
   )
+  assertMetaLength("es", es.meta.pages)
+  assertMetaLength("en", en.meta.pages)
+}
+
+const META_LIMITS = { title: 60, description: 155 } as const
+
+function assertMetaLength(locale: string, pages: Dictionary["meta"]["pages"]) {
+  for (const [page, copy] of Object.entries(pages)) {
+    if (copy.title.length > META_LIMITS.title) {
+      throw new Error(
+        `meta.pages.${page}.title in ${locale}.json is ${copy.title.length} characters (max ${META_LIMITS.title})`,
+      )
+    }
+    if (copy.description.length > META_LIMITS.description) {
+      throw new Error(
+        `meta.pages.${page}.description in ${locale}.json is ${copy.description.length} characters (max ${META_LIMITS.description})`,
+      )
+    }
+  }
 }
 
 let checked = false

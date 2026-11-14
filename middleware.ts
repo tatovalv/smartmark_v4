@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import { isSiteSlug } from "@/lib/routes"
+import { isLocaleSlug } from "@/lib/routes"
 
 function spanishSlug(pathname: string) {
   const slug = pathname.replace(/\/$/, "").slice(1)
-  return isSiteSlug(slug) ? slug : null
+  if (!slug || slug.includes("/")) return null
+  return isLocaleSlug("es", slug) ? slug : null
 }
 
 export function middleware(request: NextRequest) {
@@ -18,7 +19,7 @@ export function middleware(request: NextRequest) {
 
   if (pathname.startsWith("/es/")) {
     const slug = pathname.slice(4).replace(/\/$/, "")
-    if (isSiteSlug(slug)) {
+    if (isLocaleSlug("es", slug)) {
       const url = request.nextUrl.clone()
       url.pathname = `/${slug}`
       return NextResponse.redirect(url, 308)

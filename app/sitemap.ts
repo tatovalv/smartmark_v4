@@ -1,15 +1,15 @@
 import type { MetadataRoute } from "next"
-import { pagePath, SITE_PAGES, type SitePage } from "@/lib/routes"
+import { PAGE_UPDATED, pagePath, SITE_PAGE_IDS, type SitePage } from "@/lib/routes"
 import { SITE_URL } from "@/lib/site"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date()
-  const pages: SitePage[] = ["home", ...Object.values(SITE_PAGES)]
+  const pages: SitePage[] = ["home", ...SITE_PAGE_IDS]
 
   return pages.flatMap((page) => {
     const es = new URL(pagePath("es", page), SITE_URL).toString()
     const en = new URL(pagePath("en", page), SITE_URL).toString()
     const languages = { es, en, "x-default": es }
+    const lastModified = new Date(`${PAGE_UPDATED[page]}T00:00:00.000Z`)
     return [
       {
         url: es,

@@ -2,7 +2,36 @@
   "meta": {
     "title": "SmartMark Consultores | IA y automatización para empresas en Latinoamérica",
     "description": "La inteligencia artificial se aplica al trabajo repetitivo, no a un sistema enorme. Automatizamos ese trabajo con su equipo y con las herramientas que ya tienen.",
-    "ogAlt": "SmartMark Consultores"
+    "ogAlt": "SmartMark Consultores",
+    "pages": {
+      "home": {
+        "title": "Consultoría en IA y automatización | SmartMark Consultores",
+        "description": "Consultoría de IA y automatización para equipos de negocio en Latinoamérica. Aplicamos la IA al trabajo que se repite."
+      },
+      "services": {
+        "title": "Servicios de IA y automatización para empresas | SmartMark",
+        "description": "Cinco formas de aplicar IA en su empresa: taller, diagnóstico, automatizaciones, prompts y acompañamiento."
+      },
+      "cases": {
+        "title": "Casos de uso de IA para equipos de negocio | SmartMark",
+        "description": "Cómo se ve la IA en atención, ventas, finanzas, recursos humanos, operaciones y gerencia. Una persona sigue decidiendo."
+      },
+      "how": {
+        "title": "Cómo implementamos IA en su empresa | SmartMark",
+        "description": "Conversación, propuesta, construcción con su equipo y entrega para que sigan solos. Sin un sistema de más."
+      },
+      "why": {
+        "title": "Por qué SmartMark: consultoría de IA con criterio",
+        "description": "Llevamos el criterio de más de 25 años en tecnología al trabajo repetitivo: IA donde aporta y automatización donde alcanza."
+      },
+      "contact": {
+        "title": "Contacto: agende una conversación sobre IA | SmartMark",
+        "description": "Cuéntenos qué se repite en su operación. Agendamos una conversación y respondemos con un alcance en 48 horas."
+      }
+    }
+  },
+  "breadcrumb": {
+    "home": "Inicio"
   },
   "logoAlt": "SmartMark Consultores",
   "a11y": {

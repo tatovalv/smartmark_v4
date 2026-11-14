@@ -52,7 +52,7 @@ export function CaseBoard({ cases }: { cases: Cases }) {
         {cases.items.map((entry, index) => (
           <article key={entry.title} className="case-card">
             <p className="index">{String(index + 1).padStart(2, "0")}</p>
-            <h3>{entry.title}</h3>
+            <h2>{entry.title}</h2>
             <p>{entry.text}</p>
             <button type="button" className="case-open" onClick={() => setOpen(index)}>
               {cases.open}
