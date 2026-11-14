@@ -1,3 +1,4 @@
+import { ClientLogos, type ClientLogo } from "@/components/site/client-logos"
 import { ContactForm } from "@/components/site/contact-form"
 import { Header } from "@/components/site/header"
 import { StructuredData } from "@/components/site/json-ld"
@@ -336,11 +337,25 @@ export default function Landing({
                 <li key={step.title}>
                   <p className="index">{String(index + 1).padStart(2, "0")}</p>
                   <h2>{step.title}</h2>
+                  <p className="spine-duration">{step.duration}</p>
                   <p className="spine-lead">{step.text}</p>
                   <p className="spine-detail">{step.detail}</p>
+                  {index === 2 ? (
+                    <a href={pagePath(locale, "services")} className="preview-link">
+                      {dict.how.servicesLink}
+                    </a>
+                  ) : null}
                 </li>
               ))}
             </ol>
+            <div className="deliverables">
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{dict.how.deliverables.title}</h2>
+              <ul>
+                {dict.how.deliverables.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
         ) : null}
@@ -358,11 +373,30 @@ export default function Landing({
                   <p className="index">{String(index + 1).padStart(2, "0")}</p>
                   <h2>{item.title}</h2>
                   <p>{item.text}</p>
+                  {index === 1 ? (
+                    <a href={pagePath(locale, "how")} className="preview-link">
+                      {dict.why.howLink}
+                    </a>
+                  ) : null}
                 </article>
               ))}
             </div>
+            <ClientLogos title={dict.why.clients.title} items={dict.why.clients.items as ClientLogo[]} />
           </div>
         </section>
+        ) : null}
+
+        {page === "why" ? (
+        <div className="stats-band">
+          <ul className="shell">
+            {dict.why.stats.map((stat) => (
+              <li key={stat.label}>
+                <p className="stat-value">{stat.value}</p>
+                <p className="stat-label">{stat.label}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
         ) : null}
 
         {page === "home" ? (

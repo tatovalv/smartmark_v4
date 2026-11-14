@@ -15,11 +15,11 @@
       },
       "how": {
         "title": "Cómo implementamos IA en su empresa | SmartMark",
-        "description": "Conversación, propuesta, construcción con su equipo y entrega para que sigan solos. Sin un sistema de más."
+        "description": "Conversación inicial sin costo, propuesta en 48 horas, implementación con su equipo y documentación para que sigan solos. Así trabajamos la IA."
       },
       "why": {
         "title": "Por qué SmartMark: consultoría de IA con criterio",
-        "description": "Llevamos el criterio de más de 25 años en tecnología al trabajo repetitivo: IA donde aporta y automatización donde alcanza."
+        "description": "Más de 25 años en tecnología, neutrales en herramientas y enfocados en enseñar. Le decimos dónde la IA aporta y dónde basta con automatizar."
       },
       "contact": {
         "title": "Contacto: agende una conversación sobre IA | SmartMark",
@@ -228,34 +228,58 @@
     }
   },
   "how": {
-    "title": "Cómo trabajamos",
+    "title": "Cómo implementamos inteligencia artificial en su empresa",
     "lead": "Dónde, cómo y para qué: así decidimos con usted en qué procesos aplicar la IA, la implementamos con su equipo y medimos el resultado.",
+    "servicesLink": "Ver servicios →",
+    "deliverables": {
+      "title": "Qué recibe al final",
+      "items": [
+        "Soluciones funcionando en su operación",
+        "Documentación en lenguaje de negocio",
+        "Plantillas y prompts reutilizables",
+        "Un equipo que sabe mantenerlas y crear las siguientes"
+      ]
+    },
     "steps": [
       {
         "title": "Conversación inicial",
+        "duration": "45 minutos",
         "text": "45 minutos, sin costo, para entender su operación y objetivos.",
         "detail": "Revisamos cómo opera hoy el área, qué herramientas ya están pagadas y dónde se va el tiempo."
       },
       {
         "title": "Propuesta clara",
+        "duration": "En 48 horas",
         "text": "Alcance, entregables, tiempos y cotización en 48 horas.",
         "detail": "Recibe un documento concreto: qué haremos, qué no, en qué plazo y la cotización. Sin letra pequeña."
       },
       {
         "title": "Construimos y capacitamos",
+        "duration": "De medio día a 8 semanas, según el servicio",
         "text": "Trabajamos con su equipo, no solo para su equipo.",
         "detail": "La primera solución se construye con las personas que la van a usar. Salen sabiendo cómo cambiarla."
       },
       {
         "title": "Su equipo sigue solo",
+        "duration": "Acompañamiento opcional",
         "text": "Documentación, plantillas y acompañamiento opcional.",
         "detail": "Quedan los prompts, las plantillas y una guía. El acompañamiento mensual está si quieren seguir, no como condición."
       }
     ]
   },
   "why": {
-    "title": "Por qué SmartMark",
+    "title": "Por qué elegir SmartMark como su consultora de IA",
     "lead": "Cualquiera puede venderle inteligencia artificial. Nosotros le decimos dónde la necesita, cómo aplicarla para que funcione y qué resultado esperar. Y también dónde no hace falta.",
+    "howLink": "Vea cómo trabajamos →",
+    "stats": [
+      { "value": "25+", "label": "años en tecnología y desarrollo de software" },
+      { "value": "2", "label": "idiomas: español e inglés" },
+      { "value": "2", "label": "modalidades: virtual o presencial" }
+    ],
+    "clients": {
+      "title": "Con quiénes hemos trabajado",
+      "items": []
+    },
     "items": [
       {
         "title": "Experiencia real",

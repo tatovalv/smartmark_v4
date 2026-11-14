@@ -15,11 +15,11 @@
       },
       "how": {
         "title": "How We Implement AI in Your Company | SmartMark",
-        "description": "A first conversation, a clear proposal, building with your team, and a handoff so they can continue alone."
+        "description": "A free intro call, a proposal within 48 hours, implementation with your team, and documentation so they can carry on. This is how we work."
       },
       "why": {
         "title": "Why SmartMark: AI Consulting with Judgment",
-        "description": "More than 25 years in technology, applied to repetitive work: AI where it helps, automation where it is enough."
+        "description": "25+ years in technology, vendor-neutral, and focused on teaching. We tell you where AI adds value and where simple automation is enough."
       },
       "contact": {
         "title": "Contact: Book a Call About AI | SmartMark",
@@ -228,34 +228,58 @@
     }
   },
   "how": {
-    "title": "How we work",
+    "title": "How we implement AI in your company",
     "lead": "Where, how, and what for: that's how we decide with you which processes need AI, implement it with your team, and measure the results.",
+    "servicesLink": "See services →",
+    "deliverables": {
+      "title": "What you get at the end",
+      "items": [
+        "Working solutions in your operation",
+        "Documentation in plain business language",
+        "Reusable templates and prompts",
+        "A team that knows how to maintain them and build the next ones"
+      ]
+    },
     "steps": [
       {
         "title": "Intro call",
+        "duration": "45 minutes",
         "text": "45 minutes, free, to understand your operation and goals.",
         "detail": "We look at how the area works today, which tools you already pay for, and where the time goes."
       },
       {
         "title": "Clear proposal",
+        "duration": "Within 48 hours",
         "text": "Scope, deliverables, timeline, and quote within 48 hours.",
         "detail": "You get a concrete document: what we will do, what we won't, the timeline, and the quote. No fine print."
       },
       {
         "title": "We build and train",
+        "duration": "Half a day to 8 weeks, depending on the service",
         "text": "We work with your team, not just for them.",
         "detail": "The first solution is built with the people who will use it. They leave knowing how to change it."
       },
       {
         "title": "Your team takes it from there",
+        "duration": "Optional ongoing support",
         "text": "Documentation, templates, and optional ongoing support.",
         "detail": "You keep the prompts, the templates, and a guide. Monthly support is there if you want to continue, not as a condition."
       }
     ]
   },
   "why": {
-    "title": "Why SmartMark",
+    "title": "Why choose SmartMark as your AI consulting partner",
     "lead": "Anyone can sell you AI. We tell you where you need it, how to apply it so it works, and what results to expect. And where you don't need it.",
+    "howLink": "See how we work →",
+    "stats": [
+      { "value": "25+", "label": "years in technology and software development" },
+      { "value": "2", "label": "languages: Spanish and English" },
+      { "value": "2", "label": "formats: remote or on-site" }
+    ],
+    "clients": {
+      "title": "Who we've worked with",
+      "items": []
+    },
     "items": [
       {
         "title": "Real experience",
