@@ -12,7 +12,7 @@ export function generateStaticParams() {
   ])
 }
 
-export const dynamicParams = false
+export const dynamicParams = true
 
 function resolvePage(locale: string, slug: string[] | undefined): SitePage | null {
   if (!isLocale(locale)) return null

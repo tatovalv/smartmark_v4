@@ -2,8 +2,8 @@
   "meta": {
     "pages": {
       "home": {
-        "title": "AI & Automation Consulting for Companies | SmartMark",
-        "description": "AI consulting for companies. We help you apply AI where it matters: in the right processes, with your team, and with results you can measure."
+        "title": "AI & Automation Consulting in Latin America | SmartMark",
+        "description": "AI consulting for companies in Costa Rica and Latin America. We help you apply AI where it matters: the right processes, your team, real results."
       },
       "services": {
         "title": "AI & Automation Services for Business Teams | SmartMark",
@@ -24,6 +24,10 @@
       "contact": {
         "title": "Contact: Book a Call About AI | SmartMark",
         "description": "Tell us what you want to improve in your operation. We reply within 48 hours. In English and Spanish, remote or on-site."
+      },
+      "privacy": {
+        "title": "Privacy policy | SmartMark Consultores",
+        "description": "What the contact form collects, why we use it, email delivery through Resend, and how to request access, correction, or deletion."
       }
     }
   },
@@ -53,16 +57,16 @@
     "ctaShort": "Book a call"
   },
   "hero": {
-    "eyebrow": "AI consulting",
+    "eyebrow": "AI consulting · Costa Rica & Latin America",
     "stageLabel": "Why talk with SmartMark",
     "title": "Your company needs AI. Let's apply it where it really matters.",
     "subtitle": "We help you decide where AI belongs in your operation, how to implement it with your team, and what results to expect, using the tools you already have.",
     "primary": "Book a call",
     "secondary": "See services",
     "trust": [
-      "25+ years in technology",
-      "Training and talks for multinational companies",
-      "In English and Spanish, remote or on-site"
+      "25+ years building software",
+      "AI agents and training for multinational companies",
+      "First 45-minute call, free"
     ]
   },
   "position": {
@@ -75,20 +79,20 @@
     "closing": "It's not about using AI everywhere. It's about using it where it changes the results."
   },
   "problem": {
-    "title": "What we see",
-    "lead": "We talk with companies that were quoted a very high price for an AI system. The work underneath was repetitive: it could be automated, and the team could learn to maintain it.",
+    "title": "Why AI still isn't paying off for many companies",
+    "lead": "It's rarely a lack of tools. It's almost always where and how AI was applied.",
     "items": [
       {
-        "title": "A system priced far above the problem.",
-        "text": "A custom platform gets proposed when the case is an email, a report, or an answer that already exists somewhere."
+        "title": "They tried it, but the work didn't change.",
+        "text": "The team has ChatGPT or Copilot, but emails, reports, and data handoffs are still done by hand."
       },
       {
-        "title": "The repetitive work stays with the team.",
-        "text": "Email, reports, copying data between systems, answering the same questions. That is where AI applies, and where it can be automated."
+        "title": "They were quoted a huge system for a specific problem.",
+        "text": "A custom platform was proposed when the problem could be solved by automating the tools they already had."
       },
       {
-        "title": "The team is left depending on whoever sold it.",
-        "text": "If only the vendor knows how the system works, every change costs again. The solution has to stay with the company."
+        "title": "Only the vendor knows how it works.",
+        "text": "Every change costs money again. The solution has to stay with your team."
       }
     ]
   },
@@ -131,8 +135,8 @@
         "text": "The solution stays with the team. If three months later only we know how it works, the work was done wrong."
       },
       {
-        "title": "We will say no",
-        "text": "If the process is repetitive, we don't build a custom system. We automate it with what you already have. If AI isn't justified, we say that too."
+        "title": "We tell you the truth",
+        "text": "If a process can be solved with simple automation, we won't sell you a system. If AI isn't justified, we'll say so. That way, when we recommend AI, you know it's worth it."
       }
     ]
   },
@@ -141,6 +145,8 @@
     "intro": "Five ways to apply AI where it matters, depending on where your team is today. Each one ends with something people use, not a presentation.",
     "includes": "Includes",
     "audienceLabel": "Who it's for",
+    "outcomeLabel": "Outcome",
+    "formatLabel": "Format",
     "quote": "Request a quote",
     "casesLink": "See use cases →",
     "preview": {
@@ -154,6 +160,8 @@
         "title": "AI Workshop for Business Teams",
         "short": "Your team learns to use AI in their daily work and leaves with working solutions.",
         "audience": "Teams ready to start using AI in their daily work.",
+        "outcome": "Your team uses AI on real tasks starting the following week.",
+        "format": "Half a day to 3 days · on-site or virtual",
         "serviceType": "AI training",
         "text": "A hands-on workshop where your team learns to use AI in their daily work — and leaves with working solutions.",
         "points": [
@@ -168,6 +176,8 @@
         "title": "AI & Automation Opportunity Assessment",
         "short": "Where AI will have the biggest impact on your operation, and in what order to tackle it.",
         "audience": "Companies unsure where to start, or with pilots that haven't delivered.",
+        "outcome": "A prioritized list of where to apply AI and a 90-day roadmap.",
+        "format": "2 to 3 weeks",
         "serviceType": "AI consulting",
         "text": "We identify where AI and automation will have the biggest impact on your operation — and in what order to tackle it.",
         "points": [
@@ -182,6 +192,8 @@
         "title": "Automations & AI Agents (built with your team)",
         "short": "Automations and agents built with your team, which they then maintain themselves.",
         "audience": "Teams with repetitive work that eats hours every week.",
+        "outcome": "Hours saved every week on a specific process, measured before and after.",
+        "format": "2 to 8 weeks per process",
         "serviceType": "AI process automation",
         "text": "We build automations and agents that solve real problems together with your team — and teach them to maintain them and build the next ones.",
         "points": [
@@ -196,6 +208,8 @@
         "title": "Prompts & Context: AI that gives you the answers you need",
         "short": "The right instructions and context so AI answers what you actually need.",
         "audience": "Teams already using AI but not getting consistent answers.",
+        "outcome": "Consistent AI answers and a prompt library your team reuses.",
+        "format": "1 to 3 weeks",
         "serviceType": "Prompt engineering",
         "text": "AI is only as good as how you ask and what information it gets. We design the right prompts and context for your processes, together with your team.",
         "points": [
@@ -210,6 +224,8 @@
         "title": "Ongoing AI Advisory",
         "short": "An expert partner, month by month, so you move forward with AI without wasting time or money.",
         "audience": "Companies that want to keep moving with AI, with an expert alongside.",
+        "outcome": "Steady progress with AI, without wasting time on dead-end experiments.",
+        "format": "Monthly, 3-month minimum",
         "serviceType": "Ongoing AI advisory",
         "text": "An expert partner, month after month, so your company moves forward with AI without wasting time or money.",
         "points": [
@@ -226,6 +242,27 @@
       "title": "Talks & keynotes",
       "text": "Executive talks and keynotes on AI for business, for events, associations, and leadership teams.",
       "button": "Request info"
+    },
+    "faq": {
+      "title": "Questions about the services",
+      "items": [
+        {
+          "q": "Which service should we start with?",
+          "a": "If your team is not yet using AI in daily work, the workshop is the first step. If you have already tried it and are not sure where to go next, the assessment gives you a prioritized list and a 90-day roadmap. In the first conversation we tell you which of the two fits."
+        },
+        {
+          "q": "Does the workshop adapt to our industry?",
+          "a": "Yes. The workshop uses your team's real tasks, not a generic example. It works for whichever area wants to start: customer service, sales, finance, operations, or another."
+        },
+        {
+          "q": "Can several services be combined?",
+          "a": "Yes. Many companies start with the workshop and then continue with an assessment or by automating one process. The proposal tells you which combination makes sense and what to expect."
+        },
+        {
+          "q": "How do you quote?",
+          "a": "According to the scope. We don't publish prices, because each process is different. You get the proposal within 48 hours, with the timeline and what it includes."
+        }
+      ]
     }
   },
   "how": {
@@ -239,6 +276,15 @@
         "Documentation in plain business language",
         "Reusable templates and prompts",
         "A team that knows how to maintain them and build the next ones"
+      ]
+    },
+    "security": {
+      "title": "How we protect your information",
+      "items": [
+        "We use enterprise versions of AI tools, which do not train on your data.",
+        "We set permissions: AI only sees what the process needs.",
+        "Important decisions get a human review.",
+        "Usage rules are documented for your team."
       ]
     },
     "steps": [
@@ -273,9 +319,10 @@
     "lead": "Anyone can sell you AI. We tell you where you need it, how to apply it so it works, and what results to expect. And where you don't need it.",
     "howLink": "See how we work →",
     "stats": [
-      { "value": "25+", "label": "years in technology and software development" },
-      { "value": "2", "label": "languages: Spanish and English" },
-      { "value": "2", "label": "formats: remote or on-site" }
+      { "value": "25+", "label": "years building software" },
+      { "value": "45 min", "label": "first call, free" },
+      { "value": "48 h", "label": "to get your proposal" },
+      { "value": "0", "label": "licenses to sell you" }
     ],
     "clients": {
       "title": "Who we've worked with",
@@ -296,7 +343,7 @@
       },
       {
         "title": "Built around how your company works",
-        "text": "We work in Spanish and English, with the way most companies actually operate: lean teams, several tools at once, and budgets that have to earn their place. The solution is designed for that context, not for an office that isn't yours."
+        "text": "We work in Spanish and English, remotely or on-site, with the way most companies actually operate: lean teams, several tools at once, and budgets that have to earn their place. The solution is designed for that context, not for an office that isn't yours."
       }
     ]
   },
@@ -305,6 +352,7 @@
     "lead": "This is where AI usually makes a difference first: work that repeats, eats up hours, and can be improved with the tools you already pay for.",
     "indexLabel": "Areas",
     "implementLabel": "How we implement it:",
+    "workshopLink": "Start with a workshop →",
     "builtLabel": "What can be built",
     "keepsLabel": "What stays with the team",
     "preview": {
@@ -353,7 +401,7 @@
       },
       {
         "slug": "human-resources",
-        "service": "automation",
+        "service": "prompts",
         "title": "Human resources",
         "text": "A first reading of candidates, and clear answers to what employees ask every week.",
         "situation": "Resumes are read one by one against a job description that lives in a document. At the same time, employees ask about leave, policy, and benefits, and the answer depends on who is free.",
@@ -401,19 +449,31 @@
       },
       {
         "q": "Which tools do you use?",
-        "a": "Whatever fits your company best and what you already have. We're vendor-neutral."
+        "a": "We work with what your company already has: Microsoft 365 and Copilot, Google Workspace and Gemini, ChatGPT, Claude, Power Automate, Make, n8n, or Zapier, among others. If something new is needed, we justify it first."
       },
       {
         "q": "Is it safe to use AI with company data?",
-        "a": "Every solution is designed with privacy, permissions, and security best practices in mind."
-      },
-      {
-        "q": "Do you work remotely or on-site?",
-        "a": "Both, in English or Spanish, depending on what your team needs."
+        "a": "Yes, if it's designed well. We define with you which data AI can use, with which permissions, and in which tools. We prefer the enterprise versions that don't use your data to train models, and we leave the rules documented for your team."
       },
       {
         "q": "How much does it cost?",
         "a": "Most cases don't call for a custom system. It depends on the process. Tell us what repeats and we'll send a quote within 48 hours."
+      },
+      {
+        "q": "How long does it take to see results?",
+        "a": "A workshop shows results the same week. Automating one process is usually running in 2 to 8 weeks. The proposal tells you the exact timeline."
+      },
+      {
+        "q": "What if AI isn't the right solution for our case?",
+        "a": "We'll tell you in the first conversation. Sometimes the answer is simple automation, or adjusting the process. We don't charge you for saying no."
+      },
+      {
+        "q": "Do we have to buy new licenses?",
+        "a": "In most cases, no. We start with the tools you already pay for. If a new license is justified, we explain it with numbers before we recommend it."
+      },
+      {
+        "q": "What happens when the project ends?",
+        "a": "Your team is left with the solution running, documented, and knowing how to maintain it. If you want to keep moving, monthly advisory is available, but it isn't required."
       }
     ]
   },
@@ -454,6 +514,8 @@
     "message": "Message",
     "messagePlaceholder": "Tell us what you want to improve.",
     "submit": "Send message",
+    "privacyBefore": "By submitting, you agree that we use your data only to reply to your inquiry. See our",
+    "privacyLink": "privacy policy",
     "sending": "Sending…",
     "requiredNote": "Fields marked with * are required.",
     "required": "Please fill in this field.",
@@ -522,9 +584,78 @@
     "message": "Hi, I'd like to talk about AI and automation for my company."
   },
   "footer": {
-    "blurb": "AI consulting for companies. AI applied where it matters, with your team, for real results.",
+    "blurb": "AI consulting for companies in Costa Rica and Latin America. AI applied where it matters, with your team, for real results.",
     "rights": "© {year} SmartMark Consultores",
-    "linksLabel": "Sections"
+    "linksLabel": "Sections",
+    "privacy": "Privacy"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "lead": "This policy describes how SmartMark Consultores handles the personal data you send through the contact form on this site.",
+    "updatedLabel": "Last updated",
+    "updated": "[FECHA_ACTUALIZACION]",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "Controller",
+        "paragraphs": [
+          "The controller of this data is SmartMark Consultores, [RAZON_SOCIAL], legal entity ID [CEDULA_JURIDICA].",
+          "For a question about this policy, write to {email}."
+        ]
+      },
+      {
+        "id": "data",
+        "title": "What we collect and why",
+        "paragraphs": [
+          "The contact form collects the following. We also record the language of the page you wrote from. We use all of this only to reply to your inquiry and send you the proposal."
+        ],
+        "items": [
+          "Name",
+          "Company",
+          "Email",
+          "Phone, if you provide one",
+          "How you prefer to be contacted",
+          "Country",
+          "Service of interest",
+          "Message"
+        ]
+      },
+      {
+        "id": "email",
+        "title": "Email provider",
+        "paragraphs": [
+          "The message is sent through Resend, the service that delivers the email to SmartMark Consultores. Resend processes it only to complete that delivery."
+        ]
+      },
+      {
+        "id": "analytics",
+        "title": "Analytics",
+        "paragraphs": [
+          "When visit measurement is on, the site uses Google Analytics to see which pages are viewed. Google may receive technical data, such as browser type and an IP address. That information is not used to reply to your inquiry or to sell you anything."
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "We do not sell or transfer your data",
+        "paragraphs": [
+          "We do not sell your data or hand it over for a third party to use on its own. The only transfer is delivery through Resend, and only to deliver the message to SmartMark Consultores."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "How long we keep it",
+        "paragraphs": [
+          "Inquiry data is kept for [PLAZO_CONSERVACION]."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "How to ask for access, correction, or deletion",
+        "paragraphs": [
+          "You can ask for access, correction, or deletion of your data by writing to {email}. We reply to that same address. Include your name and the email you used, so we can find the inquiry."
+        ]
+      }
+    ]
   },
   "notFound": {
     "title": "Page not found",

@@ -26,10 +26,12 @@ export function ContactForm({
   locale,
   copy,
   services,
+  privacyHref,
 }: {
   locale: Locale
   copy: FormCopy
   services: Option[]
+  privacyHref: string
 }) {
   const [values, setValues] = useState(empty)
   const [errors, setErrors] = useState<Errors>({})
@@ -269,6 +271,13 @@ export function ContactForm({
       <button type="submit" className="btn btn-primary w-full sm:w-auto" disabled={status === "sending"}>
         {status === "sending" ? copy.sending : copy.submit}
       </button>
+      <p className="max-w-xl text-sm leading-relaxed text-brand-muted">
+        {copy.privacyBefore}{" "}
+        <a href={privacyHref} className="font-medium text-brand-secondary underline underline-offset-4">
+          {copy.privacyLink}
+        </a>
+        .
+      </p>
     </form>
   )
 }

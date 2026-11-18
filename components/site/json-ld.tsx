@@ -37,7 +37,36 @@ function organizationJsonLd(locale: Locale, dict: Dictionary) {
     },
     knowsAbout: KNOWS_ABOUT,
     availableLanguage: ["Spanish", "English"],
+    areaServed: [
+      "Costa Rica",
+      "Panamá",
+      "Guatemala",
+      "El Salvador",
+      "Honduras",
+      "Nicaragua",
+      "República Dominicana",
+      "México",
+      "Colombia",
+      "Perú",
+      "Chile",
+      "Ecuador",
+    ].map((name) => ({ "@type": "Country", name })),
     sameAs: [LINKEDIN_URL],
+  }
+}
+
+function faqPageJsonLd(id: string, items: { q: string; a: string }[]) {
+  return {
+    "@type": "FAQPage",
+    "@id": id,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
   }
 }
 
@@ -59,6 +88,7 @@ export function breadcrumbJsonLd(locale: Locale, page: Exclude<SitePage, "home">
     how: dict.nav.how,
     why: dict.nav.why,
     contact: dict.nav.contact,
+    privacy: dict.privacy.title,
   }[page]
 
   return {
@@ -123,8 +153,10 @@ export function StructuredData({ locale, dict, page }: { locale: Locale; dict: D
   const graph = [
     organizationJsonLd(locale, dict),
     websiteJsonLd(locale),
-    ...(page === "home" ? [] : [breadcrumbJsonLd(locale, page, dict)]),
-    ...(page === "services" ? [servicesJsonLd(locale, dict)] : []),
+    ...(page === "home" ? [faqPageJsonLd(`${absolute(locale, "home")}#faq`, dict.faq.items)] : [breadcrumbJsonLd(locale, page, dict)]),
+    ...(page === "services"
+      ? [servicesJsonLd(locale, dict), faqPageJsonLd(`${absolute(locale, "services")}#faq`, dict.services.faq.items)]
+      : []),
     ...(page === "contact" ? [contactPageJsonLd(locale, dict)] : []),
   ]
 

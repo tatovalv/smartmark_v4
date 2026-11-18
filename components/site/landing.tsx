@@ -10,6 +10,8 @@ import { homePath, serviceOptions, type Dictionary, type Locale } from "@/lib/i1
 import { pagePath, type SitePage } from "@/lib/routes"
 import { bookingLink, EMAIL, LINKEDIN_URL, whatsappHref } from "@/lib/site"
 
+const analyticsOn = Boolean(process.env.NEXT_PUBLIC_GA_ID && /^G-[A-Z0-9]+$/.test(process.env.NEXT_PUBLIC_GA_ID))
+
 export default function Landing({
   locale,
   dict,
@@ -219,6 +221,9 @@ export default function Landing({
                           {dict.cases.implementLabel} {service.title} →
                         </a>
                       ) : null}
+                      <a href={`${pagePath(locale, "services")}#workshop`} className="preview-link">
+                        {dict.cases.workshopLink}
+                      </a>
                     </div>
                   </article>
                 )
@@ -292,6 +297,12 @@ export default function Landing({
                   <p className="sheet-audience">
                     <span>{dict.services.audienceLabel}</span> {item.audience}
                   </p>
+                  <p className="sheet-audience">
+                    <span>{dict.services.outcomeLabel}</span> {item.outcome}
+                  </p>
+                  <p className="sheet-audience">
+                    <span>{dict.services.formatLabel}</span> {item.format}
+                  </p>
                   <p className="sheet-label">{dict.services.includes}</p>
                   <ul>
                     {item.points.map((point) => (
@@ -320,6 +331,24 @@ export default function Landing({
                 </QuoteLink>
               </div>
             </article>
+            <div className="mt-16 max-w-3xl">
+              <h2 id="servicios-faq-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                {dict.services.faq.title}
+              </h2>
+              <div className="mt-8 divide-y divide-brand-line border-y border-brand-line">
+                {dict.services.faq.items.map((item) => (
+                  <details key={item.q} className="group py-1">
+                    <summary className="flex cursor-pointer items-start justify-between gap-4 py-4 text-lg font-semibold leading-snug">
+                      <span>{item.q}</span>
+                      <span aria-hidden="true" className="mt-1 text-brand-secondary transition group-open:rotate-45">
+                        +
+                      </span>
+                    </summary>
+                    <p className="pb-4 leading-relaxed text-brand-muted">{item.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
         ) : null}
@@ -351,6 +380,14 @@ export default function Landing({
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{dict.how.deliverables.title}</h2>
               <ul>
                 {dict.how.deliverables.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="deliverables">
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{dict.how.security.title}</h2>
+              <ul>
+                {dict.how.security.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
@@ -432,7 +469,7 @@ export default function Landing({
             <p className="lede">{dict.contact.text}</p>
             <div className="contact-stage">
               <div className="contact-sheet">
-                <ContactForm locale={locale} copy={dict.form} services={options} />
+                <ContactForm locale={locale} copy={dict.form} services={options} privacyHref={pagePath(locale, "privacy")} />
               </div>
               <aside className="contact-note">
               <ul className="contact-promises">
@@ -468,6 +505,43 @@ export default function Landing({
         </section>
         ) : null}
 
+        {/* Revisar con un abogado antes de publicar. */}
+        {page === "privacy" ? (
+        <section id="privacidad" className="section" aria-labelledby="privacidad-title">
+          <div className="shell">
+            <div className="max-w-3xl">
+              <h1 id="privacidad-title" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                {dict.privacy.title}
+              </h1>
+              <p className="lede">{dict.privacy.lead}</p>
+              <p className="mt-6 text-sm font-semibold text-brand-secondary">
+                {dict.privacy.updatedLabel}: {dict.privacy.updated}
+              </p>
+              {dict.privacy.sections
+                .filter((section) => section.id !== "analytics" || analyticsOn)
+                .map((section) => (
+                  <div key={section.id}>
+                    <h2 className="mt-10 text-2xl font-semibold tracking-tight">{section.title}</h2>
+                    {section.paragraphs.map((paragraph) => (
+                      <p key={paragraph} className="mt-3 leading-relaxed text-brand-muted">
+                        <PrivacyText text={paragraph} />
+                      </p>
+                    ))}
+                    {"items" in section && section.items ? (
+                      <ul className="mt-4 grid list-disc gap-2 pl-5 leading-relaxed text-brand-muted">
+                        {section.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </div>
+                ))}
+            </div>
+          </div>
+        </section>
+        ) : null}
+
+        {page !== "privacy" ? (
         <section className={page === "home" ? "final-cta-band is-full bg-white" : "final-cta-band"} aria-labelledby="cta-final-title">
           <div className="shell">
             <div className="final-cta">
@@ -494,6 +568,7 @@ export default function Landing({
             </div>
           </div>
         </section>
+        ) : null}
       </main>
 
       <footer className="bg-brand-secondary text-white">
@@ -511,6 +586,9 @@ export default function Landing({
                   {link.label}
                 </a>
               ))}
+              <a href={pagePath(locale, "privacy")} className="hover:underline">
+                {dict.footer.privacy}
+              </a>
               <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">
                 {dict.contact.linkedinLabel}
               </a>
@@ -527,6 +605,20 @@ export default function Landing({
 
       {whatsapp ? <WhatsAppButton href={whatsapp} label={dict.whatsapp.label} /> : null}
       <StructuredData locale={locale} dict={dict} page={page} />
+    </>
+  )
+}
+
+function PrivacyText({ text }: { text: string }) {
+  const [before, after] = text.split("{email}")
+  if (after === undefined) return text
+  return (
+    <>
+      {before}
+      <a className="font-medium text-brand-secondary underline underline-offset-4" href={`mailto:${EMAIL}`}>
+        {EMAIL}
+      </a>
+      {after}
     </>
   )
 }

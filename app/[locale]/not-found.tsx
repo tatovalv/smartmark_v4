@@ -1,5 +1,10 @@
+import type { Metadata } from "next"
 import { headers } from "next/headers"
 import { getDictionary, homePath, isLocale, type Locale } from "@/lib/i18n"
+
+export const metadata: Metadata = {
+  robots: { index: false },
+}
 
 export default function NotFound() {
   const headerLocale = headers().get("x-locale")

@@ -6,6 +6,7 @@ export const SITE_PAGES = {
   how: { es: "como-trabajamos", en: "how-we-work" },
   why: { es: "por-que-smartmark", en: "why-smartmark" },
   contact: { es: "contacto", en: "contact" },
+  privacy: { es: "privacidad", en: "privacy" },
 } as const
 
 export type SitePageId = keyof typeof SITE_PAGES
@@ -15,12 +16,13 @@ export const SITE_PAGE_IDS = Object.keys(SITE_PAGES) as SitePageId[]
 
 /** Fixed dates so each deploy does not look like a content change to Google. */
 export const PAGE_UPDATED: Record<SitePage, string> = {
-  home: "2026-11-14",
-  services: "2026-11-14",
-  cases: "2026-11-14",
-  how: "2026-11-14",
-  why: "2026-11-14",
-  contact: "2026-11-14",
+  home: "2026-11-18",
+  services: "2026-11-18",
+  cases: "2026-11-18",
+  how: "2026-11-18",
+  why: "2026-11-18",
+  contact: "2026-11-18",
+  privacy: "2026-11-18",
 }
 
 export function pageFromSlug(locale: Locale, slug: string): SitePageId | null {

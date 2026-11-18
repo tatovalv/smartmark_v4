@@ -3,7 +3,7 @@
     "pages": {
       "home": {
         "title": "Consultoría en IA y automatización | SmartMark Consultores",
-        "description": "Consultoría en inteligencia artificial para empresas. Le ayudamos a aplicar IA donde importa: en los procesos correctos, con su equipo y con resultados."
+        "description": "Consultoría en inteligencia artificial para empresas en Costa Rica y Latinoamérica. Le ayudamos a aplicar IA donde importa: procesos, equipo y resultados."
       },
       "services": {
         "title": "Servicios de IA y automatización para empresas | SmartMark",
@@ -24,6 +24,10 @@
       "contact": {
         "title": "Contacto: agende una conversación sobre IA | SmartMark",
         "description": "Cuéntenos qué quiere mejorar en su operación. Le respondemos en menos de 48 horas. Atención en español e inglés, virtual o presencial."
+      },
+      "privacy": {
+        "title": "Política de privacidad | SmartMark Consultores",
+        "description": "Datos que recoge el formulario de contacto, para qué se usan, el envío por Resend y cómo pedir acceso, corrección o eliminación."
       }
     }
   },
@@ -53,16 +57,16 @@
     "ctaShort": "Agendar"
   },
   "hero": {
-    "eyebrow": "Consultoría en inteligencia artificial",
+    "eyebrow": "Consultoría en inteligencia artificial · Costa Rica y Latinoamérica",
     "stageLabel": "Por qué conversar con SmartMark",
     "title": "Su empresa necesita IA. Apliquémosla donde realmente importa.",
     "subtitle": "Le ayudamos a definir dónde aplicar la inteligencia artificial en su operación, cómo implementarla con su equipo y qué resultados esperar, con las herramientas que ya tiene.",
     "primary": "Agendar una conversación",
     "secondary": "Ver servicios",
     "trust": [
-      "Más de 25 años en tecnología",
-      "Capacitaciones y charlas para empresas multinacionales",
-      "Atención en español e inglés, virtual o presencial"
+      "Más de 25 años construyendo software",
+      "Agentes de IA y capacitaciones para empresas multinacionales",
+      "Primera conversación de 45 minutos, sin costo"
     ]
   },
   "position": {
@@ -75,20 +79,20 @@
     "closing": "No se trata de usar IA en todo. Se trata de usarla donde cambia los resultados."
   },
   "problem": {
-    "title": "Lo que vemos",
-    "lead": "Conversamos con empresas a las que les cotizaron un sistema de inteligencia artificial por un monto muy alto. El trabajo de fondo era repetitivo: se podía automatizar, y el equipo podía aprender a mantenerlo.",
+    "title": "Por qué la IA todavía no da resultados en muchas empresas",
+    "lead": "No es por falta de herramientas. Casi siempre es por dónde y cómo se aplicó.",
     "items": [
       {
-        "title": "Un sistema cotizado muy por encima del problema.",
-        "text": "Se propone una plataforma a la medida cuando el caso es un correo, un reporte o una respuesta que ya está escrita en algún lado."
+        "title": "La probaron, pero el trabajo siguió igual.",
+        "text": "El equipo tiene acceso a ChatGPT o Copilot, pero los correos, reportes y traspasos de datos se siguen haciendo a mano."
       },
       {
-        "title": "El trabajo repetitivo sigue en el equipo.",
-        "text": "Correos, reportes, copiar datos entre sistemas y contestar las mismas preguntas. Ahí es donde la IA se aplica, y donde se puede automatizar."
+        "title": "Le cotizaron un sistema enorme para un problema concreto.",
+        "text": "Se propone una plataforma a la medida cuando el caso se resolvía automatizando lo que ya tienen."
       },
       {
-        "title": "El equipo queda dependiendo de quien lo vendió.",
-        "text": "Si solo el proveedor sabe cómo funciona el sistema, cada cambio vuelve a costar. La solución tiene que quedar en la empresa."
+        "title": "Solo el proveedor sabe cómo funciona.",
+        "text": "Cada cambio vuelve a costar. La solución tiene que quedar en manos de su equipo."
       }
     ]
   },
@@ -131,8 +135,8 @@
         "text": "La solución queda en manos del equipo. Si dentro de tres meses solo nosotros sabemos cómo funciona, el trabajo quedó mal hecho."
       },
       {
-        "title": "Decimos que no",
-        "text": "Si el proceso es repetitivo, no armamos un sistema a la medida. Lo automatizamos con lo que ya tienen. Si la IA no se justifica, también lo decimos."
+        "title": "Le decimos la verdad",
+        "text": "Si un proceso se resuelve con una automatización simple, no le vendemos un sistema. Si la IA no se justifica, también se lo decimos. Así, cuando le recomendamos IA, sabe que vale la pena."
       }
     ]
   },
@@ -141,6 +145,8 @@
     "intro": "Cinco maneras de aplicar IA donde importa, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
     "includes": "Incluye",
     "audienceLabel": "Para quién",
+    "outcomeLabel": "Resultado",
+    "formatLabel": "Formato",
     "quote": "Solicitar cotización",
     "casesLink": "Ver casos de uso →",
     "preview": {
@@ -154,6 +160,8 @@
         "title": "Taller de IA para equipos de negocio",
         "short": "Su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
         "audience": "Equipos que quieren empezar a usar IA en su trabajo diario.",
+        "outcome": "Su equipo usa IA en tareas reales desde la semana siguiente.",
+        "format": "De medio día a 3 días · presencial o virtual",
         "serviceType": "Capacitación en inteligencia artificial",
         "text": "Un taller práctico donde su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
         "points": [
@@ -168,6 +176,8 @@
         "title": "Diagnóstico de oportunidades de IA y automatización",
         "short": "Dónde la IA genera más impacto en su operación, y en qué orden abordarlo.",
         "audience": "Empresas que no saben por dónde empezar o tienen pilotos sin resultados.",
+        "outcome": "Una lista priorizada de dónde aplicar IA y una hoja de ruta de 90 días.",
+        "format": "2 a 3 semanas",
         "serviceType": "Consultoría en inteligencia artificial",
         "text": "Identificamos dónde la IA y la automatización generan más impacto en su operación, y en qué orden abordarlo.",
         "points": [
@@ -182,6 +192,8 @@
         "title": "Automatizaciones y agentes de IA (con su equipo)",
         "short": "Automatizaciones y agentes construidos con su equipo, que después ellos mantienen.",
         "audience": "Áreas con tareas repetitivas que consumen horas cada semana.",
+        "outcome": "Horas recuperadas cada semana en un proceso concreto, medidas antes y después.",
+        "format": "2 a 8 semanas por proceso",
         "serviceType": "Automatización de procesos con IA",
         "text": "Construimos junto a su equipo automatizaciones y agentes que resuelven problemas reales — y les enseñamos a mantenerlos y crear los siguientes.",
         "points": [
@@ -196,6 +208,8 @@
         "title": "Prompts y contexto: IA que responde lo que usted necesita",
         "short": "Las instrucciones y el contexto correctos para que la IA responda lo que necesita.",
         "audience": "Equipos que ya usan IA pero no obtienen respuestas consistentes.",
+        "outcome": "Respuestas de IA consistentes y una biblioteca de prompts que el equipo reutiliza.",
+        "format": "1 a 3 semanas",
         "serviceType": "Ingeniería de prompts",
         "text": "La calidad de la IA depende de cómo se le pide y de la información que recibe. Diseñamos con su equipo los prompts y el contexto correctos para sus procesos.",
         "points": [
@@ -210,6 +224,8 @@
         "title": "Acompañamiento continuo en IA",
         "short": "Un aliado experto mes a mes, para avanzar con IA sin perder tiempo ni dinero.",
         "audience": "Empresas que quieren avanzar con IA mes a mes, con un experto al lado.",
+        "outcome": "Avance constante con IA, sin perder tiempo en pruebas que no llevan a nada.",
+        "format": "Mensual, mínimo 3 meses",
         "serviceType": "Asesoría continua en inteligencia artificial",
         "text": "Un aliado experto mes a mes para que su empresa avance con IA sin perder tiempo ni dinero.",
         "points": [
@@ -226,6 +242,27 @@
       "serviceType": "Conferencias sobre inteligencia artificial",
       "text": "Charlas ejecutivas y conferencias sobre IA aplicada a negocios para eventos, asociaciones y equipos directivos.",
       "button": "Solicitar información"
+    },
+    "faq": {
+      "title": "Preguntas sobre los servicios",
+      "items": [
+        {
+          "q": "¿Por cuál servicio conviene empezar?",
+          "a": "Si su equipo todavía no usa IA en el trabajo diario, el taller es el primer paso. Si ya la probaron y no saben dónde seguir, el diagnóstico deja una lista priorizada y una hoja de ruta de 90 días. En la primera conversación le decimos cuál de los dos le conviene."
+        },
+        {
+          "q": "¿El taller se adapta a nuestra industria?",
+          "a": "Sí. El taller usa las tareas reales de su equipo, no un ejemplo genérico. Sirve para el área que quiera empezar: atención, ventas, finanzas, operaciones u otra."
+        },
+        {
+          "q": "¿Pueden combinarse varios servicios?",
+          "a": "Sí. Muchas empresas empiezan con el taller y después siguen con un diagnóstico o con la automatización de un proceso. En la propuesta le decimos qué combinación tiene sentido y qué puede esperar."
+        },
+        {
+          "q": "¿Cómo se cotiza?",
+          "a": "Según el alcance. No publicamos precios, porque cada proceso es distinto. Le enviamos la propuesta en 48 horas, con el plazo y lo que incluye."
+        }
+      ]
     }
   },
   "how": {
@@ -239,6 +276,15 @@
         "Documentación en lenguaje de negocio",
         "Plantillas y prompts reutilizables",
         "Un equipo que sabe mantenerlas y crear las siguientes"
+      ]
+    },
+    "security": {
+      "title": "Cómo cuidamos su información",
+      "items": [
+        "Usamos versiones empresariales de las herramientas de IA, que no entrenan con sus datos.",
+        "Definimos permisos: la IA solo ve lo que el proceso necesita.",
+        "Revisión humana en las decisiones importantes.",
+        "Reglas de uso documentadas para su equipo."
       ]
     },
     "steps": [
@@ -273,9 +319,10 @@
     "lead": "Cualquiera puede venderle inteligencia artificial. Nosotros le decimos dónde la necesita, cómo aplicarla para que funcione y qué resultado esperar. Y también dónde no hace falta.",
     "howLink": "Vea cómo trabajamos →",
     "stats": [
-      { "value": "25+", "label": "años en tecnología y desarrollo de software" },
-      { "value": "2", "label": "idiomas: español e inglés" },
-      { "value": "2", "label": "modalidades: virtual o presencial" }
+      { "value": "25+", "label": "años construyendo software" },
+      { "value": "45 min", "label": "primera conversación, sin costo" },
+      { "value": "48 h", "label": "para recibir su propuesta" },
+      { "value": "0", "label": "licencias que venderle" }
     ],
     "clients": {
       "title": "Con quiénes hemos trabajado",
@@ -296,7 +343,7 @@
       },
       {
         "title": "Pensado para cómo opera su empresa",
-        "text": "Trabajamos en español y en inglés, con la forma en que operan la mayoría de las empresas: equipos reducidos, varias herramientas a la vez y presupuestos que tienen que rendir. La solución se diseña para ese contexto, no para una oficina que no es la suya."
+        "text": "Trabajamos en español y en inglés, de forma virtual o presencial, con la forma en que operan la mayoría de las empresas: equipos reducidos, varias herramientas a la vez y presupuestos que tienen que rendir. La solución se diseña para ese contexto, no para una oficina que no es la suya."
       }
     ]
   },
@@ -305,6 +352,7 @@
     "lead": "Aquí es donde la IA suele marcar la diferencia primero: trabajos que se repiten, consumen horas y se pueden mejorar con las herramientas que ya paga.",
     "indexLabel": "Áreas",
     "implementLabel": "Cómo lo implementamos:",
+    "workshopLink": "Empiece con un taller →",
     "builtLabel": "Qué se puede construir",
     "keepsLabel": "Qué se queda en el equipo",
     "preview": {
@@ -353,7 +401,7 @@
       },
       {
         "slug": "recursos-humanos",
-        "service": "automation",
+        "service": "prompts",
         "title": "Recursos humanos",
         "text": "Una primera lectura de candidatos, y respuestas claras a lo que el equipo pregunta cada semana.",
         "situation": "Los currículos se leen uno por uno contra una descripción que vive en un documento. Al mismo tiempo, los colaboradores preguntan por vacaciones, políticas y beneficios, y la respuesta depende de quién esté disponible.",
@@ -401,19 +449,31 @@
       },
       {
         "q": "¿Qué herramientas usan?",
-        "a": "Las que mejor se adapten a su empresa y a lo que ya tienen. Somos neutrales."
+        "a": "Trabajamos con lo que su empresa ya tiene: Microsoft 365 y Copilot, Google Workspace y Gemini, ChatGPT, Claude, Power Automate, Make, n8n o Zapier, entre otras. Si hace falta algo nuevo, se lo justificamos antes."
       },
       {
         "q": "¿Es seguro usar IA con información de la empresa?",
-        "a": "Diseñamos cada solución considerando privacidad, permisos y buenas prácticas de seguridad."
-      },
-      {
-        "q": "¿Trabajan de forma virtual o presencial?",
-        "a": "De las dos formas, en español o en inglés, según lo que necesite su equipo."
+        "a": "Sí, si se diseña bien. Definimos con usted qué datos puede usar la IA, con qué permisos y en qué herramientas; preferimos las versiones empresariales que no usan sus datos para entrenar modelos, y dejamos las reglas documentadas para su equipo."
       },
       {
         "q": "¿Cuánto cuesta?",
         "a": "La mayoría de los casos no pide un sistema a la medida. Depende del proceso. Cuéntenos qué se repite y le enviamos una cotización en 48 horas."
+      },
+      {
+        "q": "¿Cuánto tiempo toma ver resultados?",
+        "a": "Un taller deja resultados la misma semana. Una automatización de un proceso suele estar funcionando en 2 a 8 semanas. En la propuesta le decimos el plazo exacto."
+      },
+      {
+        "q": "¿Y si la IA no es la solución para nuestro caso?",
+        "a": "Se lo decimos en la primera conversación. A veces la respuesta es una automatización simple, o ajustar el proceso. No cobramos por decirle que no."
+      },
+      {
+        "q": "¿Tenemos que comprar licencias nuevas?",
+        "a": "En la mayoría de los casos no. Empezamos con las herramientas que ya pagan. Si una licencia nueva se justifica, se la explicamos con números antes de recomendarla."
+      },
+      {
+        "q": "¿Qué pasa cuando termina el proyecto?",
+        "a": "Su equipo queda con la solución funcionando, documentada y sabiendo mantenerla. Si quiere seguir avanzando, está el acompañamiento mensual, pero no es condición."
       }
     ]
   },
@@ -454,6 +514,8 @@
     "message": "Mensaje",
     "messagePlaceholder": "Cuéntenos qué quiere mejorar.",
     "submit": "Enviar mensaje",
+    "privacyBefore": "Al enviar, acepta que usemos sus datos solo para responder su consulta. Ver",
+    "privacyLink": "política de privacidad",
     "sending": "Enviando…",
     "requiredNote": "Los campos con * son obligatorios.",
     "required": "Complete este campo.",
@@ -522,9 +584,78 @@
     "message": "Hola, me interesa conversar sobre IA y automatización para mi empresa."
   },
   "footer": {
-    "blurb": "Consultoría en inteligencia artificial para empresas. IA aplicada donde importa, con su equipo y con resultados.",
+    "blurb": "Consultoría en inteligencia artificial para empresas en Costa Rica y Latinoamérica. IA aplicada donde importa, con su equipo y con resultados.",
     "rights": "© {year} SmartMark Consultores",
-    "linksLabel": "Secciones"
+    "linksLabel": "Secciones",
+    "privacy": "Privacidad"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lead": "Esta política describe cómo SmartMark Consultores trata los datos personales que usted envía por el formulario de contacto de este sitio.",
+    "updatedLabel": "Fecha de actualización",
+    "updated": "[FECHA_ACTUALIZACION]",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "Responsable",
+        "paragraphs": [
+          "El responsable de estos datos es SmartMark Consultores, [RAZON_SOCIAL], cédula jurídica [CEDULA_JURIDICA].",
+          "Para una consulta sobre esta política, escriba a {email}."
+        ]
+      },
+      {
+        "id": "data",
+        "title": "Qué datos recogemos y para qué",
+        "paragraphs": [
+          "El formulario de contacto recoge los datos siguientes. También queda registrado el idioma de la página desde la que escribió. Los usamos solo para responder su consulta y enviarle la propuesta."
+        ],
+        "items": [
+          "Nombre",
+          "Empresa",
+          "Correo electrónico",
+          "Teléfono, si lo indica",
+          "Cómo prefiere que le contactemos",
+          "País",
+          "Servicio de interés",
+          "Mensaje"
+        ]
+      },
+      {
+        "id": "email",
+        "title": "Proveedor de correo",
+        "paragraphs": [
+          "El mensaje se envía por Resend, el servicio que entrega el correo a SmartMark Consultores. Resend lo trata únicamente para completar ese envío."
+        ]
+      },
+      {
+        "id": "analytics",
+        "title": "Analítica",
+        "paragraphs": [
+          "Cuando la medición de visitas está activa, el sitio usa Google Analytics para saber qué páginas se consultan. Google puede recibir datos técnicos, como el tipo de navegador y una dirección IP. Esa información no se usa para responder su consulta ni para venderle nada."
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "No vendemos ni cedemos sus datos",
+        "paragraphs": [
+          "No vendemos sus datos ni los cedemos para que un tercero los use por su cuenta. La única cesión es el envío por Resend, y solo para entregar el mensaje a SmartMark Consultores."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Cuánto tiempo se guardan",
+        "paragraphs": [
+          "Los datos de la consulta se conservan durante [PLAZO_CONSERVACION]."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Cómo pedir acceso, corrección o eliminación",
+        "paragraphs": [
+          "Puede pedir acceso, corrección o eliminación de sus datos escribiendo a {email}. Le respondemos a ese mismo correo. Indique su nombre y el correo con el que escribió, para poder localizar la consulta."
+        ]
+      }
+    ]
   },
   "notFound": {
     "title": "Página no encontrada",
