@@ -603,10 +603,6 @@ footer :focus-visible,
   .preview-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
-@media (min-width: 1280px) {
-  .preview-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-}
-
 .final-cta-band {
   padding-bottom: 4.5rem;
 }

@@ -7,7 +7,7 @@
       },
       "services": {
         "title": "AI & Automation Services for Business Teams | SmartMark",
-        "description": "AI workshops, opportunity assessments, automations, AI agents, prompt design, and ongoing advisory for business teams."
+        "description": "Prompts, AI workshops, assessments, process optimization, AI agents, and ongoing advisory for business teams."
       },
       "cases": {
         "title": "AI Use Cases for Business Teams | SmartMark",
@@ -142,7 +142,7 @@
   },
   "services": {
     "title": "AI and automation services for business teams",
-    "intro": "Five ways to apply AI where it matters, depending on where your team is today. Each one ends with something people use, not a presentation.",
+    "intro": "Six services, in the order most companies progress with AI: first learn to ask it well, then apply it across the team, then automate and build agents. You can start with any of them; in the first call we'll tell you which fits.",
     "includes": "Includes",
     "audienceLabel": "Who it's for",
     "outcomeLabel": "Outcome",
@@ -150,34 +150,50 @@
     "quote": "Request a quote",
     "casesLink": "See use cases →",
     "preview": {
-      "title": "Five ways to get started",
-      "lead": "From a one-day workshop to month-by-month advisory, depending on where your team is today.",
+      "title": "Six services, one clear path",
+      "lead": "From learning to ask AI the right way to having agents working in your operation.",
       "link": "See all services →"
     },
     "items": [
       {
+        "id": "prompts",
+        "title": "Prompts & Context: teach AI to work the way your company does",
+        "short": "We write the prompts for your tasks and check whether the information AI receives is the information it needs.",
+        "audience": "Teams already using ChatGPT, Copilot, or another AI but getting generic or inconsistent answers.",
+        "outcome": "Prompts ready for the key tasks, with context that actually works, and a team that knows how to maintain them.",
+        "format": "We do it with your team · can be combined with the workshop",
+        "serviceType": "Prompt and context engineering",
+        "text": "The main work is writing the prompts and reviewing the context. A prompt is the instruction for each task; context is the information AI receives in order to answer well: products, policies, tone, examples, and documents. We check whether what it is being given today is effective, and we correct it when it isn't. We also teach your team to write and adjust those prompts, so they don't depend on us.",
+        "points": [
+          "We write the prompts for the key tasks, with examples from your own work",
+          "We review the context AI receives today and define which context is effective: documents, data, rules, and tone",
+          "A library of ready prompts, each with the information it needs",
+          "Your team learns to write and adjust them, with simple quality, security, and privacy rules"
+        ]
+      },
+      {
         "id": "workshop",
         "title": "AI Workshop for Business Teams",
-        "short": "Your team learns to use AI in their daily work and leaves with working solutions.",
+        "short": "Your team learns to use AI on real tasks and leaves with working solutions.",
         "audience": "Teams ready to start using AI in their daily work.",
-        "outcome": "Your team uses AI on real tasks starting the following week.",
-        "format": "Half a day to 3 days · on-site or virtual",
+        "outcome": "Your team uses AI on real tasks.",
+        "format": "On-site or virtual",
         "serviceType": "AI training",
         "text": "A hands-on workshop where your team learns to use AI in their daily work — and leaves with working solutions.",
         "points": [
           "Effective use of AI assistants on real tasks from their area",
-          "Guided build of their first automation or agent, no coding required",
+          "Their first simple automation, built during the workshop with no coding",
           "Reusable materials and templates",
-          "On-site or virtual, from half a day to 3 days"
+          "On-site or virtual"
         ]
       },
       {
         "id": "assessment",
-        "title": "AI & Automation Opportunity Assessment",
-        "short": "Where AI will have the biggest impact on your operation, and in what order to tackle it.",
+        "title": "AI Opportunity Assessment",
+        "short": "We show you where AI will drive the most results in your operation, and where to start.",
         "audience": "Companies unsure where to start, or with pilots that haven't delivered.",
         "outcome": "A prioritized list of where to apply AI and a 90-day roadmap.",
-        "format": "2 to 3 weeks",
+        "format": "Interviews with the teams, prioritization, and a roadmap",
         "serviceType": "AI consulting",
         "text": "We identify where AI and automation will have the biggest impact on your operation — and in what order to tackle it.",
         "points": [
@@ -189,34 +205,34 @@
       },
       {
         "id": "automation",
-        "title": "Automations & AI Agents (built with your team)",
-        "short": "Automations and agents built with your team, which they then maintain themselves.",
+        "title": "Process Optimization with Automation & AI",
+        "short": "We take a process that's done by hand today and automate it with the tools you already have.",
         "audience": "Teams with repetitive work that eats hours every week.",
         "outcome": "Hours saved every week on a specific process, measured before and after.",
-        "format": "2 to 8 weeks per process",
-        "serviceType": "AI process automation",
-        "text": "We build automations and agents that solve real problems together with your team — and teach them to maintain them and build the next ones.",
+        "format": "One specific process, with the tools you already have",
+        "serviceType": "Process automation and optimization",
+        "text": "Many day-to-day tasks (copying data between systems, building reports, sending the same emails) can run on their own. We take a specific process, simplify it, and automate it with the tools you already pay for, using AI only where it adds value. We build it with your team so they can maintain it afterward.",
         "points": [
-          "No-code platforms for non-technical teams",
-          "Custom development when the use case requires it",
-          "Integration with your current tools (email, spreadsheets, CRM, ERP, etc.)",
-          "Training and documentation so your team becomes self-sufficient"
+          "We review the process and remove the steps you don't need",
+          "Automation with no-code platforms (Power Automate, Make, n8n…) or custom development when needed",
+          "Connection to your current tools: email, spreadsheets, CRM, ERP",
+          "Documentation and training so your team can maintain it"
         ]
       },
       {
-        "id": "prompts",
-        "title": "Prompts & Context: AI that gives you the answers you need",
-        "short": "The right instructions and context so AI answers what you actually need.",
-        "audience": "Teams already using AI but not getting consistent answers.",
-        "outcome": "Consistent AI answers and a prompt library your team reuses.",
-        "format": "1 to 3 weeks",
-        "serviceType": "Prompt engineering",
-        "text": "AI is only as good as how you ask and what information it gets. We design the right prompts and context for your processes, together with your team.",
+        "id": "agents",
+        "title": "AI Agents for Your Operation",
+        "short": "AI assistants that do more than answer: they look up information and complete tasks, within clear rules.",
+        "audience": "Companies with a high volume of inquiries, requests, or follow-ups that follow a pattern.",
+        "outcome": "Answers and tasks handled in minutes, around the clock, while your team focuses on the cases that need judgment.",
+        "format": "One agent, with clear rules and your team supervising",
+        "serviceType": "AI agent development",
+        "text": "An AI agent is an assistant that goes a step beyond answering: it looks up your company's information, follows defined rules, and completes tasks, such as replying to customers, sorting requests, or following up with leads. We design it with clear limits, and your team oversees the important decisions.",
         "points": [
-          "Prompt library for each team's key tasks",
-          "How to give AI the right context (documents, data, business rules)",
-          "Prompts for automations and agents that work consistently",
-          "Best practices for quality, security, and privacy"
+          "We define what the agent does, what it doesn't, and when it hands the case to a person",
+          "Connected to your company's information and tools",
+          "Tested with real cases before it goes live",
+          "Your team learns to adjust and supervise it"
         ]
       },
       {
@@ -225,7 +241,7 @@
         "short": "An expert partner, month by month, so you move forward with AI without wasting time or money.",
         "audience": "Companies that want to keep moving with AI, with an expert alongside.",
         "outcome": "Steady progress with AI, without wasting time on dead-end experiments.",
-        "format": "Monthly, 3-month minimum",
+        "format": "Monthly check-ins",
         "serviceType": "Ongoing AI advisory",
         "text": "An expert partner, month after month, so your company moves forward with AI without wasting time or money.",
         "points": [
@@ -248,7 +264,7 @@
       "items": [
         {
           "q": "Which service should we start with?",
-          "a": "If your team is not yet using AI in daily work, the workshop is the first step. If you have already tried it and are not sure where to go next, the assessment gives you a prioritized list and a 90-day roadmap. In the first conversation we tell you which of the two fits."
+          "a": "If your team already uses AI but isn't getting good answers, start with prompts and context. If they don't use it day to day yet, the workshop is the first step. If you're not sure where to apply it, the assessment gives you a prioritized list. In the first call we'll tell you which fits."
         },
         {
           "q": "Does the workshop adapt to our industry?",
@@ -362,7 +378,7 @@
     "items": [
       {
         "slug": "customer-service",
-        "service": "automation",
+        "service": "agents",
         "title": "Customer service",
         "text": "What comes in again and again stops taking the people who should be on the difficult cases.",
         "situation": "The team answers the same questions by email, chat, and phone. The right answer lives in a manual, in an email from months ago, or in the head of the person who has been there longest. Meanwhile, the case that actually needs judgment waits.",
@@ -375,7 +391,7 @@
       },
       {
         "slug": "sales",
-        "service": "automation",
+        "service": "agents",
         "title": "Sales",
         "text": "Following up a lead and drafting a proposal no longer wait for someone to have a free afternoon.",
         "situation": "A prospect writes, the details stay in one person's inbox, and the proposal is built by copying the last one. What gets lost is not a tool. It is the day someone needed an answer.",

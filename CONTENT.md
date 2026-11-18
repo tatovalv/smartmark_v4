@@ -27,7 +27,7 @@ Both languages are generated on the server from the same components. Do not put 
 | The results we aim for | `outcomes` | `outcomes` |
 | Why AI still isn't paying off | `problem` | `problem` |
 | How we think about the work | `approach` | `approach` |
-| Five services, audience, outcome, format, and quote buttons | `services` | `services` |
+| Six services, audience, outcome, format, and quote buttons | `services` | `services` |
 | Questions at the bottom of the services page | `services.faq` | `services.faq` |
 | Talks band | `services.talks` | `services.talks` |
 | How we work, including how we protect information | `how` | `how` |

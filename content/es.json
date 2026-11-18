@@ -7,7 +7,7 @@
       },
       "services": {
         "title": "Servicios de IA y automatización para empresas | SmartMark",
-        "description": "Talleres de IA, diagnóstico de oportunidades, automatizaciones, agentes de IA, prompts y acompañamiento para equipos de negocio."
+        "description": "Prompts, talleres de IA, diagnóstico, optimización de procesos, agentes de IA y acompañamiento para empresas."
       },
       "cases": {
         "title": "Casos de uso de IA para equipos de negocio | SmartMark",
@@ -142,7 +142,7 @@
   },
   "services": {
     "title": "Servicios de inteligencia artificial y automatización para empresas",
-    "intro": "Cinco maneras de aplicar IA donde importa, según qué tan adelante esté su equipo. Cada una termina con algo que se usa, no con una presentación.",
+    "intro": "Seis servicios, en el orden en que la mayoría de las empresas avanza con IA: primero aprender a pedirle bien, después aplicarla en el equipo, luego automatizar y crear agentes. Puede empezar por cualquiera; en la primera conversación le decimos cuál le conviene.",
     "includes": "Incluye",
     "audienceLabel": "Para quién",
     "outcomeLabel": "Resultado",
@@ -150,34 +150,50 @@
     "quote": "Solicitar cotización",
     "casesLink": "Ver casos de uso →",
     "preview": {
-      "title": "Cinco maneras de empezar",
-      "lead": "Desde un taller de un día hasta acompañamiento mes a mes, según qué tan adelante esté su equipo.",
+      "title": "Seis servicios, un camino claro",
+      "lead": "De aprender a pedirle bien a la IA, a tener agentes trabajando en su operación.",
       "link": "Ver todos los servicios →"
     },
     "items": [
       {
+        "id": "prompts",
+        "title": "Prompts y contexto: enséñele a la IA a trabajar como su empresa",
+        "short": "Escribimos los prompts de sus tareas y revisamos si la información que recibe la IA es la que hace falta.",
+        "audience": "Equipos que ya usan ChatGPT, Copilot u otra IA, pero reciben respuestas genéricas o inconsistentes.",
+        "outcome": "Prompts listos para las tareas clave, con el contexto que sí funciona, y un equipo que sabe mantenerlos.",
+        "format": "Lo hacemos con su equipo · se puede combinar con el taller",
+        "serviceType": "Ingeniería de prompts y contexto",
+        "text": "El trabajo principal es escribir los prompts y revisar el contexto. El prompt es la instrucción de cada tarea; el contexto es la información que la IA recibe para responder bien: productos, políticas, tono, ejemplos y documentos. Revisamos si lo que hoy se le está dando es lo efectivo, y lo corregimos cuando no lo es. Además, le enseñamos a su equipo a escribir y ajustar esos prompts, para que no dependan de nosotros.",
+        "points": [
+          "Escribimos los prompts de las tareas clave, con ejemplos de su propio trabajo",
+          "Revisamos el contexto que hoy recibe la IA y definimos cuál es el efectivo: documentos, datos, reglas y tono",
+          "Biblioteca de prompts listos, cada uno con la información que necesita",
+          "Su equipo aprende a escribirlos y ajustarlos, con reglas simples de calidad, seguridad y privacidad"
+        ]
+      },
+      {
         "id": "workshop",
         "title": "Taller de IA para equipos de negocio",
-        "short": "Su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
+        "short": "Su equipo aprende a usar IA en sus tareas reales y sale con soluciones funcionando.",
         "audience": "Equipos que quieren empezar a usar IA en su trabajo diario.",
-        "outcome": "Su equipo usa IA en tareas reales desde la semana siguiente.",
-        "format": "De medio día a 3 días · presencial o virtual",
+        "outcome": "Su equipo usa IA en tareas reales.",
+        "format": "Presencial o virtual",
         "serviceType": "Capacitación en inteligencia artificial",
         "text": "Un taller práctico donde su equipo aprende a usar IA en su trabajo diario y sale con soluciones funcionando.",
         "points": [
           "Uso efectivo de asistentes de IA en tareas reales del área",
-          "Construcción guiada de su primera automatización o agente, sin programar",
+          "Su primera automatización sencilla, construida en el taller y sin programar",
           "Material y plantillas reutilizables",
-          "Modalidad presencial o virtual, de medio día a 3 días"
+          "Modalidad presencial o virtual"
         ]
       },
       {
         "id": "assessment",
-        "title": "Diagnóstico de oportunidades de IA y automatización",
-        "short": "Dónde la IA genera más impacto en su operación, y en qué orden abordarlo.",
+        "title": "Diagnóstico de oportunidades de IA",
+        "short": "Le decimos dónde la IA genera más resultados en su operación, y por dónde empezar.",
         "audience": "Empresas que no saben por dónde empezar o tienen pilotos sin resultados.",
         "outcome": "Una lista priorizada de dónde aplicar IA y una hoja de ruta de 90 días.",
-        "format": "2 a 3 semanas",
+        "format": "Entrevistas con las áreas, priorización y una hoja de ruta",
         "serviceType": "Consultoría en inteligencia artificial",
         "text": "Identificamos dónde la IA y la automatización generan más impacto en su operación, y en qué orden abordarlo.",
         "points": [
@@ -189,34 +205,34 @@
       },
       {
         "id": "automation",
-        "title": "Automatizaciones y agentes de IA (con su equipo)",
-        "short": "Automatizaciones y agentes construidos con su equipo, que después ellos mantienen.",
+        "title": "Optimización de procesos con automatización e IA",
+        "short": "Tomamos un proceso que hoy se hace a mano y lo automatizamos con las herramientas que ya tiene.",
         "audience": "Áreas con tareas repetitivas que consumen horas cada semana.",
         "outcome": "Horas recuperadas cada semana en un proceso concreto, medidas antes y después.",
-        "format": "2 a 8 semanas por proceso",
-        "serviceType": "Automatización de procesos con IA",
-        "text": "Construimos junto a su equipo automatizaciones y agentes que resuelven problemas reales — y les enseñamos a mantenerlos y crear los siguientes.",
+        "format": "Un proceso concreto, con las herramientas que ya tiene",
+        "serviceType": "Automatización y optimización de procesos",
+        "text": "Muchas tareas del día a día (copiar datos entre sistemas, armar reportes, enviar los mismos correos) se pueden hacer solas. Tomamos un proceso concreto, lo simplificamos y lo automatizamos con las herramientas que ya paga, usando IA solo donde aporta. Lo construimos con su equipo, para que después lo puedan mantener.",
         "points": [
-          "Plataformas sin código (no-code) para equipos no técnicos",
-          "Desarrollo a la medida cuando el caso lo requiere",
-          "Integración con sus herramientas actuales (correo, hojas de cálculo, CRM, ERP, etc.)",
-          "Capacitación y documentación para que el equipo sea autónomo"
+          "Revisamos el proceso y quitamos los pasos que no hacen falta",
+          "Automatización con plataformas sin código (Power Automate, Make, n8n…) o desarrollo a la medida si el caso lo pide",
+          "Conexión con sus herramientas actuales: correo, hojas de cálculo, CRM, ERP",
+          "Documentación y capacitación para que su equipo la mantenga"
         ]
       },
       {
-        "id": "prompts",
-        "title": "Prompts y contexto: IA que responde lo que usted necesita",
-        "short": "Las instrucciones y el contexto correctos para que la IA responda lo que necesita.",
-        "audience": "Equipos que ya usan IA pero no obtienen respuestas consistentes.",
-        "outcome": "Respuestas de IA consistentes y una biblioteca de prompts que el equipo reutiliza.",
-        "format": "1 a 3 semanas",
-        "serviceType": "Ingeniería de prompts",
-        "text": "La calidad de la IA depende de cómo se le pide y de la información que recibe. Diseñamos con su equipo los prompts y el contexto correctos para sus procesos.",
+        "id": "agents",
+        "title": "Agentes de IA para su operación",
+        "short": "Asistentes de IA que no solo responden: consultan información y ejecutan tareas, con reglas claras.",
+        "audience": "Empresas con mucho volumen de consultas, solicitudes o seguimientos que siguen un patrón.",
+        "outcome": "Respuestas y tareas resueltas en minutos, las 24 horas, con su equipo enfocado en los casos que necesitan criterio.",
+        "format": "Un agente, con reglas claras y supervisión de su equipo",
+        "serviceType": "Desarrollo de agentes de inteligencia artificial",
+        "text": "Un agente de IA es un asistente que va un paso más allá de responder: consulta la información de su empresa, sigue reglas definidas y ejecuta tareas, como contestar a clientes, clasificar solicitudes o dar seguimiento a prospectos. Lo diseñamos con límites claros y con su equipo supervisando las decisiones importantes.",
         "points": [
-          "Biblioteca de prompts para las tareas clave de cada área",
-          "Cómo darle a la IA el contexto correcto (documentos, datos, reglas del negocio)",
-          "Prompts para automatizaciones y agentes que funcionan de forma consistente",
-          "Buenas prácticas de calidad, seguridad y privacidad"
+          "Definimos qué hace el agente, qué no hace y cuándo pasa el caso a una persona",
+          "Conectado a la información y las herramientas de su empresa",
+          "Pruebas con casos reales antes de ponerlo a trabajar",
+          "Su equipo aprende a ajustarlo y supervisarlo"
         ]
       },
       {
@@ -225,7 +241,7 @@
         "short": "Un aliado experto mes a mes, para avanzar con IA sin perder tiempo ni dinero.",
         "audience": "Empresas que quieren avanzar con IA mes a mes, con un experto al lado.",
         "outcome": "Avance constante con IA, sin perder tiempo en pruebas que no llevan a nada.",
-        "format": "Mensual, mínimo 3 meses",
+        "format": "Sesiones mensuales de seguimiento",
         "serviceType": "Asesoría continua en inteligencia artificial",
         "text": "Un aliado experto mes a mes para que su empresa avance con IA sin perder tiempo ni dinero.",
         "points": [
@@ -248,7 +264,7 @@
       "items": [
         {
           "q": "¿Por cuál servicio conviene empezar?",
-          "a": "Si su equipo todavía no usa IA en el trabajo diario, el taller es el primer paso. Si ya la probaron y no saben dónde seguir, el diagnóstico deja una lista priorizada y una hoja de ruta de 90 días. En la primera conversación le decimos cuál de los dos le conviene."
+          "a": "Si su equipo ya usa IA pero no obtiene buenas respuestas, empiece por prompts y contexto. Si todavía no la usan en el trabajo diario, el taller es el primer paso. Si no sabe dónde aplicarla, el diagnóstico le da una lista priorizada. En la primera conversación le decimos cuál le conviene."
         },
         {
           "q": "¿El taller se adapta a nuestra industria?",
@@ -362,7 +378,7 @@
     "items": [
       {
         "slug": "atencion-al-cliente",
-        "service": "automation",
+        "service": "agents",
         "title": "Atención al cliente",
         "text": "Lo que llega una y otra vez deja de ocupar a las personas que deberían estar en los casos difíciles.",
         "situation": "El equipo contesta las mismas preguntas por correo, chat y teléfono. La respuesta correcta está en un manual, en un correo de hace meses o en la cabeza de quien lleva más tiempo. Mientras tanto, el caso que sí necesita criterio espera.",
@@ -375,7 +391,7 @@
       },
       {
         "slug": "ventas",
-        "service": "automation",
+        "service": "agents",
         "title": "Ventas",
         "text": "El seguimiento de un prospecto y el primer borrador de una propuesta dejan de depender de que alguien tenga la tarde libre.",
         "situation": "Un prospecto escribe, la información queda en el correo de una persona y la propuesta se arma copiando la anterior. Lo que se pierde no es una herramienta: es el día en que había que responder.",
