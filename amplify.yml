@@ -8,6 +8,7 @@ frontend:
         - pnpm install
     build:
       commands:
+        - node scripts/write-admin-env.mjs
         - pnpm run build
   artifacts:
     baseDirectory: .next

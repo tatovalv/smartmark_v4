@@ -1,5 +1,15 @@
+import { generatedAdminEnv } from "@/lib/admin-env.generated"
+
 export const ADMIN_COOKIE = "sm_admin"
 const SESSION_MS = 12 * 60 * 60 * 1000
+
+function adminEnvironment() {
+  return {
+    user: process.env.ADMIN_USER || generatedAdminEnv.user,
+    password: process.env.ADMIN_PASSWORD || generatedAdminEnv.password,
+    secret: process.env.ADMIN_SESSION_SECRET || generatedAdminEnv.secret,
+  }
+}
 
 type SessionPayload = { user: string; exp: number }
 
@@ -27,7 +37,7 @@ function equalText(left: string, right: string) {
 }
 
 async function sign(payload: string) {
-  const secret = process.env.ADMIN_SESSION_SECRET
+  const secret = adminEnvironment().secret
   if (!secret) return null
   const key = await crypto.subtle.importKey(
     "raw",
@@ -41,17 +51,17 @@ async function sign(payload: string) {
 }
 
 export function adminConfigured() {
-  return Boolean(process.env.ADMIN_USER && process.env.ADMIN_PASSWORD && process.env.ADMIN_SESSION_SECRET)
+  const env = adminEnvironment()
+  return Boolean(env.user && env.password && env.secret)
 }
 
 export function credentialsMatch(user: string, password: string) {
-  const expectedUser = process.env.ADMIN_USER || ""
-  const expectedPassword = process.env.ADMIN_PASSWORD || ""
-  return equalText(user, expectedUser) && equalText(password, expectedPassword)
+  const env = adminEnvironment()
+  return equalText(user, env.user) && equalText(password, env.password)
 }
 
 export async function createSessionToken() {
-  const user = process.env.ADMIN_USER
+  const user = adminEnvironment().user
   if (!user) return null
   const payload = bytesToBase64Url(new TextEncoder().encode(JSON.stringify({ user, exp: Date.now() + SESSION_MS } satisfies SessionPayload)))
   const signature = await sign(payload)
@@ -67,7 +77,7 @@ export async function readSession(token: string | undefined) {
   if (!expected || !equalText(signature, expected)) return null
   try {
     const data = JSON.parse(new TextDecoder().decode(base64UrlToBytes(payload))) as SessionPayload
-    if (!data || data.user !== process.env.ADMIN_USER || typeof data.exp !== "number" || data.exp < Date.now()) return null
+    if (!data || data.user !== adminEnvironment().user || typeof data.exp !== "number" || data.exp < Date.now()) return null
     return { user: data.user }
   } catch {
     return null
