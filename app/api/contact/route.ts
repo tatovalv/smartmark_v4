@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { Resend } from "resend"
 import { getDictionary, isLocale, serviceOptions, type Locale } from "@/lib/i18n"
+import { addInquiry } from "@/lib/inquiries"
 
 function escapeHtml(text: string) {
   return text.replace(/[&<>"']/g, (char) => {
@@ -91,12 +92,29 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: email && !emailOk ? "email" : "missing" }, { status: 400 })
     }
 
-    const apiKey = process.env.RESEND_API_KEY
-    if (!apiKey) {
-      console.error("RESEND_API_KEY is not set")
-      return NextResponse.json({ error: "config" }, { status: 500 })
+    let stored = false
+    try {
+      await addInquiry({
+        locale,
+        name,
+        company,
+        email,
+        phone,
+        contactMethod: methodLabel,
+        country: countryLabel,
+        service: serviceLabel,
+        message,
+      })
+      stored = true
+    } catch (error) {
+      console.error("Could not store the inquiry:", error)
     }
 
+    const apiKey = process.env.RESEND_API_KEY
+    let emailed = false
+    if (!apiKey) {
+      console.error("RESEND_API_KEY is not set; the inquiry was stored without sending email")
+    } else {
     const resend = new Resend(apiKey)
     // onboarding@resend.dev is Resend's test sender and usually lands in spam.
     // In production, set RESEND_FROM_EMAIL to an address on smartmarkconsultores.com
@@ -149,11 +167,11 @@ export async function POST(request: NextRequest) {
       ].join("\n"),
     })
 
-    if (result.error) {
-      console.error("Resend API error:", result.error)
-      return NextResponse.json({ error: "send" }, { status: 500 })
+    if (result.error) console.error("Resend API error:", result.error)
+    else emailed = true
     }
 
+    if (!stored && !emailed) return NextResponse.json({ error: "send" }, { status: 500 })
     return NextResponse.json({ ok: true })
   } catch (error) {
     console.error("Contact form error:", error)

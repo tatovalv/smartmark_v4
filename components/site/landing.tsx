@@ -34,6 +34,7 @@ export default function Landing({
     { href: pagePath(locale, "why"), label: dict.nav.why },
     { href: contactHref, label: dict.nav.contact },
   ]
+  const menuLinks = [...links, { href: "/admin", label: dict.nav.admin }]
 
   return (
     <>
@@ -44,7 +45,7 @@ export default function Landing({
         locale={locale}
         logoAlt={dict.logoAlt}
         homeHref={home}
-        links={links}
+        links={menuLinks}
         cta={dict.nav.cta}
         ctaShort={dict.nav.ctaShort}
         booking={booking}

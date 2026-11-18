@@ -67,6 +67,9 @@ The contact form posts to `/api/contact` and sends a hidden `idioma` field (`es`
 - `RESEND_TO_EMAIL` — the inbox that receives the leads. Falls back to `info@smartmarkconsultores.com`.
 - `NEXT_PUBLIC_GA_ID` — Google Analytics 4 id (`G-…`). When it is set, the site loads Analytics and the privacy policy shows the analytics section.
 - `NEXT_PUBLIC_GSC_VERIFICATION` — Google Search Console verification token. When it is set, the layout adds the matching meta tag.
+- `ADMIN_USER`, `ADMIN_PASSWORD`, and `ADMIN_SESSION_SECRET` — required for the admin panel at `/admin`. Set all three in `.env.local` and in Amplify. The session secret is a long random string used to sign the login cookie. Do not commit these values.
+
+Contact submissions are stored in `data/inquiries.json` (not committed) and shown in the admin panel, where each one can be marked unread, read, or replied. The form still succeeds when `RESEND_API_KEY` is missing: the message is kept in the panel and no email is sent. When the key is set, the email goes out through Resend as well. On AWS Amplify the server disk is temporary, so that file does not survive a new deploy; a database is needed before relying on the panel in production.
 
 Spam protection in `app/api/contact/route.ts`: a hidden `website` field (honeypot), a 3-second minimum between loading the form and sending it, and a limit of 5 submissions per IP every 10 minutes. The limit is kept in memory, so it resets on each deploy; move it to a shared store if spam grows. Blocked submissions get a normal success response but no email is sent.
 
