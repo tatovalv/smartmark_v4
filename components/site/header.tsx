@@ -64,9 +64,9 @@ export function Header({
     <header className="sticky top-0 z-50 border-b border-brand-line bg-white/95 backdrop-blur">
       <div className="h-1 bg-brand-primary" />
       {banner ? <EnglishBanner {...banner} englishHref={pagePath("en", page)} /> : null}
-      <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex w-full max-w-6xl items-center gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-3">
         <a href={homeHref} className="shrink-0 rounded-md" aria-label={logoAlt}>
-          <img src="/logo-mark.png" alt="" width={188} height={81} className="h-11 w-auto sm:h-12" />
+          <img src="/logo-mark.png" alt="" width={188} height={81} className="h-9 w-auto sm:h-12" />
         </a>
 
         <nav aria-label={labels.nav} className="ml-6 hidden items-center gap-5 lg:flex">
@@ -89,7 +89,7 @@ export function Header({
           </a>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 sm:gap-3 lg:hidden">
+        <div className="ml-auto flex items-center gap-1.5 sm:gap-3 lg:hidden">
           <LanguageSwitcher locale={locale} label={labels.lang} page={page} />
           <a {...booking} className="btn btn-primary btn-sm" onClick={() => track("cta_click")}>
             {ctaShort}
@@ -97,7 +97,7 @@ export function Header({
           <button
             ref={buttonRef}
             type="button"
-            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-line"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand-line"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? labels.closeMenu : labels.openMenu}

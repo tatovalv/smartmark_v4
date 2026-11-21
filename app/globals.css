@@ -1387,6 +1387,142 @@ summary::-webkit-details-marker {
 
 .case-card .preview-link { margin-top: 1.25rem; }
 
+@media (max-width: 799px) {
+  .shell { padding-inline: 1.15rem; }
+  .section,
+  .blueprint,
+  .cases-band,
+  .position-banner { padding-block: 3.15rem; }
+
+  .hero-constellation { height: 7.5rem; }
+
+  .hero-copy { padding: 0.15rem 1.15rem 0.15rem; }
+
+  .hero .display {
+    margin-top: 0.7rem;
+    font-size: clamp(2.35rem, 10.4vw, 3.05rem);
+    line-height: 0.96;
+  }
+
+  .hero .lede {
+    margin-top: 0.95rem;
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  .hero-copy .btn { width: 100%; }
+
+  .hero-notes {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1.15rem;
+    border-top: 0;
+    padding: 0.2rem 1.15rem 1.4rem;
+  }
+
+  .hero-notes li {
+    border-radius: 1.2rem;
+    background: white;
+    padding: 0.95rem 1rem;
+    box-shadow: var(--shadow);
+  }
+
+  .position-pillars {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1.35rem;
+  }
+
+  .position-pillars li {
+    border: 0;
+    border-radius: 1.2rem;
+    background: color-mix(in srgb, white 12%, transparent);
+    padding: 1.05rem 1.05rem 1.15rem;
+  }
+
+  .position-text { max-width: none; }
+
+  .stair {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .diagnosis {
+    gap: 0.85rem;
+    margin-top: 1.6rem;
+  }
+
+  .diagnosis article {
+    border-radius: 1.25rem;
+    background: white;
+    padding: 1.1rem 1.1rem 1.2rem;
+    box-shadow: var(--shadow);
+  }
+
+  .giant { font-size: 2.15rem; line-height: 1; }
+
+  .diagnosis h3 {
+    margin-top: 0.2rem;
+    max-width: none;
+    font-size: 1.28rem;
+  }
+
+  .preview-grid {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .stats-band { margin-bottom: 3.15rem; padding-block: 1.7rem; }
+
+  .stats-band ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.15rem 1rem;
+  }
+
+  .stats-band li {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .stat-value { font-size: 2.05rem; }
+
+  .chip-row {
+    gap: 0.6rem;
+  }
+
+  .sheet {
+    padding: 1.25rem 1.1rem 1.35rem;
+  }
+
+  .sheet-index {
+    position: static;
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    color: var(--color-secondary);
+  }
+
+  .sheet h2 { padding-right: 0; }
+
+  .blueprint-grid article { padding: 1.2rem 0.1rem 1.35rem; }
+
+  .why-band article,
+  .mosaic article { padding: 1.2rem 1.1rem 1.3rem; }
+
+  .case-card { padding: 1.2rem 1.05rem 1.3rem; }
+
+  .final-cta { padding: 1.7rem 1.15rem 1.55rem; }
+
+  .final-cta h2 { font-size: 1.95rem; }
+
+  .final-cta-actions,
+  .final-cta-actions .btn { width: 100%; }
+}
+
 @media (min-width: 800px) {
   .cases-band { padding-block: 6.5rem; }
 
